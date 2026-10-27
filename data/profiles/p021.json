@@ -1,0 +1,98 @@
+{
+  "id": "p021",
+  "full_name": "Mariana Correia",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Gerente de Projetos Ágil",
+  "years_experience": 16,
+  "certifications": [
+    {
+      "name": "Certified Scrum Professional (CSP)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Certified Scrum Master (CSM)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Cloudera Certified Hadoop Administrator (CCA-500)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "HDP Certified Administrator (HDPCA)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Oracle Certified Java Developer (OCJP)",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "master",
+      "course": "Master of Computer Applications (MCA)",
+      "institution": "Osmania University",
+      "completion_year": 2001
+    }
+  ],
+  "projects": [
+    {
+      "name": "Foundation Services (GLS, ConfigServices)",
+      "client": "McDonald's",
+      "sector": "varejo",
+      "role": "Gerente de Projetos Ágil (Scrum of Scrums)",
+      "description": "Gerenciou equipes globais, implementou métricas, CI/CD e automação de testes em ambiente AWS",
+      "start": "2017-02",
+      "end": null
+    },
+    {
+      "name": "DAAPS (Digital Analytics and App Support)",
+      "client": "PwC",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos Ágil",
+      "description": "Coordenação de equipes nos EUA e Índia, planejamento de roadmap e gestão de riscos",
+      "start": "2014-07",
+      "end": "2017-02"
+    },
+    {
+      "name": "NetSim (Network Simulator) – lON",
+      "client": "British Telecom",
+      "sector": "telecom",
+      "role": "Gerente de Entrega",
+      "description": "Gerenciou entrega de soluções Hadoop e AWS para clientes globais",
+      "start": "2010-01",
+      "end": "2014-06"
+    },
+    {
+      "name": "Cellular Network Administrator (CNA)",
+      "client": "Ericsson",
+      "sector": "telecom",
+      "role": "Líder Técnico Java / Scrum Master",
+      "description": "Desenvolvimento e entrega de soluções Java, coordenação de equipes offshore",
+      "start": "2005-10",
+      "end": "2009-12"
+    },
+    {
+      "name": "NMS (Network Management Systems)",
+      "client": "Lucent Technologies",
+      "sector": "telecom",
+      "role": "Líder Técnico",
+      "description": "Desenvolvimento de interface Java Swing e testes unitários com JUnit",
+      "start": "2004-07",
+      "end": "2005-09"
+    },
+    {
+      "name": "MST (MUI System Testing)",
+      "client": "Broadcom",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor",
+      "description": "Testes unitários e documentação de testes para sistemas Java",
+      "start": "2002-02",
+      "end": "2004-06"
+    }
+  ]
+}

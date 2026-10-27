@@ -1,0 +1,63 @@
+{
+  "id": "p065",
+  "full_name": "Juliana Freitas",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2006,
+      "course": "Master of Computer Application (MCA)",
+      "institution": "Andhra University",
+      "level": "master"
+    }
+  ],
+  "job_title": "Analista de Negócios / Gerente de Projetos",
+  "projects": [
+    {
+      "client": "General Electric",
+      "description": "Gestão de projetos de logística e rastreamento de ativos para a divisão de energia.",
+      "end": null,
+      "name": "Worldwide Material Management - Logistics",
+      "role": "Analista de Negócios e Gerente de Projetos",
+      "sector": "energia",
+      "start": "2014-07"
+    },
+    {
+      "client": "General Electric",
+      "description": "Automação de workflows de gestão de fornecedores e integração de dados de ERP.",
+      "end": "2014-06",
+      "name": "SMF and ERP Utilities",
+      "role": "Analista de Negócios e Gerente de Projetos",
+      "sector": "energia",
+      "start": "2011-01"
+    },
+    {
+      "client": "General Electric",
+      "description": "Migração de aplicações corporativas para o domínio de energia e integração de processos de pagamento.",
+      "end": "2010-12",
+      "name": "AP Conversions",
+      "role": "Analista de Negócios",
+      "sector": "energia",
+      "start": "2010-08"
+    },
+    {
+      "client": "Tata Consultancy Services",
+      "description": "Desenvolvimento de framework J2EE orientado a serviços para infraestrutura de aplicações.",
+      "end": "2010-05",
+      "name": "EAG J2EE Framework",
+      "role": "Líder de Projeto",
+      "sector": "tecnologia",
+      "start": "2009-08"
+    },
+    {
+      "client": "State Bank of India",
+      "description": "Desenvolvimento de sistema de workflow e gestão de documentos para centralização de transações não-clientes.",
+      "end": "2009-07",
+      "name": "SBI Workflow & DMS",
+      "role": "Desenvolvedor",
+      "sector": "financeiro",
+      "start": "2007-03"
+    }
+  ],
+  "years_experience": 11
+}

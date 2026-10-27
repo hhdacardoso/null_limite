@@ -1,0 +1,38 @@
+{
+  "id": "p108",
+  "full_name": "André Pereira",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Desenvolvedor Java Full Stack",
+  "years_experience": 9,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Desenvolvimento de Aplicações Full Stack para Farmers Insurance",
+      "client": "Farmers Insurance",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java Full Stack",
+      "description": "Projetou e implementou serviços REST e SOAP, microserviços Spring Boot e front‑end AngularJS para a plataforma de seguros.",
+      "start": "2016-04",
+      "end": null
+    },
+    {
+      "name": "Desenvolvimento de Aplicações SOA e Microserviços para TIAA",
+      "client": "TIAA",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Criou APIs REST, serviços Mule ESB e microserviços Spring Boot na nuvem AWS para processos financeiros.",
+      "start": "2014-03",
+      "end": "2016-03"
+    },
+    {
+      "name": "Desenvolvimento de Aplicações Web para Panasonic",
+      "client": "Panasonic",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java",
+      "description": "Implementou MVC com JSF, Hibernate e Spring, além de SPA AngularJS para sistemas de controle industrial.",
+      "start": "2012-08",
+      "end": "2014-02"
+    }
+  ]
+}

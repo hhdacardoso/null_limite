@@ -1,0 +1,65 @@
+{
+  "id": "p107",
+  "full_name": "Tatiane Dias",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Java/Web Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "MetLife",
+      "client": "MetLife",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java/Web Sênior",
+      "description": "Desenvolvimento de aplicações J2EE, microserviços REST com Spring Boot e UI em Angular/React.",
+      "start": "2017-08",
+      "end": null
+    },
+    {
+      "name": "Wells Fargo",
+      "client": "Wells Fargo",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java/Web Sênior",
+      "description": "Projeto de microserviços com Spring Boot, Docker, Kafka e integração front-end AngularJS/React.",
+      "start": "2016-04",
+      "end": null
+    },
+    {
+      "name": "Chrysler",
+      "client": "Chrysler",
+      "sector": "industria",
+      "role": "Desenvolvedor Java/Web Sênior",
+      "description": "Modernização do portal de clientes usando J2EE, Spring, UI AngularJS/Bootstrap e AWS.",
+      "start": "2015-02",
+      "end": "2016-03"
+    },
+    {
+      "name": "Sprint Corporation",
+      "client": "Sprint",
+      "sector": "telecom",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "description": "Implementação de serviços RESTful, UI com Struts/Dojo e integração Kafka.",
+      "start": "2013-11",
+      "end": "2015-01"
+    },
+    {
+      "name": "Matrix Medical Network",
+      "client": "Matrix Medical Network",
+      "sector": "saude",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento full‑stack de aplicações médicas com Spring, Hibernate e Web Services SOAP/REST.",
+      "start": "2012-12",
+      "end": "2013-10"
+    },
+    {
+      "name": "Olive Technology",
+      "client": "Olive Technology",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor de Software",
+      "description": "Desenvolvimento de aplicações J2EE usando Struts, Hibernate e Oracle.",
+      "start": "2009-08",
+      "end": "2012-10"
+    }
+  ]
+}

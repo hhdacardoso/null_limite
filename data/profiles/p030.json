@@ -1,0 +1,63 @@
+{
+  "id": "p030",
+  "full_name": "Bruno Nunes",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2015,
+      "course": "Master of Science: Finance",
+      "institution": "Manhattan Ville College",
+      "level": "master"
+    }
+  ],
+  "job_title": "Analista de Negócios",
+  "projects": [
+    {
+      "client": "Wells Fargo Bank",
+      "description": "Desenvolvimento de estratégias baseadas em dados e modelos preditivos para produtos de empréstimo ao consumidor.",
+      "end": null,
+      "name": "Business Analyst - Finance",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2017-05"
+    },
+    {
+      "client": "The Vanguard Group",
+      "description": "Suporte ao grupo de gestão de investimentos na definição de soluções de tecnologia e processos de negócios futuros.",
+      "end": "2017-04",
+      "name": "Senior Business Analyst",
+      "role": "Analista de Negócios Sênior",
+      "sector": "financeiro",
+      "start": "2016-07"
+    },
+    {
+      "client": "Selux corporation",
+      "description": "Definição de estratégias de precificação para consumidores e empresas, incluindo análise de margem bruta.",
+      "end": "2016-06",
+      "name": "Business Analyst",
+      "role": "Analista de Negócios",
+      "sector": "outros",
+      "start": "2015-07"
+    },
+    {
+      "client": "Accenture Services Pvt. Ltd.",
+      "description": "Implementação de módulos do sistema bancário Temenos T24 para negócios bancários.",
+      "end": "2012-03",
+      "name": "Business Analyst – Finance",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2010-04"
+    },
+    {
+      "client": "Micro Village Communications",
+      "description": "Análise de resultados operacionais, elaboração de orçamentos e documentação de requisitos de software.",
+      "end": "2010-03",
+      "name": "Junior Business Analyst",
+      "role": "Analista de Negócios Júnior",
+      "sector": "outros",
+      "start": "2008-09"
+    }
+  ],
+  "years_experience": 7
+}

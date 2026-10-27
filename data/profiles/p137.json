@@ -1,0 +1,47 @@
+{
+  "id": "p137",
+  "full_name": "Vinícius Silva",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Analista de Negócios Ágil",
+  "projects": [
+    {
+      "client": "Charter Communications",
+      "description": "Gestão de requisitos e suporte a lançamentos de produtos utilizando metodologias ágeis e ferramentas como ServiceNow e Dynamics 365.",
+      "end": null,
+      "name": "Agile Business Analyst",
+      "role": "Analista de Negócios Ágil",
+      "sector": "telecom",
+      "start": "2016-10"
+    },
+    {
+      "client": "Capital One Bank",
+      "description": "Análise de requisitos para produtos bancários, modelagem de dados e suporte a processos de liquidez e gestão de riscos.",
+      "end": "2016-08",
+      "name": "Business Analyst",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2015-01"
+    },
+    {
+      "client": "DXC Technology",
+      "description": "Suporte a implementação de Oracle Agile PLM e análise de processos de recursos humanos e finanças.",
+      "end": "2014-12",
+      "name": "Business System Analyst",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "tecnologia",
+      "start": "2013-02"
+    },
+    {
+      "client": "Coventry Health Care",
+      "description": "Análise de fluxos de dados de saúde, gestão de interfaces HL7 e suporte a projetos de Medicaid/MMIS.",
+      "end": "2013-01",
+      "name": "Business System Analyst",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "saude",
+      "start": "2011-10"
+    }
+  ],
+  "years_experience": 8
+}

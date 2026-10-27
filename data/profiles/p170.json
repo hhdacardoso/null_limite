@@ -1,0 +1,54 @@
+{
+  "id": "p170",
+  "full_name": "Rodrigo Almeida",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelors in Information Technology",
+      "institution": "Mumbai University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Sistemas de Negócios",
+  "projects": [
+    {
+      "client": "Allstate",
+      "description": "Análise de dados e construção de data warehouse para gestão de sinistros.",
+      "end": null,
+      "name": "Claims Project",
+      "role": "Analista de Negócios",
+      "sector": "seguros",
+      "start": "2015-02"
+    },
+    {
+      "client": "American Express",
+      "description": "Gestão da migração em massa de produtos de cartões de crédito e estratégia de portfólio.",
+      "end": null,
+      "name": "Strategic Market Capabilities (SMC)",
+      "role": "Líder de Analista de Sistemas de Negócios",
+      "sector": "financeiro",
+      "start": "2015-02"
+    },
+    {
+      "client": "American Express",
+      "description": "Análise de tecnologia e negócios para a gestão global de emissão de cartões de crédito.",
+      "end": "2015-02",
+      "name": "Global Credit Card Issuance (GCI)",
+      "role": "Analista de Tecnologia/Negócios",
+      "sector": "financeiro",
+      "start": "2007-07"
+    },
+    {
+      "client": "Union Bank of Switzerland (UBS)",
+      "description": "Desenvolvimento e suporte de aplicações de gestão de caixa e transferências de pagamentos via SWIFT.",
+      "end": "2015-02",
+      "name": "Banking Operations",
+      "role": "Engenheiro de Software Sênior",
+      "sector": "financeiro",
+      "start": "2007-07"
+    }
+  ],
+  "years_experience": 10
+}

@@ -67,10 +67,31 @@ Não há migrations: ao mudar o modelo, apague `null_limite.db` para recriar.
 ## Privacidade (LGPD)
 Uploads não são servidos publicamente. Comprovantes só são baixados pelo dono ou por gestores via endpoint autenticado.
 
+## Dados de demo (base de currículos)
+
+A base recebida (228 currículos `.docx`, em inglês) contém dados pessoais reais. O pipeline abaixo gera dados de demo anonimizados; os `.docx` originais **nunca** entram no repositório.
+
+```bash
+# 1. Extrai o texto e anonimiza (offline). Aborta sem gravar nada se sobrar e-mail, telefone, SSN, URL ou nome original
+python scripts/ingest/anonymize.py "<pasta com os .docx>"        # -> data/anon/ (fora do git)
+
+# 2. Estrutura em JSON com LLM (Groq, plano gratuito). Precisa de GROQ_API_KEY no .env
+python scripts/ingest/structure.py --limit 100                  # -> data/profiles/*.json (versionado)
+
+# 3. Recria o banco com os perfis (APAGA todos os dados do banco)
+python scripts/seed.py
+```
+
+- **Anonimização**: nome trocado por nome fictício brasileiro; contato, links, SSN, data de nascimento, visto, endereço e seção de referências removidos. A correspondência com o nome original não é salva.
+- **Estruturação**: só o texto anonimizado é enviado ao Groq. O plano gratuito limita tokens por dia, por isso são 100 perfis equilibrados entre BA, PM e Dev, priorizando quem tem certificação e experiência em energia. Rodar de novo continua de onde parou.
+- **Seed**: cria um profissional por perfil (`nome.sobrenome@nexora.demo`) e dois gestores (`gestor1@nexora.demo`, `gestor2@nexora.demo`), todos com senha `demo123`. Os currículos originais param em 2016-2017, então as datas são deslocadas: cerca de 70% dos perfis parecem atualizados recentemente e 30% parecem desatualizados há 2-4 anos. Os comprovantes são PDFs fictícios, com parte aprovada, parte pendente e parte sem comprovante.
+
 ## Estrutura
 ```
 null_limite/
 ├── main.py              # App completo (single-file)
+├── scripts/             # Anonimização, estruturação (LLM) e seed
+├── data/profiles/       # Perfis anonimizados em JSON (seed)
 ├── requirements.txt     # Dependências
 ├── run.sh               # Script de inicialização
 ├── .gitignore
@@ -89,6 +110,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=10080
 UPLOAD_DIR=./uploads
 MAX_FILE_SIZE=10485760
 MANAGER_EMAILS=gestor@ex.com,outro@ex.com
+GROQ_API_KEY=gsk_...   # só para scripts/ingest/structure.py
 ```
 
 ## Testando rápido (curl)

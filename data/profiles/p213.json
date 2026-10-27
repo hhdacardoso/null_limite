@@ -1,0 +1,45 @@
+{
+  "id": "p213",
+  "full_name": "Larissa Lima",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2009,
+      "course": "Bachelors in Computer Science Engineering",
+      "institution": "Siddhartha Engineering College, Acharya Nagarjuna University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "First Citizens Bank",
+      "description": "Desenvolvimento e migração para nuvem (AWS) de APIs de contas de clientes.",
+      "end": null,
+      "name": "Customer Accounts API Development/Enhancement and Migration to Cloud",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "financeiro",
+      "start": "2017-01"
+    },
+    {
+      "client": "Sun Life Financial",
+      "description": "Desenvolvimento de interface de contas de clientes e migração de aplicações para nuvem.",
+      "end": "2016-12",
+      "name": "Customer Accounts Interface",
+      "role": "Desenvolvedor Java/J2EE",
+      "sector": "seguros",
+      "start": "2015-10"
+    },
+    {
+      "client": "State Farm Insurance",
+      "description": "Desenvolvimento de aplicação de seguro automotivo para acesso online e processamento de sinistros.",
+      "end": "2015-09",
+      "name": "Auto Insurance Application",
+      "role": "Consultor Desenvolvedor Java/J2EE Sênior",
+      "sector": "seguros",
+      "start": "2014-07"
+    }
+  ],
+  "years_experience": 8
+}

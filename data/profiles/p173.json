@@ -1,0 +1,65 @@
+{
+  "id": "p173",
+  "full_name": "Fernanda Moreira",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Sr Java/Hadoop Developer",
+  "years_experience": 10,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "ATG Commerce & Endeca Integration",
+      "client": "Citibank",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Sênior",
+      "description": "Integração e otimização de aplicações ATG Commerce e Endeca em ambiente AWS.",
+      "start": "2014-11",
+      "end": null
+    },
+    {
+      "name": "Data Pipeline Hadoop",
+      "client": "McKesson Health Solutions",
+      "sector": "saude",
+      "role": "Desenvolvedor Sênior",
+      "description": "Construção de pipeline de dados com Hadoop, Spark e Hive para análise de logs.",
+      "start": "2012-01",
+      "end": "2014-10"
+    },
+    {
+      "name": "Migracao WebSphere para AWS",
+      "client": "McKesson Health Solutions",
+      "sector": "saude",
+      "role": "Desenvolvedor Sênior",
+      "description": "Migração de aplicações WebSphere 5.x/6.x para AWS EC2 e S3.",
+      "start": "2012-01",
+      "end": "2014-10"
+    },
+    {
+      "name": "Customização ATG Commerce",
+      "client": "Citibank",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Sênior",
+      "description": "Customização de módulos de catálogo, carrinho e checkout em ATG Commerce.",
+      "start": "2014-11",
+      "end": null
+    },
+    {
+      "name": "Monitoramento com Zabbix e AppDynamics",
+      "client": "Citibank",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Sênior",
+      "description": "Implementação de monitoramento de aplicações em ambientes Linux/Windows.",
+      "start": "2014-11",
+      "end": null
+    },
+    {
+      "name": "Desenvolvimento de RESTful Services",
+      "client": "McKesson Health Solutions",
+      "sector": "saude",
+      "role": "Desenvolvedor Sênior",
+      "description": "Criação de serviços RESTful com Spring e Jersey para integração de sistemas.",
+      "start": "2012-01",
+      "end": "2014-10"
+    }
+  ]
+}

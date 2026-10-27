@@ -1,0 +1,60 @@
+{
+  "id": "p068",
+  "full_name": "Camila Machado",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Negócios",
+  "years_experience": 9,
+  "certifications": [
+    {
+      "name": "ITIL",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "master",
+      "course": "Science",
+      "institution": null,
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Surveillance System",
+      "client": "Chicago Board of Options Exchange (CBOE)",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Análise e documentação de requisitos para aplicações de vigilância de mercado.",
+      "start": "2013-07",
+      "end": null
+    },
+    {
+      "name": "Internal Ovation Project",
+      "client": "TD Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Gestão de requisitos e suporte ao sistema de contas e transações bancárias.",
+      "start": "2011-05",
+      "end": "2013-05"
+    },
+    {
+      "name": "Architectural and Security Model Gateway",
+      "client": "Verizon",
+      "sector": "telecom",
+      "role": "Analista de Negócios",
+      "description": "Coordenação de processos de portais de autenticação e autorização.",
+      "start": "2009-04",
+      "end": "2011-05"
+    },
+    {
+      "name": "POS Authorization System",
+      "client": "Sears",
+      "sector": "varejo",
+      "role": "Analista de Negócios",
+      "description": "Análise de requisitos e documentação para autorizações de vendas e devoluções.",
+      "start": "2007-10",
+      "end": "2009-03"
+    }
+  ]
+}

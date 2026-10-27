@@ -1,0 +1,63 @@
+{
+  "id": "p218",
+  "full_name": "Carlos Moreira",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Full Stack Java",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Engineering",
+      "institution": "Koneru Lakshmaiah College of Engineering",
+      "completion_year": 2009
+    }
+  ],
+  "projects": [
+    {
+      "name": "Online Pharmacy System",
+      "client": "BlueCross Blue Shield of NC",
+      "sector": "saude",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Desenvolvimento e implantação de aplicação de farmácia online com mais de um milhão de usuários.",
+      "start": "2016-01",
+      "end": null
+    },
+    {
+      "name": "AML/KYC Solution",
+      "client": "Wex Inc",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Desenvolvimento de solução anti‑lavagem de dinheiro e conhecimento do cliente para instituição bancária.",
+      "start": "2014-05",
+      "end": "2015-11"
+    },
+    {
+      "name": "Retiree Drug Subsidy Program",
+      "client": "United Health Group",
+      "sector": "saude",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Sistema para geração e transmissão de relatórios de subsídio de medicamentos para aposentados.",
+      "start": "2013-07",
+      "end": "2014-04"
+    },
+    {
+      "name": "RESTful Services Integration",
+      "client": "Nexius",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento de serviços RESTful e integração Spring/Hibernate para múltiplas aplicações.",
+      "start": "2012-08",
+      "end": "2013-06"
+    },
+    {
+      "name": "Struts‑Spring‑Hibernate Application",
+      "client": "Star Touch India Pvt. Ltd",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Implementação de aplicação web usando Struts, Spring e Hibernate.",
+      "start": "2009-09",
+      "end": "2012-05"
+    }
+  ]
+}

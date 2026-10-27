@@ -1,0 +1,72 @@
+{
+  "id": "p038",
+  "full_name": "Rafael Souza",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Gerente de Projetos",
+  "years_experience": null,
+  "certifications": [
+    {
+      "name": "PMP",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "ITIL V3",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "OCP",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Projeto de Gestão de Saúde – CDPHP",
+      "client": "CDPHP (Capital District Physicians' Health Plan)",
+      "sector": "saude",
+      "role": "Gerente de Projetos",
+      "description": "Gerenciou projetos de melhoria de processos de saúde, coordenando equipes on‑shore e off‑shore e entregando soluções dentro do prazo e orçamento.",
+      "start": "2017-04",
+      "end": null
+    },
+    {
+      "name": "Transição de Sistemas – Miller Coors USA",
+      "client": "Miller Coors",
+      "sector": "outros",
+      "role": "Sr. Administrador de Banco de Dados Oracle & SQL e Gerente de Transição de Projetos",
+      "description": "Supervisionou a migração de sistemas e a administração de bancos de dados 24/7 durante a transição de contas.",
+      "start": "2016-07",
+      "end": "2017-03"
+    },
+    {
+      "name": "Administração de Banco de Dados – RSA Insurance",
+      "client": "RSA (Royal and Sun Alliance)",
+      "sector": "seguros",
+      "role": "Sr. Administrador de Banco de Dados Oracle e Gerente de Carga de Trabalho de Projetos",
+      "description": "Gerenciou a administração de bancos de dados Oracle, otimização de consultas e migração de data center.",
+      "start": "2012-11",
+      "end": "2016-06"
+    },
+    {
+      "name": "Administração de Banco de Dados – Miller Coors India",
+      "client": "Miller Coors",
+      "sector": "outros",
+      "role": "Administrador de Banco de Dados Oracle & SQL",
+      "description": "Responsável pela administração de bancos de dados Oracle, backup, recuperação e replicação com Golden Gate.",
+      "start": "2012-01",
+      "end": "2012-11"
+    },
+    {
+      "name": "Administração de Banco de Dados – Irving Oil",
+      "client": "Irving Oil",
+      "sector": "energia",
+      "role": "Administrador de Banco de Dados Oracle",
+      "description": "Gerenciou bancos de dados Oracle, backups, tuning e segurança em ambiente de produção.",
+      "start": "2009-03",
+      "end": "2012-01"
+    }
+  ]
+}

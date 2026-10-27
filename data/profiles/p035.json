@@ -1,0 +1,84 @@
+{
+  "id": "p035",
+  "full_name": "Ana Machado",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Program Manager",
+  "years_experience": 12,
+  "certifications": [
+    {
+      "name": "Project Manager",
+      "issuer": "Wipro Technologies",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "master",
+      "course": "Master of Science, Computer Science",
+      "institution": "Andhra University, Visakhapatnam",
+      "completion_year": null
+    },
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Science, Computer Science",
+      "institution": "Andhra University, Visakhapatnam",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Release Program Manager",
+      "client": "Microsoft",
+      "sector": "tecnologia",
+      "role": "Release Program Manager",
+      "description": "Established release processes for change management and published release status reports to leadership and global audiences to ensure projects were on track.",
+      "start": "2014-02",
+      "end": "2014-12"
+    },
+    {
+      "name": "Test Manager",
+      "client": "Microsoft",
+      "sector": "tecnologia",
+      "role": "Test Manager",
+      "description": "Responsible for testing and maintenance for a suite of applications for volume licensing contract management within Enterprise Commerce IT.",
+      "start": "2013-10",
+      "end": "2014-01"
+    },
+    {
+      "name": "Program Manager",
+      "client": "Microsoft",
+      "sector": "tecnologia",
+      "role": "Program Manager",
+      "description": "Helped develop a single dashboard for Service Agent's desktops of all agent-required applications to enable the most accurate and timely support.",
+      "start": "2013-06",
+      "end": "2013-10"
+    },
+    {
+      "name": "Project Manager",
+      "client": "Lowe’s US Retail Chain",
+      "sector": "varejo",
+      "role": "Project Manager",
+      "description": "Developed user stories for the consumer app; oversaw Sprint planning and directed test case development.",
+      "start": "2012-08",
+      "end": "2013-05"
+    },
+    {
+      "name": "Project Manager",
+      "client": "Nike",
+      "sector": "varejo",
+      "role": "Project Manager",
+      "description": "Facilitated project SCRUM meetings and generated status reports to stakeholders.",
+      "start": "2010-02",
+      "end": "2012-06"
+    },
+    {
+      "name": "QA Manager/Project Manager",
+      "client": "Microsoft",
+      "sector": "tecnologia",
+      "role": "QA Manager/Project Manager",
+      "description": "Prioritized apps for general availability releases and generated monthly metric reports and status updates.",
+      "start": "2009-02",
+      "end": "2010-01"
+    }
+  ]
+}

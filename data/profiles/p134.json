@@ -1,0 +1,47 @@
+{
+  "id": "p134",
+  "full_name": "Gustavo Carvalho",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Full Stack Java/J2EE Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Synaptic Storage as a Service",
+      "client": "T-Mobile",
+      "sector": "telecom",
+      "role": "Desenvolvedor Full Stack Java/J2EE Sênior",
+      "description": "Desenvolvimento de plataforma de armazenamento em nuvem com microserviços, Spring Boot e implantação em AWS.",
+      "start": "2017-05",
+      "end": null
+    },
+    {
+      "name": "BCBS Anthem Care Application",
+      "client": "Anthem BCBS",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Implementação de portal de seguros de saúde com AngularJS, Spring Security e serviços REST/SOAP.",
+      "start": "2016-08",
+      "end": "2017-05"
+    },
+    {
+      "name": "Assurant Insurance Platform",
+      "client": "Assurant Inc",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento de aplicação de seguros usando Spring MVC, Hibernate e integração de serviços SOAP/REST.",
+      "start": "2014-09",
+      "end": "2016-07"
+    },
+    {
+      "name": "Health Connection Supportive Housing System",
+      "client": "Health Connection",
+      "sector": "governo",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Sistema de gestão de moradia assistida com Spring, Hibernate, AngularJS e implantação em Docker/AWS.",
+      "start": "2013-06",
+      "end": "2014-09"
+    }
+  ]
+}

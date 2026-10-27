@@ -1,0 +1,124 @@
+{
+  "id": "p144",
+  "full_name": "Lucas Pereira",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [
+    {
+      "issue_year": null,
+      "issuer": "APMG",
+      "name": "PRINCE2 Practitioner"
+    },
+    {
+      "issue_year": null,
+      "issuer": "AACPS Global",
+      "name": "Managing Multiple Projects"
+    },
+    {
+      "issue_year": null,
+      "issuer": "APMG",
+      "name": "ITIL v3 Foundation"
+    },
+    {
+      "issue_year": null,
+      "issuer": "ISI",
+      "name": "Certified Scrum Master"
+    },
+    {
+      "issue_year": null,
+      "issuer": "Rackspace",
+      "name": "Cloud Computing (CloudU)"
+    },
+    {
+      "issue_year": null,
+      "issuer": "AACPS Global",
+      "name": "Six Sigma Black Belt"
+    },
+    {
+      "issue_year": null,
+      "issuer": "IRCA",
+      "name": "ISO 9001:2008 Lead Auditor"
+    },
+    {
+      "issue_year": null,
+      "issuer": "RABQSA",
+      "name": "ISO 20000-1:2011 Lead Auditor"
+    },
+    {
+      "issue_year": null,
+      "issuer": "IRCA",
+      "name": "ISO 27001:2005 Lead Auditor"
+    }
+  ],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Executive MBA (IT Operations)",
+      "institution": "IIBMS",
+      "level": "mba"
+    },
+    {
+      "completion_year": null,
+      "course": "Bachelor of Engineering (Computers)",
+      "institution": "WIT, Shivaji University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Gerente de Projetos",
+  "projects": [
+    {
+      "client": "Deutsche Bank",
+      "description": "Liderança de projetos de remediação regulatória e análise de negócios para ambientes de teste.",
+      "end": null,
+      "name": "Remediação Regulatória de Ambiente de Teste",
+      "role": "Gerente de Projetos / Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2015-08"
+    },
+    {
+      "client": "AIG",
+      "description": "Gestão de integrações de sistemas e estratégia de digitalização para seguradora de vida.",
+      "end": "2015-07",
+      "name": "Integração de Sistemas e Estratégia de Digitalização",
+      "role": "Gerente de Projetos",
+      "sector": "seguros",
+      "start": "2013-05"
+    },
+    {
+      "client": "United Health Group",
+      "description": "Implementação de engenharia web e estratégia de comércio eletrônico com abordagem híbrida.",
+      "end": "2013-03",
+      "name": "Engenharia Web e Implementação Multinacional",
+      "role": "Gerente de Projetos",
+      "sector": "saude",
+      "start": "2011-10"
+    },
+    {
+      "client": "Chevron",
+      "description": "Gestão de processos e implantação global de software para o setor de petróleo e gás.",
+      "end": "2011-08",
+      "name": "Gestão de Processos e Implantação Global",
+      "role": "Gerente de Projetos",
+      "sector": "energia",
+      "start": "2006-08"
+    },
+    {
+      "client": "Travelers",
+      "description": "Desenvolvimento de software personalizado para otimização de processos e redução de custos.",
+      "end": "2006-07",
+      "name": "Desenvolvimento de Software Personalizado",
+      "role": "Gerente de Projetos",
+      "sector": "seguros",
+      "start": "2005-07"
+    },
+    {
+      "client": "Cigna",
+      "description": "Desenvolvimento de bancos de dados relacionais e implementação de SSO.",
+      "end": "2005-05",
+      "name": "Desenvolvimento de Banco de Dados e SSO",
+      "role": "Gerente de Projetos",
+      "sector": "saude",
+      "start": "2005-01"
+    }
+  ],
+  "years_experience": null
+}

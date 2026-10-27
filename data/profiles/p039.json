@@ -1,0 +1,45 @@
+{
+  "id": "p039",
+  "full_name": "Bruno Rocha",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Masters in Computer Application",
+      "institution": null,
+      "level": "master"
+    }
+  ],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "eBay",
+      "description": "Desenvolvimento de funcionalidades para a plataforma de bilheteria StubHub.com.",
+      "end": null,
+      "name": "StubHub.com",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "varejo",
+      "start": "2014-08"
+    },
+    {
+      "client": "Citicorp",
+      "description": "Desenvolvimento da aplicação de trading CitiTrade para a Citibank.",
+      "end": "2014-07",
+      "name": "CitiTrade",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "financeiro",
+      "start": "2012-02"
+    },
+    {
+      "client": "Anthem",
+      "description": "Atualização de mensagens do portal de provedores para conformidade com HIPAA.",
+      "end": "2012-06",
+      "name": "Providers Portal",
+      "role": "Desenvolvedor Java J2EE",
+      "sector": "saude",
+      "start": "2011-02"
+    }
+  ],
+  "years_experience": 9
+}

@@ -1,0 +1,79 @@
+{
+  "id": "p037",
+  "full_name": "Isabela Dias",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Gerente de Projetos de TI Sênior",
+  "years_experience": 10,
+  "certifications": [
+    {
+      "name": "PMP",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "ITILV3",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "OCP",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Computer Science Engineering",
+      "institution": "JNTU",
+      "completion_year": 2010
+    }
+  ],
+  "projects": [
+    {
+      "name": "Citrix on AWS / Server Patching / Audits",
+      "client": "CDPHP (Capital District Physicians' Health Plan)",
+      "sector": "saude",
+      "role": "Gerente de Projetos de TI Sênior",
+      "description": "Gerente responsável por migração de 1500 servidores para Citrix na AWS, patching de servidores e auditorias.",
+      "start": "2017-04",
+      "end": null
+    },
+    {
+      "name": "Projeto de Transição e Implementação",
+      "client": "Miller Coors - USA",
+      "sector": "industria",
+      "role": "Gerente de Projetos de TI e Gerente de Transição Sênior",
+      "description": "Coordenação de projetos de TI e transição B2B para o cliente de bebidas.",
+      "start": "2016-07",
+      "end": "2017-03"
+    },
+    {
+      "name": "Gerenciamento de Projetos e DBA Oracle",
+      "client": "RSA (Royal and Sun Alliance)",
+      "sector": "seguros",
+      "role": "Gerente de Projetos de TI e Administrador Senior de Banco de Dados Oracle",
+      "description": "Gestão de projetos de TI e administração de bancos de dados Oracle para seguradora internacional.",
+      "start": "2012-11",
+      "end": "2016-06"
+    },
+    {
+      "name": "Projeto de Implementação de Banco de Dados",
+      "client": "Miller Coors - India",
+      "sector": "industria",
+      "role": "Gerente de Projetos e Administrador de Banco de Dados Oracle/SQL",
+      "description": "Gerenciamento de projetos e administração de bancos de dados Oracle e SQL Server.",
+      "start": "2012-01",
+      "end": "2012-11"
+    },
+    {
+      "name": "Administração de Banco de Dados Oracle e WLM",
+      "client": "Irving Oil",
+      "sector": "energia",
+      "role": "Administrador de Banco de Dados Oracle e Gerente de Projeto (Work Load Manager)",
+      "description": "Administração de bancos de dados Oracle e gerenciamento de projetos para empresa de óleo e gás.",
+      "start": "2009-03",
+      "end": "2012-01"
+    }
+  ]
+}

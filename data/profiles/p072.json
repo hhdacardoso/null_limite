@@ -1,0 +1,65 @@
+{
+  "id": "p072",
+  "full_name": "Renata Monteiro",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Java Full Stack",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Coleta de Dados de Consumo de Energia",
+      "client": "CenterPoint Energy",
+      "sector": "energia",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de microserviços e integração com AWS para coleta e análise de consumo energético.",
+      "start": "2016-01",
+      "end": null
+    },
+    {
+      "name": "Projeto Workday – Integração de Dados de RH",
+      "client": "Morgan Stanley",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java",
+      "description": "Implementação de serviços Java e integração com Workday, incluindo ETL de XML e APIs REST.",
+      "start": "2014-11",
+      "end": "2016-01"
+    },
+    {
+      "name": "Microserviços de Alertas de Seguros",
+      "client": "AXA Equitable Life Insurance Company",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java",
+      "description": "Criação de microserviços Spring Boot para exposição de dados de alertas e front‑end Angular.",
+      "start": "2013-10",
+      "end": "2014-10"
+    },
+    {
+      "name": "AutoScale – Plataforma de Cloud Privada",
+      "client": "Thomson Reuters",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de solução de auto‑escalamento usando Spring, OpenStack e integração com Splunk.",
+      "start": "2012-08",
+      "end": "2013-09"
+    },
+    {
+      "name": "Portal de Clientes OptumRx",
+      "client": "Optum Health",
+      "sector": "saude",
+      "role": "Desenvolvedor Java",
+      "description": "Implementação de funcionalidades de portal de medicamentos com Spring, JSP e integração IBM Work Manager.",
+      "start": "2011-10",
+      "end": "2012-06"
+    },
+    {
+      "name": "Sistema de Cálculo de Vendas e Compensação",
+      "client": "Colruyt Group India",
+      "sector": "industria",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento full‑stack com Struts, Spring MVC e Hibernate para cálculo de comissões.",
+      "start": "2009-05",
+      "end": "2011-09"
+    }
+  ]
+}

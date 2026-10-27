@@ -1,0 +1,51 @@
+{
+  "id": "p094",
+  "full_name": "Diego Santos",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Sistemas de Negócios",
+  "years_experience": 7,
+  "certifications": [
+    {
+      "name": "CSM",
+      "issuer": "Certified Scrum Master",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "mba",
+      "course": "Master’s in Business Administration",
+      "institution": "Virginia International University",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "E-commerce Website Enhancement",
+      "client": "Giant Eagle",
+      "sector": "varejo",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Responsável por levantamento de requisitos, modelagem de processos e execução de testes de aceitação do usuário para funcionalidades de e-commerce.",
+      "start": "2015-09",
+      "end": null
+    },
+    {
+      "name": "Projeto de Integração de Sistemas",
+      "client": "Cognosante",
+      "sector": "tecnologia",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Coordenou sessões JAD, desenvolveu planos de teste e validou requisitos funcionais para sistemas de gestão corporativa.",
+      "start": "2013-07",
+      "end": "2015-08"
+    },
+    {
+      "name": "Projeto de Otimização de Processos de Supply Chain",
+      "client": "IBM",
+      "sector": "tecnologia",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Elaboração de backlog, facilitação de sprints e modelagem de processos AS IS/TO BE para soluções de e-commerce.",
+      "start": "2011-09",
+      "end": "2013-07"
+    }
+  ]
+}

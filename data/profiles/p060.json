@@ -1,0 +1,38 @@
+{
+  "id": "p060",
+  "full_name": "Sofia Almeida",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Analista de Sistemas de Negócios Sênior / Scrum Master",
+  "projects": [
+    {
+      "client": "Kohl's",
+      "description": "Melhoria do rastreamento de pedidos e processos de coleta e embalagem para otimizar a receita e o atendimento ao cliente.",
+      "end": null,
+      "name": "Enhancement of Order Management and Tracking",
+      "role": "Analista de Sistemas de Negócios Sênior / Scrum Master",
+      "sector": "varejo",
+      "start": "2016-08"
+    },
+    {
+      "client": "NJDOC",
+      "description": "Criação de um Data Mart para análise do histórico educacional de detentos e rastreamento da conclusão de programas obrigatórios.",
+      "end": "2016-07",
+      "name": "Inmate Educational History Data Mart",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "sector": "governo",
+      "start": "2015-03"
+    },
+    {
+      "client": "Amway",
+      "description": "Melhoria da experiência de compra multicanal e implementação de um novo programa de cashback e recompensas no aplicativo de e-commerce.",
+      "end": "2015-03",
+      "name": "Unified Shopping Experience and Rewards Program",
+      "role": "Analista de Negócios Sênior",
+      "sector": "varejo",
+      "start": "2014-01"
+    }
+  ],
+  "years_experience": 8
+}

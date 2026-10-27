@@ -1,0 +1,65 @@
+{
+  "id": "p221",
+  "full_name": "Gabriela Duarte",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Senior Java/J2EE Developer",
+  "years_experience": 9,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Con Edison",
+      "client": "Con Edison",
+      "sector": "energia",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "description": "Desenvolvimento de aplicações Java/J2EE com foco em serviços RESTful, micro‑serviços e integração com o framework Curam.",
+      "start": "2016-11",
+      "end": null
+    },
+    {
+      "name": "CVS Health",
+      "client": "CVS Health",
+      "sector": "saude",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Projeto PCPS Patient Centric Prescription Solution, desenvolvimento de UI com React/Angular e integração com AWS.",
+      "start": "2014-10",
+      "end": "2016-10"
+    },
+    {
+      "name": "Infinity Info Systems",
+      "client": "Infinity Info Systems",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento de aplicações CRM e BI, consumo de web services SOAP/REST e integração via Mule ESB.",
+      "start": "2013-10",
+      "end": "2014-04"
+    },
+    {
+      "name": "C-Cubed Solutions",
+      "client": "C-Cubed Solutions",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de ferramenta Koss Dispo Sheet com Spring MVC, Hibernate e JBoss.",
+      "start": "2011-10",
+      "end": "2013-09"
+    },
+    {
+      "name": "Infinity Info Systems",
+      "client": "Infinity Info Systems",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento de aplicações web com AngularJS, Dojo e integração Mule ESB.",
+      "start": "2013-10",
+      "end": "2014-04"
+    },
+    {
+      "name": "C-Cubed Solutions",
+      "client": "C-Cubed Solutions",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de aplicação Kbase e Knowledge Base com Spring MVC e Hibernate.",
+      "start": "2011-10",
+      "end": "2013-09"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "p069",
+  "full_name": "Otávio Araújo",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2010,
+      "course": "Bachelor of Science",
+      "institution": "India",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios Sênior",
+  "projects": [
+    {
+      "client": "Alaska Billing Service",
+      "description": "Implementação do Sistema de Adjudicação Automatizada de Sinistros (ACAS) em conformidade com HIPAA.",
+      "end": null,
+      "name": "Implementação de ACAS",
+      "role": "Analista de Negócios Sênior",
+      "sector": "saude",
+      "start": "2016-10"
+    },
+    {
+      "client": "CIGNA Healthcare",
+      "description": "Desenvolvimento de solução de seguros totalmente cobertos no sistema Facets para simplificação de ofertas e processamento de sinistros.",
+      "end": "2016-08",
+      "name": "Solução de Seguros no Facets",
+      "role": "Analista de Negócios Sênior",
+      "sector": "seguros",
+      "start": "2015-09"
+    },
+    {
+      "client": "DuPont",
+      "description": "Desenvolvimento de aplicação web para coleta de informações de materiais de dispositivos médicos.",
+      "end": "2015-08",
+      "name": "Aplicação Web de Materiais Médicos",
+      "role": "Analista de Negócios",
+      "sector": "industria",
+      "start": "2014-12"
+    },
+    {
+      "client": "St. Mary’s Hospital",
+      "description": "Melhorias no conjunto de transações EDI de pagamento em saúde e implementação de software de origem ACH.",
+      "end": "2014-11",
+      "name": "EDI de Pagamentos em Saúde",
+      "role": "Analista de Negócios Sênior",
+      "sector": "saude",
+      "start": "2010-05"
+    },
+    {
+      "client": "Wake Forest Hospital",
+      "description": "Melhorias no conjunto de transações EDI de pagamento em saúde e implementação de software de origem ACH.",
+      "end": "2014-11",
+      "name": "EDI de Pagamentos em Saúde",
+      "role": "Analista de Negócios Sênior",
+      "sector": "saude",
+      "start": "2010-05"
+    },
+    {
+      "client": "Massachusetts General Hospital",
+      "description": "Melhorias no conjunto de transações EDI de pagamento em saúde e implementação de software de origem ACH.",
+      "end": "2014-11",
+      "name": "EDI de Pagamentos em Saúde",
+      "role": "Analista de Negócios Sênior",
+      "sector": "saude",
+      "start": "2010-05"
+    }
+  ],
+  "years_experience": 7
+}

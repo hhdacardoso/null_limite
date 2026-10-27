@@ -1,0 +1,100 @@
+{
+  "id": "p042",
+  "full_name": "Mariana Almeida",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Consultor Financeiro PMO",
+  "years_experience": 16,
+  "certifications": [
+    {
+      "name": "ITIL v3 Certified",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Professional Scrum Master I Certified",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Microsoft Certified Professional",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "specialization",
+      "course": "Post Graduate Diploma in Business Administration – Operations Management",
+      "institution": "SCDL, Pune, India",
+      "completion_year": null
+    },
+    {
+      "level": "technical",
+      "course": "Professional Diploma in Network Centered Computing",
+      "institution": "NIIT, Kolkata, India",
+      "completion_year": null
+    },
+    {
+      "level": "bachelor",
+      "course": "Economics",
+      "institution": "St. Xavier’s College, Kolkata, India",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance PMO Consultant",
+      "client": "Motiva Enterprises LLC",
+      "sector": "energia",
+      "role": "Consultor Financeiro PMO",
+      "description": "Consultoria PMO para programa de transformação estratégica de TI de US$350MM.",
+      "start": "2016-02",
+      "end": "2017-12"
+    },
+    {
+      "name": "PMO Manager",
+      "client": "Shell Oil Company",
+      "sector": "energia",
+      "role": "Gerente de PMO",
+      "description": "Gerenciamento de programa global de US$100MM para melhorar processos de manufatura downstream.",
+      "start": "2012-01",
+      "end": "2016-12"
+    },
+    {
+      "name": "Project Manager",
+      "client": "Shell Oil Company",
+      "sector": "energia",
+      "role": "Gerente de Projetos",
+      "description": "Gestão de portfólio global de PMO centralizado.",
+      "start": "2010-01",
+      "end": "2012-12"
+    },
+    {
+      "name": "Lead PMO Analyst",
+      "client": "Shell Oil Company",
+      "sector": "energia",
+      "role": "Analista Líder de PMO",
+      "description": "Transição e estabilização de PMO de TI de varejo.",
+      "start": "2008-01",
+      "end": "2010-12"
+    },
+    {
+      "name": "Site Lead",
+      "client": "RWE nPower Ltd.",
+      "sector": "energia",
+      "role": "Líder de Site",
+      "description": "Liderança de programa de renovação de infraestrutura no Reino Unido.",
+      "start": "2008-05",
+      "end": "2008-07"
+    },
+    {
+      "name": "Technical Lead & Analyst",
+      "client": "Hewlett Packard Company",
+      "sector": "tecnologia",
+      "role": "Líder Técnico e Analista",
+      "description": "Projeto global de analytics de negócios, reengenharia de processos.",
+      "start": "2006-01",
+      "end": "2008-04"
+    }
+  ]
+}

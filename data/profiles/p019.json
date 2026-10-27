@@ -1,0 +1,47 @@
+{
+  "id": "p019",
+  "full_name": "Eduarda Vieira",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 7,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "MMIS 5010 Transactions Delivery",
+      "client": "West Virginia State Medicaid",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Entrega de transações 5010 e migração de ICD 9-10 em MMIS",
+      "start": "2014-05",
+      "end": null
+    },
+    {
+      "name": "PPACA Implementation",
+      "client": "Medica Health Plans",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Configuração e testes de requisitos PPACA em planos de saúde",
+      "start": "2013-05",
+      "end": "2014-05"
+    },
+    {
+      "name": "EDI Claims System Development",
+      "client": "ENS Health",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Desenvolvimento de aplicações para envio e recebimento de dados EDI",
+      "start": "2011-04",
+      "end": "2013-04"
+    },
+    {
+      "name": "QnXT Documentation and UAT",
+      "client": "San Francisco Health Plan",
+      "sector": "saude",
+      "role": "Analista de Requisitos",
+      "description": "Documentação de BRDs e suporte a UAT em QnXT",
+      "start": "2010-02",
+      "end": "2011-03"
+    }
+  ]
+}

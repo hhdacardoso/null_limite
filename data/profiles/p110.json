@@ -1,0 +1,54 @@
+{
+  "id": "p110",
+  "full_name": "Daniela Melo",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelors in Technology, Computer Science",
+      "institution": "UPTU, Lucknow, India",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios Sênior",
+  "projects": [
+    {
+      "client": "Kohl's",
+      "description": "Integração da plataforma Salesforce com o e-commerce e CRM legado para visão unificada de dados do cliente.",
+      "end": null,
+      "name": "Integração Salesforce e E-commerce",
+      "role": "Analista de Negócios Sênior",
+      "sector": "varejo",
+      "start": "2017-01"
+    },
+    {
+      "client": "L Brands",
+      "description": "Integração do sistema de gestão de pedidos IBM Sterling com a plataforma de comércio eletrônico IBM WebSphere.",
+      "end": "2017-01",
+      "name": "Integração IBM Sterling e WebSphere",
+      "role": "Analista de Negócios Sênior",
+      "sector": "varejo",
+      "start": "2015-11"
+    },
+    {
+      "client": "State of Florida",
+      "description": "Melhoria do data warehouse corporativo do departamento de agricultura para aumentar a precisão dos cálculos estatísticos.",
+      "end": "2015-10",
+      "name": "Melhoria de Data Warehouse Agrícola",
+      "role": "Analista de Negócios Sênior",
+      "sector": "governo",
+      "start": "2014-01"
+    },
+    {
+      "client": "Office Depot",
+      "description": "Desenho de novo sistema de gestão de pedidos e aplicação de faturamento em loja para substituir o sistema legado.",
+      "end": "2013-11",
+      "name": "Sistema de Gestão de Pedidos e Faturamento",
+      "role": "Analista de Negócios",
+      "sector": "varejo",
+      "start": "2012-09"
+    }
+  ],
+  "years_experience": 8
+}

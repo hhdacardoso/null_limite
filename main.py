@@ -58,6 +58,7 @@ class Professional(Base):
     hashed_password = Column(String(255), nullable=False)
     full_name = Column(String(255), nullable=False)
     job_title = Column(String(255), nullable=True)
+    years_experience = Column(Integer, nullable=True)
     role = Column(Enum(UserRole), default=UserRole.PROFESSIONAL, nullable=False)
     created_at = Column(DateTime, default=utcnow)
 
@@ -161,17 +162,20 @@ class ProfessionalCreate(BaseModel):
     email: EmailStr
     full_name: str
     job_title: Optional[str] = None
+    years_experience: Optional[int] = Field(default=None, ge=0)
     password: str = Field(min_length=6, max_length=72)  # bcrypt limit
 
 class ProfessionalUpdate(BaseModel):
     full_name: Optional[str] = None
     job_title: Optional[str] = None
+    years_experience: Optional[int] = Field(default=None, ge=0)
 
 class ProfessionalOut(BaseModel):
     id: int
     email: EmailStr
     full_name: str
     job_title: Optional[str] = None
+    years_experience: Optional[int] = None
     role: UserRole
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
@@ -332,6 +336,7 @@ def register(data: ProfessionalCreate, db: Session = Depends(get_db)):
         email=data.email,
         full_name=data.full_name,
         job_title=data.job_title,
+        years_experience=data.years_experience,
         hashed_password=get_password_hash(data.password),
         role=UserRole.MANAGER if data.email.lower() in MANAGER_EMAILS else UserRole.PROFESSIONAL,
     )

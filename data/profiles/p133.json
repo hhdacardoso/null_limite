@@ -1,0 +1,78 @@
+{
+  "id": "p133",
+  "full_name": "Helena Carvalho",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2005,
+      "course": "Masters of Computer Application (MCA)",
+      "institution": "Madras University",
+      "level": "master"
+    },
+    {
+      "completion_year": 2000,
+      "course": "Bachelors of Computer Science (BS)",
+      "institution": "Madras University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios",
+  "projects": [
+    {
+      "client": "IT World Build",
+      "description": "Análise de requisitos e testes para aplicação de finanças e inventário.",
+      "end": null,
+      "name": "Finance & Inventory Application",
+      "role": "Analista de Negócios",
+      "sector": "tecnologia",
+      "start": "2016-04"
+    },
+    {
+      "client": "Barclays Bank",
+      "description": "Testes de sistema e integração para implementação de pagamentos globais (SEPA).",
+      "end": "2016-01",
+      "name": "Masspay – Global Payments",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2013-06"
+    },
+    {
+      "client": "The Housing Bank for Trade & Finance (HBTF)",
+      "description": "Implementação de sistema bancário core (Finacle) com foco em testes de integração e aceitação.",
+      "end": "2013-05",
+      "name": "Implementation of Core Banking System",
+      "role": "Analista de Negócios Líder",
+      "sector": "financeiro",
+      "start": "2013-01"
+    },
+    {
+      "client": "Ratnakar Bank Ltd",
+      "description": "Implementação de novo sistema bancário core para operações do banco.",
+      "end": "2012-12",
+      "name": "Implementation of Core Banking System",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2012-05"
+    },
+    {
+      "client": "Dhanlaxmi Bank Ltd",
+      "description": "Análise de sistemas e auditoria para operações de varejo bancário.",
+      "end": "2012-04",
+      "name": "Retail Banking",
+      "role": "Analista de Sistema e Auditoria",
+      "sector": "financeiro",
+      "start": "2011-09"
+    },
+    {
+      "client": "ICICI Bank Ltd",
+      "description": "Auditoria interna e análise de sistemas para operações de varejo bancário.",
+      "end": "2011-09",
+      "name": "Retail Banking",
+      "role": "Analista de Auditoria",
+      "sector": "financeiro",
+      "start": "2007-01"
+    }
+  ],
+  "years_experience": 10
+}

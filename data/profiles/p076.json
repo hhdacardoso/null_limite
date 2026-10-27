@@ -1,0 +1,81 @@
+{
+  "id": "p076",
+  "full_name": "Nicolas Pereira",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Produto/Analista de Negócios",
+  "years_experience": 7,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "B. Sc (Hons) Statistics",
+      "institution": "Guwahati University, India",
+      "completion_year": null
+    },
+    {
+      "level": "specialization",
+      "course": "Diploma in Management",
+      "institution": null,
+      "completion_year": null
+    },
+    {
+      "level": "specialization",
+      "course": "Post Graduate Programme in Finance",
+      "institution": "Indira School of Career Studies, India",
+      "completion_year": null
+    },
+    {
+      "level": "specialization",
+      "course": "Post Graduate Certification in International Business Practice",
+      "institution": "St. Mary's University College, Twickenham, London",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Implementação de Volunteers for Salesforce",
+      "client": "JerseySTEM",
+      "sector": "outros",
+      "role": "Analista de Negócios",
+      "description": "Gerenciamento de dados de voluntários e integração com o site da organização",
+      "start": "2017-11",
+      "end": null
+    },
+    {
+      "name": "Automação de Trade Reconciliation Tool",
+      "client": "UBS",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de especificações funcionais para reconciliação de operações de empréstimo",
+      "start": "2013-03",
+      "end": "2015-04"
+    },
+    {
+      "name": "Portal de Email para Derivativos",
+      "client": "UBS",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Criação de portal interno para armazenar e recuperar comunicações de trades",
+      "start": "2012-01",
+      "end": "2013-03"
+    },
+    {
+      "name": "Melhoria de Ferramenta Legacy de Crédito",
+      "client": "UBS",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Atualização diária e geração de relatórios de erros de trades",
+      "start": "2010-09",
+      "end": "2012-01"
+    },
+    {
+      "name": "Análise de CDS para Credit Suisse",
+      "client": "Credit Suisse",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Confirmação e resolução de trades de credit derivatives",
+      "start": "2008-09",
+      "end": "2010-09"
+    }
+  ]
+}

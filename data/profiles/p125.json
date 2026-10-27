@@ -1,0 +1,135 @@
+{
+  "id": "p125",
+  "full_name": "Henrique Ramos",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Arquiteto de BI Sênior",
+  "years_experience": 12,
+  "certifications": [
+    {
+      "name": "OBIEE 11g Administration",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Oracle WebLogic Server 12c: Administration",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Red Hat Certified System Administrator (RHCSA)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "ITIL V3",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Six Sigma Green Belt",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Sun Certified Java Professional",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Microsoft Certified Professional",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "PMP",
+      "issuer": "Satyam",
+      "issue_year": null
+    },
+    {
+      "name": "Agile Certification",
+      "issuer": "TechMahindra",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "master",
+      "course": "Master of Technology in Computer Science and Technology",
+      "institution": "Andhra University, Visakhapatnam, AP, India",
+      "completion_year": 2004
+    },
+    {
+      "level": "master",
+      "course": "Master of Science in Computer Science",
+      "institution": "Andhra University, Visakhapatnam, AP, India",
+      "completion_year": 2000
+    },
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Science in Computer Science",
+      "institution": "Andhra University, Visakhapatnam, AP, India",
+      "completion_year": 1998
+    }
+  ],
+  "projects": [
+    {
+      "name": "CEB Integration",
+      "client": "Gartner",
+      "sector": "tecnologia",
+      "role": "Arquiteto de BI",
+      "description": "Integração de dados da CEB ao sistema Gartner, desenvolvendo dashboards e relatórios em Tableau e Power BI.",
+      "start": "2017-11",
+      "end": null
+    },
+    {
+      "name": "Finance Navigator",
+      "client": "GE Global Operations",
+      "sector": "financeiro",
+      "role": "Arquiteto de BI",
+      "description": "Plataforma única de relatórios financeiros para todas as áreas da GE, usando Tableau, OBIEE e Data Lake.",
+      "start": "2013-09",
+      "end": "2017-11"
+    },
+    {
+      "name": "Financial Intelligence",
+      "client": "GE Corporate",
+      "sector": "financeiro",
+      "role": "Arquiteto de BI / Analista de Negócios",
+      "description": "Padronização e aprimoramento de relatórios financeiros globais, com migração de Cognos para OBIEE e desenvolvimento de dashboards.",
+      "start": "2008-03",
+      "end": "2013-09"
+    },
+    {
+      "name": "ARM (Account Reconciliation Management)",
+      "client": "GE Corporate",
+      "sector": "financeiro",
+      "role": "Arquiteto de BI",
+      "description": "Desenvolvimento de relatórios BI Publisher e manutenção de ambiente OBIEE para gestão de reconciliação de contas.",
+      "start": "2013-07",
+      "end": "2016-09"
+    },
+    {
+      "name": "Equipment Service – ESE Web Infrastructure Support",
+      "client": "GE ESE",
+      "sector": "industria",
+      "role": "Analista de Sistemas",
+      "description": "Instalação e suporte de servidores WebLogic, JBoss e Apache, garantindo disponibilidade da infraestrutura web.",
+      "start": "2006-07",
+      "end": "2008-03"
+    },
+    {
+      "name": "Collaboration Workspace Ops Support",
+      "client": "GE Energy",
+      "sector": "energia",
+      "role": "Analista de Sistemas",
+      "description": "Suporte operacional a mais de 70 mil usuários, incluindo administração de IIS, scripts de automação e monitoramento.",
+      "start": "2005-05",
+      "end": "2006-07"
+    }
+  ]
+}

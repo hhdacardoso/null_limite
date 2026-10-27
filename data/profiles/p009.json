@@ -1,0 +1,63 @@
+{
+  "id": "p009",
+  "full_name": "Thiago Soares",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Computer Science & Technology",
+      "institution": "Mumbai University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "projects": [
+    {
+      "client": "PNC Bank",
+      "description": "Desenvolvimento de solução automatizada para processamento de hipotecas com autoatendimento do mutuário.",
+      "end": null,
+      "name": "Digital Loan Process System",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "sector": "financeiro",
+      "start": "2016-10"
+    },
+    {
+      "client": "Citi Group",
+      "description": "Integração de módulos legados de hipotecas em uma única aplicação para gerenciar o ciclo de vida do empréstimo.",
+      "end": "2016-09",
+      "name": "Automated Loan Mortgage System",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "sector": "financeiro",
+      "start": "2015-06"
+    },
+    {
+      "client": "State of Massachusetts",
+      "description": "Criação de um Data Warehouse corporativo para alocação de orçamento, rastreamento de despesas e relatórios financeiros.",
+      "end": "2015-05",
+      "name": "Enterprise Data Warehouse Project",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "governo",
+      "start": "2014-02"
+    },
+    {
+      "client": "American Express",
+      "description": "Desenvolvimento de um gateway de soluções de pagamento para comerciantes, incluindo autorização e liquidação de transações.",
+      "end": "2014-01",
+      "name": "Payment Solution Gateway",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "financeiro",
+      "start": "2012-10"
+    },
+    {
+      "client": "Bank of Maharashtra",
+      "description": "Construção de uma plataforma de banco online para consulta de saldos, extratos e transferência de fundos.",
+      "end": "2012-09",
+      "name": "Online Banking Facility",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2011-07"
+    }
+  ],
+  "years_experience": 8
+}

@@ -1,0 +1,63 @@
+{
+  "id": "p175",
+  "full_name": "Sofia Lima",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2010,
+      "course": "Bachelors in Management",
+      "institution": "State University of New York",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Sistemas Sênior",
+  "projects": [
+    {
+      "client": "Alliance Data",
+      "description": "Análise de requisitos e gestão de projetos para serviços de cartões de varejo.",
+      "end": null,
+      "name": "Retail Card Services",
+      "role": "Analista de Sistemas",
+      "sector": "financeiro",
+      "start": "2016-09"
+    },
+    {
+      "client": "JP Morgan Chase",
+      "description": "Desenvolvimento de especificações funcionais e migração de dados para plataforma Java.",
+      "end": "2016-08",
+      "name": "Migração de Sistemas Legados",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "financeiro",
+      "start": "2015-10"
+    },
+    {
+      "client": "PNC Financial Services",
+      "description": "Requisitos funcionais e planos de teste para projetos de crédito e governança de dados.",
+      "end": "2015-08",
+      "name": "Retail Consumer Credit & Data Governance",
+      "role": "Analista de Negócios Técnico",
+      "sector": "financeiro",
+      "start": "2013-11"
+    },
+    {
+      "client": "Amerigroup Solutions",
+      "description": "Melhoria de sistema de relatórios com módulos de inteligência de negócios.",
+      "end": "2013-10",
+      "name": "Reporting System Improvement",
+      "role": "Analista de Negócios",
+      "sector": "saude",
+      "start": "2013-01"
+    },
+    {
+      "client": "Johnson Financial Group",
+      "description": "Gestão de metadados e testes de aceitação para relatórios de gestão de ativos.",
+      "end": "2012-12",
+      "name": "Asset Management Reporting",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2010-04"
+    }
+  ],
+  "years_experience": 7
+}

@@ -1,0 +1,54 @@
+{
+  "id": "p040",
+  "full_name": "Vanessa Mendes",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 7,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Computer Engineering",
+      "institution": "Dnyaneshwar University, Pune, India",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Implementação de IV&V no MMIS e Sistema de Elegibilidade Medicaid",
+      "client": "Wisconsin Medicaid (HHS)",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Implementação de testes de validação e verificação em sistemas de Medicaid",
+      "start": "2014-04",
+      "end": null
+    },
+    {
+      "name": "Projeto de Conformidade PPACA e HIPAA 5010",
+      "client": "Blue Cross and Blue Shield",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Análise e documentação de requisitos regulatórios e testes de transações EDI",
+      "start": "2013-02",
+      "end": "2014-03"
+    },
+    {
+      "name": "Desenvolvimento de Aplicações Web Clínicas",
+      "client": "Health Integration",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Elaboração de requisitos e migração de dados EDI para XML",
+      "start": "2011-04",
+      "end": "2013-01"
+    },
+    {
+      "name": "Portal Web para Departamento de Faturamento e Submissão de Reivindicações",
+      "client": "Kaiser Permanente",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Criação de casos de uso e modelagem de processos de faturamento",
+      "start": "2010-01",
+      "end": "2011-03"
+    }
+  ]
+}

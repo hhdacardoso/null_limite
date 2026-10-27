@@ -1,0 +1,65 @@
+{
+  "id": "p222",
+  "full_name": "Natália Silva",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Desenvolvedor Java/J2EE Sênior",
+  "projects": [
+    {
+      "client": "Pepsi Co.",
+      "description": "Desenvolvimento de aplicações web e serviços REST/SOAP utilizando Spring, AngularJS e NodeJS.",
+      "end": null,
+      "name": "Pepsi Co.",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "varejo",
+      "start": "2016-09"
+    },
+    {
+      "client": "American Airlines",
+      "description": "Criação de aplicações front-end e back-end com foco em microserviços, Spring Boot e AngularJS.",
+      "end": "2016-09",
+      "name": "American Airlines",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "outros",
+      "start": "2014-09"
+    },
+    {
+      "client": "Sabre Airline Solutions",
+      "description": "Desenvolvimento de soluções de e-commerce e motor de reservas (SabreSonic Web) com Spring e Hibernate.",
+      "end": "2014-09",
+      "name": "Sabre Airline Solutions",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "outros",
+      "start": "2013-08"
+    },
+    {
+      "client": "Insight",
+      "description": "Desenvolvimento de portal B2B corporativo com Spring, Hibernate e validação de cartões.",
+      "end": "2013-08",
+      "name": "Insight",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "tecnologia",
+      "start": "2012-12"
+    },
+    {
+      "client": "Cap Gemini",
+      "description": "Desenvolvimento de sistema de gestão de despesas (Ezpay) para a divisão de energia.",
+      "end": "2012-12",
+      "name": "Cap Gemini",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "energia",
+      "start": "2012-05"
+    },
+    {
+      "client": "IBM",
+      "description": "Desenvolvimento de serviço de navegação dinâmica baseado em tags populares (Social Book Marking).",
+      "end": "2012-05",
+      "name": "IBM",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "tecnologia",
+      "start": "2011-10"
+    }
+  ],
+  "years_experience": 8
+}

@@ -1,0 +1,63 @@
+{
+  "id": "p031",
+  "full_name": "Mariana Lima",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "SAS Certified Data Mining and Business Intelligence professional",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Google Analytics and AdWords Certified Professional",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Certified Microsoft Technology Associate (MTA) in .NET",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Claim Management System for Medicare Part D and Medicaid Expansion",
+      "client": "DST Health Solutions",
+      "sector": "saude",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Desenvolvimento de sistema de gestão de sinistros com foco em benefícios e otimização de processos",
+      "start": "2016-07",
+      "end": null
+    },
+    {
+      "name": "Integração MMIS com Integrated Eligibility System",
+      "client": "Texas State DHHS",
+      "sector": "saude",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Implementação de novos processos de negócios e integração de sistemas de elegibilidade",
+      "start": "2013-01",
+      "end": "2016-06"
+    },
+    {
+      "name": "Automação de Processamento de Sinistros Eletrônicos",
+      "client": "American Family Insurance",
+      "sector": "saude",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Criação de aplicação web para automação de sinistros e redução de custos",
+      "start": "2012-01",
+      "end": "2013-01"
+    },
+    {
+      "name": "Sistema de Faturamento e Gestão de Clientes",
+      "client": "Apollo Hospital",
+      "sector": "saude",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Desenvolvimento de sistema de faturamento e gestão de clientes para ciclo de receita",
+      "start": "2009-01",
+      "end": "2011-12"
+    }
+  ]
+}

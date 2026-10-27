@@ -1,0 +1,78 @@
+{
+  "id": "p154",
+  "full_name": "Samuel Correia",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2006,
+      "course": "Master of Computer Applications",
+      "institution": "Osmania University",
+      "level": "master"
+    },
+    {
+      "completion_year": 2003,
+      "course": "B.S.C (Computer Science)",
+      "institution": "Kakatiya University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Desenvolvedor Sênior Hadoop/Spark Analítico",
+  "projects": [
+    {
+      "client": "AT&T",
+      "description": "Desenvolvimento de soluções de big data e streaming em tempo real para a plataforma ECOMP.",
+      "end": null,
+      "name": "ECOMP",
+      "role": "Desenvolvedor Sênior Hadoop/Spark Analítico",
+      "sector": "telecom",
+      "start": "2017-04"
+    },
+    {
+      "client": "American Express",
+      "description": "Desenvolvimento de aplicações web e pipelines de dados para o sistema de cartões de crédito.",
+      "end": "2017-03",
+      "name": "CCSG",
+      "role": "Desenvolvedor Sênior Java/Hadoop",
+      "sector": "financeiro",
+      "start": "2016-08"
+    },
+    {
+      "client": "United Overseas Bank",
+      "description": "Implementação de interface de detecção de fraudes e processamento de dados de logs para o sistema de originação de empréstimos.",
+      "end": "2016-08",
+      "name": "Power Lender CE",
+      "role": "Líder Técnico (Java/Hadoop)",
+      "sector": "financeiro",
+      "start": "2014-09"
+    },
+    {
+      "client": "Universal Weather & Aviation",
+      "description": "Desenvolvimento de aplicação web para planejamento de viagens e consulta de dados meteorológicos e de aviação.",
+      "end": "2014-08",
+      "name": "UVTripPlanner",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "outros",
+      "start": "2010-07"
+    },
+    {
+      "client": "Honeywell",
+      "description": "Desenvolvimento de aplicação desktop para processamento de pagamentos a fornecedores (AP).",
+      "end": "2010-07",
+      "name": "Honeywell_AP",
+      "role": "Desenvolvedor Java",
+      "sector": "industria",
+      "start": "2009-12"
+    },
+    {
+      "client": "Specialty Planners Inc",
+      "description": "Desenvolvimento de aplicação web para gestão de vendas de seguros de longo prazo.",
+      "end": "2009-12",
+      "name": "AIMS",
+      "role": "Desenvolvedor Java/J2EE",
+      "sector": "seguros",
+      "start": "2007-11"
+    }
+  ],
+  "years_experience": 10
+}

@@ -1,0 +1,63 @@
+{
+  "id": "p024",
+  "full_name": "Beatriz Martins",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelor’s in engineering and Technology",
+      "institution": null,
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios",
+  "projects": [
+    {
+      "client": "Citi Bank",
+      "description": "Atuação como Analista de Negócios e QA em projetos de conformidade e regulatórios para o banco comercial.",
+      "end": null,
+      "name": "Commercial Banking IT",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2016-08"
+    },
+    {
+      "client": "Chase Bank",
+      "description": "Facilitação de reuniões Scrum e definição de processos de negócio para pagamentos digitais e cartões.",
+      "end": "2016-06",
+      "name": "Digital Banking & Payments",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2014-09"
+    },
+    {
+      "client": "Fidelity Investments",
+      "description": "Documentação de processos de negociação de títulos e requisitos de risco de liquidez (Basel II/III).",
+      "end": "2014-07",
+      "name": "Online Securities Trading System",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2014-01"
+    },
+    {
+      "client": "Union Bank of India",
+      "description": "Análise de sistemas para gestão de riscos de crédito, mercado e operacional, além de automação de processos de provisionamento.",
+      "end": "2013-12",
+      "name": "Risk & Compliance Systems",
+      "role": "Analista de Sistemas / QA",
+      "sector": "financeiro",
+      "start": "2011-08"
+    },
+    {
+      "client": "Evoke Technologies",
+      "description": "Gestão do ciclo de vida de desenvolvimento de software (SDLC) e requisitos para sistemas de hipotecas bancárias.",
+      "end": "2011-07",
+      "name": "Mortgage Banking IT",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2009-12"
+    }
+  ],
+  "years_experience": 7
+}

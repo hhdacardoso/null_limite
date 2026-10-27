@@ -1,0 +1,69 @@
+{
+  "id": "p059",
+  "full_name": "Igor Gomes",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Programas Principal / Arquiteto de Projetos Técnicos",
+  "years_experience": 10,
+  "certifications": [
+    {
+      "name": "Certified Data Scientist i.e. Data Science Professional",
+      "issuer": "Johns Hopkins University",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "master",
+      "course": "Master of Science in Engineering",
+      "institution": "New Jersey Institute of Technology",
+      "completion_year": 2009
+    }
+  ],
+  "projects": [
+    {
+      "name": "Enterprise Cybersecurity Log Masking",
+      "client": "Fidelity Investments",
+      "sector": "financeiro",
+      "role": "Arquiteto de Projetos Técnicos",
+      "description": "Implementação de lógica de mascaramento e redação de dados confidenciais em logs de servidores.",
+      "start": "2016-12",
+      "end": null
+    },
+    {
+      "name": "IoT e M2M para MCS",
+      "client": "Verizon Wireless",
+      "sector": "telecom",
+      "role": "Analista de Sistemas Técnicos",
+      "description": "Desenvolvimento de portfólio IoT para venda de licenças e serviços não tangíveis.",
+      "start": "2016-05",
+      "end": "2016-12"
+    },
+    {
+      "name": "Integração de MDM para Chubb",
+      "client": "Chubb Insurance",
+      "sector": "seguros",
+      "role": "Analista de Sistemas Técnicos",
+      "description": "Integração de sistemas de administração de políticas para visão unificada de clientes.",
+      "start": "2015-07",
+      "end": "2016-05"
+    },
+    {
+      "name": "Exportação de Produtos BBBY",
+      "client": "Bed Bath & Beyond",
+      "sector": "varejo",
+      "role": "Analista de Sistemas Técnicos",
+      "description": "Desenvolvimento de cartões de exportação de produtos para sites de personalização.",
+      "start": "2014-07",
+      "end": "2015-07"
+    },
+    {
+      "name": "Solução Web para DHMH",
+      "client": "Maryland Department of Health & Mental Hygiene",
+      "sector": "governo",
+      "role": "Analista de Sistemas Técnicos",
+      "description": "Substituição do sistema MMIS por solução web orientada a serviços.",
+      "start": "2013-01",
+      "end": "2014-07"
+    }
+  ]
+}

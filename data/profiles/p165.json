@@ -1,0 +1,75 @@
+{
+  "id": "p165",
+  "full_name": "Ana Dias",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Gerente de Projetos / Analista de Dados",
+  "years_experience": 16,
+  "certifications": [
+    {
+      "name": "Six Sigma Green Belt",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "mba",
+      "course": "Business Administration",
+      "institution": "Symbiosis Institute of Management Studies",
+      "completion_year": 2004
+    },
+    {
+      "level": "bachelor",
+      "course": "Corporate Secretaryship",
+      "institution": "University of Madras",
+      "completion_year": 1997
+    }
+  ],
+  "projects": [
+    {
+      "name": "Transformação Digital Ford Direct",
+      "client": "Ford Direct",
+      "sector": "industria",
+      "role": "Gerente de Projetos / Analista de Dados",
+      "description": "Coordenação de projetos digitais de marketing e vendas, integração de sistemas e analytics.",
+      "start": "2017-07",
+      "end": null
+    },
+    {
+      "name": "Plataforma Telemática Covisint",
+      "client": "Covisint",
+      "sector": "tecnologia",
+      "role": "Gerente de Projetos",
+      "description": "Implementação de soluções IoT e micro‑services, gestão de disponibilidade e suporte.",
+      "start": "2016-03",
+      "end": "2017-06"
+    },
+    {
+      "name": "Data Warehouse Corporativo PwC",
+      "client": "PwC",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos / Analista de Dados",
+      "description": "Projeto de data warehouse para serviços bancários e financeiros, incluindo análise de processos.",
+      "start": "2015-10",
+      "end": "2016-02"
+    },
+    {
+      "name": "Projeto de Analytics Citibank",
+      "client": "Citibank",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Gestão de requisitos, desenvolvimento ágil e entrega de soluções de big data e analytics.",
+      "start": "2015-04",
+      "end": "2015-09"
+    },
+    {
+      "name": "Modernização de Infraestrutura National Grid",
+      "client": "National Grid",
+      "sector": "energia",
+      "role": "Gerente de Projetos",
+      "description": "Planejamento e execução de projetos de infraestrutura energética.",
+      "start": "2014-11",
+      "end": "2015-03"
+    }
+  ]
+}

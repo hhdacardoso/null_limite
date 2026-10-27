@@ -1,0 +1,47 @@
+{
+  "id": "p201",
+  "full_name": "Gabriela Moreira",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "Staples",
+      "description": "Desenvolvimento de aplicação de varejo para venda de acessórios de escritório e gestão de campanhas.",
+      "end": null,
+      "name": "Aplicação de Varejo Staples",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "varejo",
+      "start": "2016-01"
+    },
+    {
+      "client": "Wells Fargo",
+      "description": "Desenvolvimento de aplicação de pagamentos para transferências domésticas e internacionais corporativas.",
+      "end": "2015-12",
+      "name": "Global Wires Application",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "sector": "financeiro",
+      "start": "2014-05"
+    },
+    {
+      "client": "BCBS",
+      "description": "Desenvolvimento de solução automatizada para renovação de seguros de saúde para pequenos grupos.",
+      "end": "2014-04",
+      "name": "Small Group Renewal",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "seguros",
+      "start": "2012-11"
+    },
+    {
+      "client": "JPMorgan Chase",
+      "description": "Desenvolvimento de dashboard interno para suporte ao cliente em eventos de ações corporativas e transferências.",
+      "end": "2012-10",
+      "name": "CSR Dashboard",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "financeiro",
+      "start": "2011-02"
+    }
+  ],
+  "years_experience": 8
+}

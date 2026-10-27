@@ -1,0 +1,51 @@
+{
+  "id": "p139",
+  "full_name": "Fernanda Ribeiro",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Negócios",
+  "years_experience": 5,
+  "certifications": [],
+  "education": [
+    {
+      "level": "master",
+      "course": "Technology Management",
+      "institution": "Texas A&M University",
+      "completion_year": null
+    },
+    {
+      "level": "bachelor",
+      "course": "Electronics and Communication Engineering",
+      "institution": "JNTU",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Projeto ERP Biogen",
+      "client": "Biogen",
+      "sector": "saude",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de requisitos de negócios e gestão de projetos ERP para clientes internos.",
+      "start": "2016-06",
+      "end": null
+    },
+    {
+      "name": "Projeto Mortgage Citibank",
+      "client": "Citibank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Análise de requisitos e modelagem de dados para produtos de seguros e linhas de crédito.",
+      "start": "2016-01",
+      "end": "2016-05"
+    },
+    {
+      "name": "Projeto GGK Technologies",
+      "client": "GGK Technologies",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Análise de negócios, modelagem de processos e implementação de metodologias Six Sigma.",
+      "start": "2012-05",
+      "end": "2014-12"
+    }
+  ]
+}

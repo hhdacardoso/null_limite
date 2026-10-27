@@ -1,0 +1,78 @@
+{
+  "id": "p127",
+  "full_name": "Vinícius Ferreira",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 15,
+  "certifications": [],
+  "education": [
+    {
+      "level": "master",
+      "course": "Masters in Computer Applications (MCA)",
+      "institution": "University of Madras, India",
+      "completion_year": null
+    },
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Science (B.Sc) in Computers, Electronics & Mathematics",
+      "institution": "Sri Venkateswara University, India",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "ServiceNow Implementation",
+      "client": "Boston Consulting Group (BCG)",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios Sênior",
+      "description": "Implementação de módulos ServiceNow para gerenciamento de projetos e recursos",
+      "start": "2017-08",
+      "end": "2018-01"
+    },
+    {
+      "name": "E-Commerce Retail Strategy",
+      "client": "LafargeHolcim",
+      "sector": "varejo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Implementação de projeto de e-commerce para o mercado norte-americano",
+      "start": "2012-10",
+      "end": "2017-06"
+    },
+    {
+      "name": "Mobile E-Commerce App",
+      "client": "Fudbid Inc.",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de aplicativo móvel de comércio eletrônico",
+      "start": "2015-09",
+      "end": "2018-01"
+    },
+    {
+      "name": "Mobile Application Development",
+      "client": "JiffyRides Inc.",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Coordenação de desenvolvimento e especificação de aplicativo móvel",
+      "start": "2013-09",
+      "end": "2017-11"
+    },
+    {
+      "name": "ERP Upgrade & Integration",
+      "client": "Baxter Healthcare",
+      "sector": "saude",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Migração de WorldSoft para JDE EnterpriseOne e desenvolvimento de relatórios BI",
+      "start": "2009-04",
+      "end": "2012-10"
+    },
+    {
+      "name": "JDE Object Development",
+      "client": "Sony Pictures Entertainment",
+      "sector": "outros",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Desenvolvimento de objetos JDE e suporte a integração de dados",
+      "start": "2009-01",
+      "end": "2009-04"
+    }
+  ]
+}

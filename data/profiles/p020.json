@@ -1,0 +1,80 @@
+{
+  "id": "p020",
+  "full_name": "Mariana Duarte",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Sistemas de Negócios e Scrum Master",
+  "years_experience": 9,
+  "certifications": [
+    {
+      "name": "Scrum Master Certification",
+      "issuer": "International Scrum Institute",
+      "issue_year": null
+    },
+    {
+      "name": "Professional Scrum Master I (PSM I) Certification",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Mathematics",
+      "institution": "Osmania University",
+      "completion_year": 2008
+    },
+    {
+      "level": "master",
+      "course": "Computers Information Systems",
+      "institution": "CalUMS",
+      "completion_year": 2014
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mortgage Loan Origination System",
+      "client": "Farm Credit Bank of Texas",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios e Scrum Master",
+      "description": "Desenvolvimento de aplicação web integrada para originação e processamento de empréstimos hipotecários.",
+      "start": "2016-09",
+      "end": null
+    },
+    {
+      "name": "Data Warehouse",
+      "client": "JPMC",
+      "sector": "financeiro",
+      "role": "Analista de Negócios e Scrum Master",
+      "description": "Criação de data warehouse para ativos não performados e geração de relatórios estratégicos com Cognos BI.",
+      "start": "2015-02",
+      "end": "2016-08"
+    },
+    {
+      "name": "Wealth Management System",
+      "client": "Fiserv",
+      "sector": "financeiro",
+      "role": "Scrum Master",
+      "description": "Implementação de sistema de gestão de patrimônio com interface única para consultores financeiros.",
+      "start": "2013-05",
+      "end": "2015-01"
+    },
+    {
+      "name": "Intranet Ticket Management Application",
+      "client": "Factset Research Systems",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de intranet para registro e acompanhamento de tickets internos.",
+      "start": "2010-02",
+      "end": "2012-11"
+    },
+    {
+      "name": "Sales Compensation System",
+      "client": "ICICI Lombard",
+      "sector": "seguros",
+      "role": "Analista de Negócios",
+      "description": "Sistema integrado para cálculo de remuneração de vendas e geração de relatórios de compliance.",
+      "start": "2008-06",
+      "end": "2010-01"
+    }
+  ]
+}

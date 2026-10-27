@@ -1,0 +1,47 @@
+{
+  "id": "p224",
+  "full_name": "Daniela Lima",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Full Stack Java",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "PPD - Pharmaceutical Product Development",
+      "client": "PPD",
+      "sector": "outros",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Desenvolvimento de portal comercial com catálogo de produtos, gestão de pedidos e integração AWS.",
+      "start": "2016-01",
+      "end": null
+    },
+    {
+      "name": "PNC Bank - Online Bill Payment",
+      "client": "PNC Bank",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Aplicação de pagamento de contas online com integração REST, Spring Boot e AWS.",
+      "start": "2013-10",
+      "end": "2015-12"
+    },
+    {
+      "name": "Jackson National Life Insurance - Internet Insurance Quote",
+      "client": "Jackson National Life Insurance",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Plataforma web para cotação e gestão de seguros, usando Spring MVC, Hibernate e serviços SOAP/REST.",
+      "start": "2011-12",
+      "end": "2013-09"
+    },
+    {
+      "name": "Cybage Software - Electronic Medical Record (EMR)",
+      "client": "Cybage Software Pvt. Ltd",
+      "sector": "saude",
+      "role": "Desenvolvedor Java",
+      "description": "Sistema EMR web para registro e compartilhamento de dados clínicos, baseado em J2EE e Hibernate.",
+      "start": "2010-01",
+      "end": "2011-10"
+    }
+  ]
+}

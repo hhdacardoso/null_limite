@@ -1,0 +1,141 @@
+{
+  "id": "p143",
+  "full_name": "Paulo Freitas",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Gerente de Projetos",
+  "years_experience": null,
+  "certifications": [
+    {
+      "name": "PRINCE2 Practitioner",
+      "issuer": "APMG",
+      "issue_year": null
+    },
+    {
+      "name": "Managing Multiple Projects",
+      "issuer": "AACPS Global",
+      "issue_year": null
+    },
+    {
+      "name": "ITIL® v3 Foundation",
+      "issuer": "APMG",
+      "issue_year": null
+    },
+    {
+      "name": "Scrum Master",
+      "issuer": "ISI",
+      "issue_year": null
+    },
+    {
+      "name": "Cloud Computing",
+      "issuer": "CloudU (Rackspace)",
+      "issue_year": null
+    },
+    {
+      "name": "Six Sigma Black Belt",
+      "issuer": "AACPS Global",
+      "issue_year": null
+    },
+    {
+      "name": "ISO 9001:2008 Lead Auditor",
+      "issuer": "IRCA",
+      "issue_year": null
+    },
+    {
+      "name": "ISO 20000-1:2011 Lead Auditor",
+      "issuer": "RABQSA",
+      "issue_year": null
+    },
+    {
+      "name": "ISO 27001:2005 Lead Auditor",
+      "issuer": "IRCA",
+      "issue_year": null
+    },
+    {
+      "name": "Fractional Reserve Banking",
+      "issuer": "Alison",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Engenharia de Computação",
+      "institution": "WIT, Shivaji University",
+      "completion_year": null
+    },
+    {
+      "level": "mba",
+      "course": "MBA Executivo (Operações de TI)",
+      "institution": "IIBMS",
+      "completion_year": null
+    },
+    {
+      "level": "specialization",
+      "course": "Programa de Gestão Estratégica",
+      "institution": "IIM Calcutta",
+      "completion_year": null
+    },
+    {
+      "level": "specialization",
+      "course": "IT Project Management",
+      "institution": "IIT Bombay",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Test Environment Regulatory Remediation",
+      "client": "Deutsche Bank",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Gestão de remediação regulatória de ambientes de teste, incluindo análise de gaps e desenvolvimento de dashboards.",
+      "start": "2015-08",
+      "end": null
+    },
+    {
+      "name": "System Integrations / Digitalization Strategy",
+      "client": "AIG",
+      "sector": "seguros",
+      "role": "Gerente de Projetos",
+      "description": "Coordenação de integrações de sistemas e estratégia de digitalização para seguradora de vida.",
+      "start": "2013-05",
+      "end": "2015-07"
+    },
+    {
+      "name": "Web Engineering",
+      "client": "United Health Group",
+      "sector": "saude",
+      "role": "Gerente de Projetos",
+      "description": "Implementação multinacional de troca eletrônica de dados e estratégia de e‑sale.",
+      "start": "2011-10",
+      "end": "2013-03"
+    },
+    {
+      "name": "Process Management",
+      "client": "Chevron",
+      "sector": "energia",
+      "role": "Gerente de Projetos",
+      "description": "Liderança de programa de implementação e rollout para o setor de óleo e gás.",
+      "start": "2006-08",
+      "end": "2011-08"
+    },
+    {
+      "name": "Custom Software Developments",
+      "client": "Travelers",
+      "sector": "seguros",
+      "role": "Gerente de Projetos",
+      "description": "Gestão de todo o ciclo de desenvolvimento de softwares personalizados para o setor de seguros.",
+      "start": "2005-07",
+      "end": "2006-07"
+    },
+    {
+      "name": "Database Developments, Oracle 10g – SSO",
+      "client": "Cigna",
+      "sector": "saude",
+      "role": "Gerente de Projetos",
+      "description": "Coordenação de desenvolvimento de bancos de dados relacionais e melhoria de consistência de dados.",
+      "start": "2005-01",
+      "end": "2005-05"
+    }
+  ]
+}

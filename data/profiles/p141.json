@@ -1,0 +1,56 @@
+{
+  "id": "p141",
+  "full_name": "Nicolas Costa",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Senior Java Developer",
+  "years_experience": 7,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Market Risk Platform",
+      "client": "Fidelity Investments",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de plataforma de risco de mercado usando NoSQL (Cassandra) e MapReduce (Hadoop)",
+      "start": "2015-01",
+      "end": null
+    },
+    {
+      "name": "CFAS Support",
+      "client": "AT&T",
+      "sector": "telecom",
+      "role": "Desenvolvedor Java",
+      "description": "Suporte de produção e desenvolvimento de aplicações Java/UNIX para o Corporate Financial Application Suite",
+      "start": "2014-01",
+      "end": "2015-01"
+    },
+    {
+      "name": "E-commerce Platform",
+      "client": "Kohl's",
+      "sector": "varejo",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de aplicações web e serviços RESTful para plataformas B2B/B2C usando ATG e Spring Boot",
+      "start": "2011-08",
+      "end": "2013-12"
+    },
+    {
+      "name": "EDI Messaging Service",
+      "client": "British Telecom",
+      "sector": "telecom",
+      "role": "Desenvolvedor Java",
+      "description": "Implementação de serviço de mensageria JMS e JAXB para integração EDI",
+      "start": "2009-10",
+      "end": "2011-07"
+    },
+    {
+      "name": "Aplicação Web Java",
+      "client": "Pilog India Pvt Ltd",
+      "sector": "outros",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de Servlets, JSP e PL/SQL para relatórios e integração de banco de dados Oracle",
+      "start": "2007-08",
+      "end": "2009-09"
+    }
+  ]
+}

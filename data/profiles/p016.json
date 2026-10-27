@@ -1,0 +1,70 @@
+{
+  "id": "p016",
+  "full_name": "Bruno Ribeiro",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [
+    {
+      "issue_year": null,
+      "issuer": "Project Management Institute",
+      "name": "PMP"
+    },
+    {
+      "issue_year": null,
+      "issuer": "Scrum Alliance",
+      "name": "CSM"
+    },
+    {
+      "issue_year": null,
+      "issuer": "Axelos",
+      "name": "ITIL Foundation"
+    }
+  ],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Computer Science and Engineering",
+      "institution": "Anna University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Gerente de Projetos",
+  "projects": [
+    {
+      "client": "Mazda North American Operations",
+      "description": "Gestão de projetos de marketing e operações de vendas, incluindo programas de experiência da marca e modernização de sistemas legados.",
+      "end": null,
+      "name": "Marketing and Sales Operations Projects",
+      "role": "Gerente de Projetos / Analista de Negócios",
+      "sector": "industria",
+      "start": "2015-06"
+    },
+    {
+      "client": "Mercedes-Benz",
+      "description": "Liderança de projetos de sistemas de reclamações de concessionários, garantias e website, com foco em otimização de processos e suporte.",
+      "end": "2015-06",
+      "name": "Dealer Claims, Warranty Systems and Dealer Website Projects",
+      "role": "Líder de Projetos",
+      "sector": "industria",
+      "start": "2013-10"
+    },
+    {
+      "client": "Toyota Motor Sales",
+      "description": "Liderança de aplicações de cadeia de suprimentos de veículos, incluindo auditorias de conformidade e automação de relatórios de vendas.",
+      "end": "2013-09",
+      "name": "Vehicle Supply Chain Applications",
+      "role": "Líder de Projetos",
+      "sector": "industria",
+      "start": "2009-02"
+    },
+    {
+      "client": "The Bank of New York Mellon",
+      "description": "Desenvolvimento e análise de sistemas de relatórios e gestão de liquidez, incluindo a criação de um novo sistema de relatórios de lockbox.",
+      "end": "2009-02",
+      "name": "Reporting and Liquidity Management Systems Projects",
+      "role": "Desenvolvedor / Líder de Módulo / Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2005-06"
+    }
+  ],
+  "years_experience": 12
+}

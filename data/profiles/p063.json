@@ -1,0 +1,78 @@
+{
+  "id": "p063",
+  "full_name": "Yasmin Oliveira",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "years_experience": 6,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Technology",
+      "institution": "Jawaharlal Nehru Technological University",
+      "completion_year": 2012
+    },
+    {
+      "level": "master",
+      "course": "Master of Science",
+      "institution": "University of New Haven",
+      "completion_year": 2017
+    }
+  ],
+  "projects": [
+    {
+      "name": "Enterprise Level Information Intelligence System",
+      "client": "Germania Insurance",
+      "sector": "seguros",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Desenvolvimento de sistema integrado com Duck Creek e Salesforce para gestão de risco e pricing",
+      "start": "2017-02",
+      "end": null
+    },
+    {
+      "name": "Migração de CRM Legacy para Salesforce",
+      "client": "Sun Life Financial",
+      "sector": "seguros",
+      "role": "Analista de Negócios / Scrum Master",
+      "description": "Planejamento e execução de migração de CRM e desenvolvimento de aplicativo móvel",
+      "start": "2015-07",
+      "end": "2017-02"
+    },
+    {
+      "name": "Data Warehouse para Departamento de Desenvolvimento de Trabalho",
+      "client": "Alaska DOLWD",
+      "sector": "governo",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Construção de data warehouse unificado para análise de dados de desemprego e treinamento",
+      "start": "2014-02",
+      "end": "2015-06"
+    },
+    {
+      "name": "Aplicação Salesforce para Marketing de Seguros",
+      "client": "Grange Insurance",
+      "sector": "seguros",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Desenvolvimento de aplicação Salesforce para rastreamento de interesses de clientes",
+      "start": "2012-11",
+      "end": "2013-12"
+    },
+    {
+      "name": "Projeto de Integração de Dados para DOLWD",
+      "client": "Alaska DOLWD",
+      "sector": "governo",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Integração de dados heterogêneos em repositório único",
+      "start": "2014-02",
+      "end": "2015-06"
+    },
+    {
+      "name": "Projeto de Desenvolvimento de Aplicação Salesforce",
+      "client": "Grange Insurance",
+      "sector": "seguros",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Customização e automação de processos de vendas no Salesforce",
+      "start": "2012-11",
+      "end": "2013-12"
+    }
+  ]
+}

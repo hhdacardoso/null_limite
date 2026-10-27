@@ -1,0 +1,85 @@
+{
+  "id": "p112",
+  "full_name": "João Barbosa",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Gerente de Projetos",
+  "years_experience": 13,
+  "certifications": [
+    {
+      "name": "Certified Scrum Master®",
+      "issuer": "Scrum Alliance",
+      "issue_year": null
+    },
+    {
+      "name": "Certified Scrum Product Owner®",
+      "issuer": "Scrum Alliance",
+      "issue_year": null
+    },
+    {
+      "name": "Certified Lean Six Sigma Green Belt",
+      "issuer": "IASSC",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "mba",
+      "course": "Master of Business Administration (HR & Marketing)",
+      "institution": "Anna University, Chennai, India",
+      "completion_year": 2007
+    },
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Engineering (Electronics & Communication)",
+      "institution": "University of Madras, Chennai, India",
+      "completion_year": 2000
+    }
+  ],
+  "projects": [
+    {
+      "name": "Resiliency Data Management System",
+      "client": "JPMorgan & Chase",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Gerenciou o projeto de gestão de resiliência de dados para análise de impacto e recuperação de desastres",
+      "start": "2017-07",
+      "end": null
+    },
+    {
+      "name": "Projeto de Serviços de Nível de Serviço",
+      "client": "Sigma Info solutions Inc",
+      "sector": "tecnologia",
+      "role": "Scrum Master / Gerente de Projetos",
+      "description": "Desenvolveu e implementou níveis de serviço para aumentar a satisfação do cliente",
+      "start": "2017-03",
+      "end": "2017-05"
+    },
+    {
+      "name": "Projeto de Armazenamento de Dados para Bank of New York Mellon",
+      "client": "Bank of New York Mellon",
+      "sector": "financeiro",
+      "role": "Scrum Master / Lead Business Analyst",
+      "description": "Criou solução de data warehouse para consolidação de dados de sistemas legados",
+      "start": "2016-05",
+      "end": "2017-02"
+    },
+    {
+      "name": "Projeto de Migração para Teradata",
+      "client": "Bank of New York Mellon",
+      "sector": "financeiro",
+      "role": "Scrum Master / Lead Business Analyst",
+      "description": "Migrou aplicações Oracle para plataforma Teradata para escalabilidade e desempenho",
+      "start": "2010-01",
+      "end": "2012-04"
+    },
+    {
+      "name": "Projeto de Suporte de Aplicação MDS",
+      "client": "Wipro (AT&T)",
+      "sector": "telecom",
+      "role": "Technical Lead",
+      "description": "Suporte a aplicação crítica de dados de mercado e administração de data warehouse",
+      "start": "2004-05",
+      "end": "2009-12"
+    }
+  ]
+}

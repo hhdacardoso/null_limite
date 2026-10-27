@@ -1,0 +1,60 @@
+{
+  "id": "p080",
+  "full_name": "Yasmin Duarte",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Master’s in management information system",
+      "institution": null,
+      "level": "master"
+    },
+    {
+      "completion_year": null,
+      "course": "Computer Science in Engineering",
+      "institution": null,
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios Sênior",
+  "projects": [
+    {
+      "client": "Office of Attorney General Child Support Division",
+      "description": "Análise de lacunas e avaliação de impacto para upgrade de padrões HIPAA em portal de seguros de saúde.",
+      "end": null,
+      "name": "Upgrade HIPAA 4010 para 5010",
+      "role": "Analista de Negócios Sênior",
+      "sector": "governo",
+      "start": "2015-10"
+    },
+    {
+      "client": "Atlas Air",
+      "description": "Gestão de requisitos e facilitação de práticas ágeis para reestruturação de negócios de seguros.",
+      "end": "2015-09",
+      "name": "Reestruturação de Seguros Comerciais",
+      "role": "Analista de Negócios Sênior",
+      "sector": "seguros",
+      "start": "2014-02"
+    },
+    {
+      "client": "University of Texas Dallas",
+      "description": "Migração de aplicações Oracle para plataforma Teradata para atender requisitos regulatórios.",
+      "end": "2013-12",
+      "name": "Migração de Plataforma BI",
+      "role": "Analista de Negócios Sênior / Scrum Master",
+      "sector": "educacao",
+      "start": "2011-11"
+    },
+    {
+      "client": "Group Health Incorporated",
+      "description": "Desenvolvimento de software para rastreamento de elegibilidade de planos Medicaid.",
+      "end": "2011-10",
+      "name": "Sistema de Elegibilidade Medicaid",
+      "role": "Analista de Negócios",
+      "sector": "saude",
+      "start": "2009-11"
+    }
+  ],
+  "years_experience": 8
+}

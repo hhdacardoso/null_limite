@@ -1,0 +1,62 @@
+{
+  "id": "p197",
+  "full_name": "Daniela Pereira",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "Certified Scrum Master",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Consolidação de sistemas de trading e risco, automação de pagamentos e settlements",
+      "client": "HSBC",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Consolidação de sistemas de trading e risco, automação de pagamentos e settlements.",
+      "start": "2016-04",
+      "end": "2017-12"
+    },
+    {
+      "name": "Desenvolvimento de dashboard de portfólio e melhorias de análise de investimentos",
+      "client": "Eaton Vance",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Desenvolvimento de dashboard de portfólio e melhorias de análise de investimentos.",
+      "start": "2015-02",
+      "end": "2016-03"
+    },
+    {
+      "name": "Criação de data warehouse para orçamento e relatórios financeiros",
+      "client": "State of New Jersey",
+      "sector": "governo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Criação de data warehouse para orçamento e relatórios financeiros.",
+      "start": "2013-11",
+      "end": "2014-12"
+    },
+    {
+      "name": "Desenvolvimento de sistema de monitoramento AML e compliance",
+      "client": "Ally Financial",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Sênior",
+      "description": "Desenvolvimento de sistema de monitoramento AML e compliance.",
+      "start": "2012-08",
+      "end": "2013-09"
+    },
+    {
+      "name": "Construção de sistema web de recrutamento para RH",
+      "client": "OLX India",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Construção de sistema web de recrutamento para RH.",
+      "start": "2011-08",
+      "end": "2012-07"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "p205",
+  "full_name": "Igor Costa",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Sr. Java/J2EE",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "CIQ (Commercial Internet Quote)",
+      "client": "Nationwide Insurance",
+      "sector": "seguros",
+      "role": "Desenvolvedor Sr. Java/J2EE",
+      "description": "Desenvolvimento full‑stack de aplicação web de cotação de seguros, incluindo UI, backend, integração AWS e suporte à produção.",
+      "start": "2015-04",
+      "end": null
+    },
+    {
+      "name": "Resource Management System",
+      "client": "Cisco",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Sr. Java/J2EE",
+      "description": "Ferramenta interna de gerenciamento de recursos, com front‑end Struts/AngularJS e backend Hibernate, hospedada na AWS.",
+      "start": "2013-02",
+      "end": "2015-03"
+    },
+    {
+      "name": "Customer Self Service",
+      "client": "John Deere Financial",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Aplicação web para clientes pagarem empréstimos e visualizarem detalhes, com suporte multilíngue e integração NoSQL.",
+      "start": "2011-11",
+      "end": "2013-02"
+    },
+    {
+      "name": "System Management",
+      "client": "YASH Technologies",
+      "sector": "tecnologia",
+      "role": "Programador Java/J2EE",
+      "description": "Sistema web de gestão interna (folgas, projetos, recursos) usando Struts, EJB e DB2.",
+      "start": "2009-11",
+      "end": "2011-10"
+    },
+    {
+      "name": "Online Project Tracking System",
+      "client": "Zealous Web Technology",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor de Software",
+      "description": "Plataforma de acompanhamento de projetos e recursos, desenvolvida com Servlets, JSP e MySQL.",
+      "start": "2008-07",
+      "end": "2009-10"
+    }
+  ]
+}

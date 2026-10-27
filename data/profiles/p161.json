@@ -1,0 +1,63 @@
+{
+  "id": "p161",
+  "full_name": "Sofia Barbosa",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "master",
+      "course": "Master’s in Computer Science",
+      "institution": null,
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Atualização do Sistema de Gestão de Risco",
+      "client": "Lord Abbett",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Sênior",
+      "description": "Gerenciou requisitos para publicação antecipada de limites de exposição de contrapartida em conformidade com Dodd‑Frank e Basel Accord.",
+      "start": "2016-01",
+      "end": null
+    },
+    {
+      "name": "Sistema de Processamento de Reivindicações em Tempo Real",
+      "client": "United Health Group",
+      "sector": "saude",
+      "role": "Analista de Negócios",
+      "description": "Desenvolveu requisitos e testes para sistema automatizado de reivindicações médicas, dentárias e de visão.",
+      "start": "2014-02",
+      "end": "2015-12"
+    },
+    {
+      "name": "Plataforma Web de Corretagem para Investidores",
+      "client": "Citi Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Elaborei backlog e requisitos para aplicação de corretagem com recursos de e‑billing e migração de investidores.",
+      "start": "2012-07",
+      "end": "2014-01"
+    },
+    {
+      "name": "Sistema de Negociação de Ativos Financeiros",
+      "client": "Atlantic Financial",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Documentou requisitos e modelou processos de negociação de derivativos e ações em ambiente ágil.",
+      "start": "2011-04",
+      "end": "2012-06"
+    },
+    {
+      "name": "Integração e Melhoria da Plataforma E‑commerce",
+      "client": "Nike",
+      "sector": "varejo",
+      "role": "Analista de Negócios",
+      "description": "Coordenei a transição para Agile/Scrum e otimizei relatórios de vendas e métricas de negócio.",
+      "start": "2009-11",
+      "end": "2011-03"
+    }
+  ]
+}
