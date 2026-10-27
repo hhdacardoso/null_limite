@@ -8,3 +8,4 @@ uploads/
 
 # Anonymized resume text (regenerate with scripts/ingest/anonymize.py)
 data/anon/
+.pytest_cache/

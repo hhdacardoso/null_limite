@@ -31,7 +31,7 @@ Hoje os currículos estão espalhados, sem padrão e desatualizados. São cerca 
 | S1 | Auth (JWT), perfil, upload de currículo, certificados | ✅ |
 | S1.5 | Modelo de domínio: projetos, formação, comprovantes e revisão por gestor | ✅ |
 | S2 | Base de demo: anonimização, estruturação com LLM, seed | ✅ (o parser de currículo enviado pelo app ainda não existe) |
-| S3 | Editais com critérios e pesos, motor de pontuação, ranking e equipe recomendada | ⏳ |
+| S3 | Editais com critérios e pesos, motor de pontuação, ranking e equipe recomendada | ✅ (cadastro do edital é manual: ainda não lê o PDF) |
 | S4 | Gamificação: atualização do perfil, pontos, badges, ranking por equipe | ⏳ |
 | S5 | Explicabilidade, resumo de 2 páginas e vídeo-pitch | ⏳ |
 
@@ -85,6 +85,25 @@ No Swagger, clique em **Authorize** e entre com o e-mail no campo `username`.
 - `POST /evidences/{id}/review`: aprova ou rejeita (`{"status": "approved"|"rejected", "note": "..."}`); o gestor não revisa o próprio comprovante
 - `GET /evidences/{id}/file`: baixa o arquivo (só o dono ou um gestor)
 
+### Editais e matching (gestor)
+- `POST /bids`: cadastra o edital com as vagas da equipe (`roles`, com `quantity`) e os critérios de cada vaga
+- `GET /bids`, `GET /bids/{id}`, `DELETE /bids/{id}`
+- `GET /bids/{id}/ranking?role_id=&limit=20`: ranking dos profissionais por vaga, com a nota detalhada por critério
+- `GET /bids/{id}/team`: equipe recomendada (a que soma mais pontos, sem repetir pessoa), nota total, nota potencial, nota máxima do edital e os comprovantes pendentes que mais sobem a nota se forem aprovados
+
+Tipos de critério:
+
+| `type` | Parâmetros | Como pontua |
+|---|---|---|
+| `certification` | `keywords` | `max_points` se o nome de uma certificação contém alguma palavra-chave (ex.: `["pmp", "project management professional"]`). Certificação vencida não pontua. |
+| `sector_projects` | `points_per_item`, `sectors` (vazio = qualquer setor) | `points_per_item` por projeto nos setores, até `max_points` |
+| `education` | `min_level`, `keywords` (opcional, nome do curso) | `max_points` se tiver formação de nível igual ou acima de `min_level` (`specialization` = pós-graduação; `mba` vale o mesmo que `specialization`) |
+| `years_experience` | `min_years` | `max_points` se os projetos com comprovante aprovado somam pelo menos `min_years` anos (períodos sobrepostos contam uma vez) |
+
+**Só pontua item com comprovante aprovado.** Item com comprovante pendente (e, no caso de anos, os anos declarados no perfil) entra só na nota potencial (`potential_points`). Item rejeitado ou sem comprovante não pontua. Cada critério traz `explanation` e os itens usados, com o status de cada um.
+
+O seed cria um edital de exemplo (`data/bids/energia.json`): Gerente de Projeto com os critérios do case, Analista de Negócios e Desenvolvedor Java. Roteiro de demo: `GET /bids/1/team`, aprovar um comprovante de `pending_gains` com `POST /evidences/{id}/review` e chamar `/team` de novo para ver a nota subir.
+
 Fora do seed, viram gestores os e-mails listados em `MANAGER_EMAILS` no momento do cadastro.
 
 ## Banco de dados
@@ -97,6 +116,7 @@ SQLite local (`null_limite.db`), criado na primeira execução.
 | `resumes` | PDFs enviados |
 | `certificates`, `projects`, `education` | itens do perfil que pontuam em editais |
 | `evidences` | comprovante de um item do perfil, com status `pending`/`approved`/`rejected` |
+| `bids`, `bid_roles`, `bid_criteria` | editais, vagas da equipe e critérios de pontuação de cada vaga |
 
 Não há migrations: ao mudar o modelo, rode `python scripts/seed.py` (ou apague o `null_limite.db`).
 
@@ -139,7 +159,10 @@ null_limite/
 │   ├── ingest/structure.py  # texto -> JSON via LLM (Groq)
 │   └── seed.py              # JSON -> banco de demo
 ├── data/profiles/           # 100 perfis anonimizados (versionado)
+├── data/bids/               # editais de exemplo carregados pelo seed
+├── tests/                   # pytest (matching e equipe recomendada)
 ├── requirements.txt
+├── requirements-dev.txt     # dependências de teste
 ├── run.sh                   # venv + dependências + seed + servidor
 ├── AGENTS.md                # instruções para agentes de IA (Claude Code, Copilot, Cursor...)
 └── README.md
@@ -166,3 +189,4 @@ GROQ_API_KEY=gsk_...   # só para scripts/ingest/structure.py
 - O `main` precisa sempre subir funcionando: é dele que sai a demo.
 - Prefira merge commit no PR, e apague a branch depois do merge.
 - Mensagens de commit no padrão Conventional Commits (`feat:`, `fix:`, `docs:`...).
+- Rode os testes antes do PR: `pip install -r requirements-dev.txt && python -m pytest -q tests`.
