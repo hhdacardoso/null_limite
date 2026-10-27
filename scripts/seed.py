@@ -5,7 +5,9 @@
 - Dates are shifted: the source resumes stop around 2016-2017, so ~70% of profiles are
   moved to look recently updated and ~30% to look 2-4 years stale (fictitious data,
   this only makes the freshness/gamification demo realistic)
-- Fictitious evidence PDFs with a mix of approved / pending / missing
+- Fictitious evidence PDFs with a mix of approved / pending / missing, dated at the profile's
+  last update; some education without a file is waiting for a manager to validate it
+- Team (practice) derived from the job title
 - Example bids from data/bids/*.json
 
 Usage: python scripts/seed.py [--profiles data/profiles] [--bids data/bids]
@@ -27,6 +29,11 @@ import main  # noqa: E402
 PASSWORD = "demo123"
 FRESH_SHARE = 0.7
 # Validity in years for certifications that must be renewed
+# First match wins; everyone else goes to business analysis
+TEAM_KEYWORDS = [
+    (main.Team.PROJECT_MANAGEMENT, ("gerente", "scrum", "programa")),
+    (main.Team.ENGINEERING, ("desenvolvedor", "engenheiro", "developer", "qa")),
+]
 CERT_VALIDITY = {"pmp": 3, "pmi-acp": 3, "capm": 5, "csm": 2, "cspo": 2, "safe": 1, "aws": 3, "azure": 1, "cbap": 3}
 
 
@@ -61,6 +68,11 @@ def latest_date(profile) -> datetime | None:
     return max((d for d in dates if d), default=None)
 
 
+def team_for(job_title: str | None) -> main.Team:
+    title = (job_title or "").lower()
+    return next((team for team, words in TEAM_KEYWORDS if any(w in title for w in words)), main.Team.BUSINESS_ANALYSIS)
+
+
 def email_for(full_name: str, taken: set) -> str:
     ascii_name = unicodedata.normalize("NFKD", full_name).encode("ascii", "ignore").decode().lower()
     base = ".".join(ascii_name.split())
@@ -93,10 +105,11 @@ def fake_pdf(text: str) -> bytes:
     return bytes(out)
 
 
-def add_evidence(db, rng, upload_dir: Path, owner, reviewer, label: str, approve_share: float, pending_share: float, **target):
+def add_evidence(db, rng, upload_dir: Path, owner, reviewer, label: str, approve_share: float, pending_share: float,
+                 created_at: datetime, **target):
     roll = rng.random()
     if roll >= approve_share + pending_share:
-        return  # no evidence uploaded
+        return False  # no evidence uploaded
     approved = roll < approve_share
     path = upload_dir / f"{uuid.uuid4()}.pdf"
     content = fake_pdf(f"Comprovante ficticio - {label} - {owner.full_name}")
@@ -109,8 +122,10 @@ def add_evidence(db, rng, upload_dir: Path, owner, reviewer, label: str, approve
         status=main.EvidenceStatus.APPROVED if approved else main.EvidenceStatus.PENDING,
         reviewed_by=reviewer.id if approved else None,
         reviewed_at=main.utcnow() if approved else None,
+        created_at=created_at,
         **target,
     ))
+    return True
 
 
 def main_seed():
@@ -131,6 +146,8 @@ def main_seed():
         old.unlink()
 
     rng = random.Random(7)
+    # Separate generator so the no-file requests don't change the rest of the demo data
+    no_file_rng = random.Random(11)
     now = main.utcnow().replace(day=1, hour=0, minute=0, second=0, microsecond=0)
     password_hash = main.get_password_hash(PASSWORD)
     db = main.SessionLocal()
@@ -164,6 +181,7 @@ def main_seed():
             full_name=profile["full_name"],
             job_title=profile.get("job_title"),
             years_experience=profile.get("years_experience"),
+            team=team_for(profile.get("job_title")),
             hashed_password=password_hash,
             created_at=last_update,
         )
@@ -180,7 +198,7 @@ def main_seed():
             )
             db.add(item)
             db.flush()
-            add_evidence(db, rng, upload_dir, professional, reviewer, cert["name"], 0.5, 0.2, certificate_id=item.id)
+            add_evidence(db, rng, upload_dir, professional, reviewer, cert["name"], 0.5, 0.2, last_update, certificate_id=item.id)
 
         for edu in profile["education"]:
             item = main.Education(
@@ -190,7 +208,10 @@ def main_seed():
             )
             db.add(item)
             db.flush()
-            add_evidence(db, rng, upload_dir, professional, reviewer, edu["course"], 0.5, 0.2, education_id=item.id)
+            uploaded = add_evidence(db, rng, upload_dir, professional, reviewer, edu["course"], 0.5, 0.2, last_update,
+                                    education_id=item.id)
+            if not uploaded and no_file_rng.random() < 0.4:
+                db.add(main.Evidence(professional_id=professional.id, education_id=item.id, created_at=last_update))
 
         for proj in profile["projects"]:
             item = main.Project(
@@ -201,7 +222,7 @@ def main_seed():
             )
             db.add(item)
             db.flush()
-            add_evidence(db, rng, upload_dir, professional, reviewer, proj["name"], 0.3, 0.15, project_id=item.id)
+            add_evidence(db, rng, upload_dir, professional, reviewer, proj["name"], 0.3, 0.15, last_update, project_id=item.id)
 
     for path in sorted(args.bids.glob("*.json")):
         db.add(main.build_bid(main.BidCreate.model_validate_json(path.read_text(encoding="utf8")), managers[0].id))

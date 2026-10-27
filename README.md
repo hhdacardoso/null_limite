@@ -32,7 +32,7 @@ Hoje os currículos estão espalhados, sem padrão e desatualizados. São cerca 
 | S1.5 | Modelo de domínio: projetos, formação, comprovantes e revisão por gestor | ✅ |
 | S2 | Base de demo: anonimização, estruturação com LLM, seed | ✅ (o parser de currículo enviado pelo app ainda não existe) |
 | S3 | Editais com critérios e pesos, motor de pontuação, ranking e equipe recomendada | ✅ (cadastro do edital é manual: ainda não lê o PDF) |
-| S4 | Gamificação: atualização do perfil, pontos, badges, ranking por equipe | ⏳ |
+| S4 | Gamificação: atualização do perfil, pontos, níveis, badges, missões, ranking por equipe | ✅ |
 | S5 | Explicabilidade, resumo de 2 páginas e vídeo-pitch | ⏳ |
 
 ## Como rodar
@@ -68,17 +68,17 @@ No Swagger, clique em **Authorize** e entre com o e-mail no campo `username`.
 ## Endpoints
 
 ### Auth
-- `POST /auth/register`: cadastra profissional (email, nome, cargo, anos de experiência, senha de 6 a 72 caracteres)
+- `POST /auth/register`: cadastra profissional (email, nome, cargo, anos de experiência, equipe opcional, senha de 6 a 72 caracteres)
 - `POST /auth/login`: login (form OAuth2, retorna JWT)
 - `GET /auth/me`: perfil do usuário logado
 
 ### Perfil do profissional (`/professionals/me`)
-- `PATCH /professionals/me`: atualiza nome, cargo, anos de experiência
+- `PATCH /professionals/me`: atualiza nome, cargo, anos de experiência e equipe (`gestao_projetos`, `analise_negocios`, `engenharia`)
 - `POST|GET /professionals/me/resumes`: upload de currículo em PDF (retorna 202) e listagem
 - `POST|GET /professionals/me/certificates`: certificações (PMP, ITIL...)
 - `POST|GET /professionals/me/projects`: projetos (cliente, setor, papel, período)
 - `POST|GET /professionals/me/education`: formação (`technical`, `bachelor`, `specialization`, `mba`, `master`, `doctorate`)
-- `POST|GET /professionals/me/evidences`: comprovantes (PDF/PNG/JPG), upload multipart com `target_type` (`certificate`|`project`|`education`), `target_id` e `file`
+- `POST|GET /professionals/me/evidences`: comprovantes (PDF/PNG/JPG), upload multipart com `target_type` (`certificate`|`project`|`education`), `target_id` e `file`. Para formação, `file` é opcional: sem arquivo, o pedido entra na fila como pendente e o gestor decide se aprova ou rejeita
 
 ### Validação de comprovantes (gestor)
 - `GET /evidences?status=pending`: fila de comprovantes para revisar
@@ -104,6 +104,27 @@ Tipos de critério:
 
 O seed cria um edital de exemplo (`data/bids/energia.json`): Gerente de Projeto com os critérios do case, Analista de Negócios e Desenvolvedor Java. Roteiro de demo: `GET /bids/1/team`, aprovar um comprovante de `pending_gains` com `POST /evidences/{id}/review` e chamar `/team` de novo para ver a nota subir.
 
+### Gamificação
+- `GET /professionals/me/gamification` (qualquer usuário): pontos, nível, status de atualização, badges, missões, posição na empresa e na equipe
+- `GET /leaderboard/teams` (qualquer usuário): ranking por equipe, só com números agregados
+- `GET /leaderboard/professionals?team=&limit=20` (gestor): ranking individual
+- `GET /gamification/overview` (gestor): saúde da base (perfis atualizados, itens comprovados, fila de comprovantes) e perfis desatualizados ordenados pelo potencial nos editais, para o gestor cobrar primeiro quem mais pesa nas propostas
+
+Os pontos são calculados a partir do estado atual do perfil (não há como acumular pontos apagando e recriando itens) e premiam sobretudo a comprovação:
+
+| Item do perfil | Pontos |
+|---|---|
+| comprovante aprovado | 12 |
+| comprovante pendente | 5 |
+| formação pendente de validação sem arquivo | 2 |
+| sem comprovante, rejeitado ou certificação vencida | 0 |
+
+Bônus de atualização, pela data do último item ou comprovante enviado pelo profissional (a revisão do gestor não conta): **+20** até 12 meses (`atualizado`), **+10** até 24 meses (`atencao`), 0 depois disso (`desatualizado`).
+
+Níveis: Bronze (0), Prata (40), Ouro (60) e Diamante (90). Badges: Perfil comprovado, Em dia, Certificado, Especialista em {setor} (3 projetos aprovados no setor) e Escalado (está na equipe recomendada de um edital).
+
+As missões listam o que falta comprovar, ordenadas pelo impacto nos editais cadastrados: "Envie o comprovante de Usina X" mostra quanto o profissional ganha no perfil e quantos pontos técnicos passa a somar em cada vaga de edital. O profissional vê só os próprios pontos e o ranking agregado por equipe; nomes no ranking individual, só para gestores (LGPD).
+
 Fora do seed, viram gestores os e-mails listados em `MANAGER_EMAILS` no momento do cadastro.
 
 ## Banco de dados
@@ -112,7 +133,7 @@ SQLite local (`null_limite.db`), criado na primeira execução.
 
 | Tabela | Conteúdo |
 |---|---|
-| `professionals` | usuários, com papel `professional` ou `manager` e anos de experiência |
+| `professionals` | usuários, com papel `professional` ou `manager`, equipe e anos de experiência |
 | `resumes` | PDFs enviados |
 | `certificates`, `projects`, `education` | itens do perfil que pontuam em editais |
 | `evidences` | comprovante de um item do perfil, com status `pending`/`approved`/`rejected` |
@@ -141,7 +162,7 @@ Para rodar a demo, só o passo 3 é necessário: os JSONs já estão no git.
 
 - **Anonimização:** o nome vira um nome fictício brasileiro; contato, links, SSN, data de nascimento, visto, endereço e seção de referências são removidos. A correspondência com o nome original não é salva.
 - **Estruturação:** só o texto anonimizado é enviado ao Groq. Por causa da cota diária gratuita, são 100 perfis equilibrados entre BA, PM e Dev, priorizando certificação e experiência em energia. Se for interrompido, retoma de onde parou.
-- **Seed:** 100 profissionais e 2 gestores. Os currículos originais param em 2016-2017, então as datas são deslocadas: cerca de 70% dos perfis parecem atualizados recentemente e 30% parecem desatualizados há 2-4 anos. Os comprovantes são PDFs fictícios, parte aprovada, parte pendente e parte faltando.
+- **Seed:** 100 profissionais e 2 gestores. Os currículos originais param em 2016-2017, então as datas são deslocadas: cerca de 70% dos perfis parecem atualizados recentemente e 30% parecem desatualizados há 2-4 anos. Os comprovantes são PDFs fictícios, parte aprovada, parte pendente e parte faltando, datados na última atualização do perfil; algumas formações aguardam validação sem arquivo. A equipe vem do cargo.
 
 ## Privacidade (LGPD)
 
