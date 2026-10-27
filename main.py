@@ -1,6 +1,7 @@
+import enum
 import os
 import uuid
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional, List
 
@@ -8,22 +9,29 @@ from fastapi import FastAPI, UploadFile, File, HTTPException, Depends, status, F
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, EmailStr
-from passlib.context import CryptContext
+from pydantic import BaseModel, ConfigDict, EmailStr, Field
+import bcrypt
 from jose import jwt, JWTError
 from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, ForeignKey, Enum
-from sqlalchemy.orm import sessionmaker, declarative_base, relationship, Session
+from sqlalchemy.orm import sessionmaker, declarative_base, Session
 import aiofiles
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Config
-DATABASE_URL = "sqlite:///./null_limite.db"
-SECRET_KEY = "dev-secret-change-in-production"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7
-UPLOAD_DIR = "./uploads"
-MAX_FILE_SIZE = 10 * 1024 * 1024
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./null_limite.db")
+SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-change-in-production")
+ALGORITHM = os.getenv("ALGORITHM", "HS256")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 60 * 24 * 7))
+UPLOAD_DIR = os.getenv("UPLOAD_DIR", "./uploads")
+MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE", 10 * 1024 * 1024))
 
 Path(UPLOAD_DIR).mkdir(parents=True, exist_ok=True)
+
+def utcnow() -> datetime:
+    # naive UTC, matches what SQLite stores
+    return datetime.now(timezone.utc).replace(tzinfo=None)
 
 # Database
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
@@ -31,7 +39,6 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
 # Security
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 # Models
@@ -41,9 +48,9 @@ class Candidate(Base):
     email = Column(String(255), unique=True, index=True, nullable=False)
     hashed_password = Column(String(255), nullable=False)
     full_name = Column(String(255), nullable=False)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
-class ResumeStatus(str, Enum):
+class ResumeStatus(str, enum.Enum):
     PENDING = "pending"
     PROCESSING = "processing"
     COMPLETED = "completed"
@@ -58,7 +65,7 @@ class Resume(Base):
     file_size = Column(Integer, nullable=False)
     status = Column(Enum(ResumeStatus), default=ResumeStatus.PENDING, nullable=False)
     parsed_data = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
 class Certificate(Base):
     __tablename__ = "certificates"
@@ -69,7 +76,7 @@ class Certificate(Base):
     issue_date = Column(DateTime, nullable=True)
     expiry_date = Column(DateTime, nullable=True)
     credential_url = Column(String(500), nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=utcnow)
 
 Base.metadata.create_all(bind=engine)
 
@@ -77,7 +84,7 @@ Base.metadata.create_all(bind=engine)
 class CandidateCreate(BaseModel):
     email: EmailStr
     full_name: str
-    password: str
+    password: str = Field(min_length=6, max_length=72)  # bcrypt limit
 
 class CandidateLogin(BaseModel):
     email: EmailStr
@@ -88,8 +95,7 @@ class CandidateOut(BaseModel):
     email: EmailStr
     full_name: str
     created_at: datetime
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class Token(BaseModel):
     access_token: str
@@ -103,8 +109,7 @@ class ResumeOut(BaseModel):
     status: ResumeStatus
     parsed_data: Optional[str] = None
     created_at: datetime
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class CertificateCreate(BaseModel):
     name: str
@@ -117,19 +122,18 @@ class CertificateOut(CertificateCreate):
     id: int
     candidate_id: int
     created_at: datetime
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # Security functions
 def verify_password(plain: str, hashed: str) -> bool:
-    return pwd_context.verify(plain, hashed)
+    return bcrypt.checkpw(plain.encode(), hashed.encode())
 
 def get_password_hash(password: str) -> str:
-    return pwd_context.hash(password)
+    return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:
     to_encode = data.copy()
-    expire = datetime.utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))
+    expire = utcnow() + (expires_delta or timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))
     to_encode.update({"exp": expire})
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
