@@ -11,6 +11,7 @@ from typing import Optional, List
 from fastapi import FastAPI, UploadFile, File, HTTPException, Depends, Form, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, model_validator
 import bcrypt
@@ -39,6 +40,8 @@ MAX_TEAM_SLOTS = 8
 
 RESUME_EXTENSIONS = {".pdf"}
 EVIDENCE_EXTENSIONS = {".pdf", ".png", ".jpg", ".jpeg"}
+
+STATIC_DIR = Path(__file__).resolve().parent / "static"
 
 Path(UPLOAD_DIR).mkdir(parents=True, exist_ok=True)
 
@@ -163,6 +166,24 @@ class Evidence(Base):
     reviewed_by = Column(Integer, ForeignKey("professionals.id", ondelete="SET NULL"), nullable=True)
     reviewed_at = Column(DateTime, nullable=True)
     created_at = Column(DateTime, default=utcnow)
+    professional = relationship("Professional", foreign_keys=[professional_id])
+    certificate = relationship("Certificate")
+    project = relationship("Project")
+    education = relationship("Education")
+
+    @property
+    def item_label(self) -> Optional[str]:
+        if self.certificate:
+            return self.certificate.name
+        if self.project:
+            return f"{self.project.name} ({self.project.sector or 'sem setor'})"
+        if self.education:
+            return f"{self.education.course} ({self.education.level.value})"
+        return None
+
+    @property
+    def professional_name(self) -> Optional[str]:
+        return self.professional.full_name if self.professional else None
 
 EVIDENCE_TARGETS = {
     EvidenceTarget.CERTIFICATE: (Certificate, "certificate_id"),
@@ -312,6 +333,8 @@ class EvidenceOut(BaseModel):
     reviewed_by: Optional[int] = None
     reviewed_at: Optional[datetime] = None
     created_at: datetime
+    item_label: Optional[str] = None
+    professional_name: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
 
 class EvidenceReview(BaseModel):
@@ -909,6 +932,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Web UI: static files only; every piece of data still goes through the authenticated API
+app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+
+@app.get("/", include_in_schema=False)
+def web_ui():
+    return FileResponse(STATIC_DIR / "index.html")
 
 # Routes: auth
 @app.post("/auth/register", response_model=ProfessionalOut, status_code=201)

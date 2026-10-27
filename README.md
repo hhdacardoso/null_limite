@@ -53,6 +53,7 @@ python scripts/seed.py             # dados de demo (apaga o banco atual)
 uvicorn main:app --reload --port 8000
 ```
 
+- Interface web: http://localhost:8000
 - Swagger UI: http://localhost:8000/docs
 - Health: http://localhost:8000/health
 
@@ -61,7 +62,21 @@ uvicorn main:app --reload --port 8000
 | Papel | Login | Senha |
 |---|---|---|
 | Gestor | `gestor1@nexora.demo`, `gestor2@nexora.demo` | `demo123` |
+| Funcionário da demo (roteiro abaixo) | `funcionario@nexora.demo` | `demo123` |
 | Profissional | `nome.sobrenome@nexora.demo` (100 perfis; veja em `data/profiles/` o campo `full_name`) | `demo123` |
+
+### Interface web
+
+Em http://localhost:8000, HTML e JS puros servidos pelo próprio FastAPI (sem build, sem CDN), usando a mesma API autenticada.
+
+- **Gestor:** Editais (equipe recomendada com nota explicada por critério, ranking por vaga e botão para aprovar os comprovantes que mais sobem a nota), Comprovantes (fila para aprovar/rejeitar, com download do arquivo) e Saúde da base (indicadores, quem cobrar primeiro, ranking por equipe e top 10).
+- **Profissional:** Meu perfil (pontos, nível, badges, missões com impacto em editais, envio de comprovante, pedido de validação de formação sem arquivo e cadastro de certificação, curso ou projeto) e Equipes (ranking agregado).
+
+Roteiro da demo:
+1. Entre como `funcionario@nexora.demo`: perfil em atenção, PMP e MBA sem comprovante, e as missões mostram que valem +10 e +5 na vaga de Gerente de Projeto do edital.
+2. Envie o PDF do PMP e peça a validação do MBA sem arquivo.
+3. Entre como `gestor1@nexora.demo`, aba Comprovantes: aprove os dois.
+4. Aba Editais: o funcionário entra na equipe recomendada como Gerente de Projeto e a nota técnica sobe de 39 para 43.
 
 No Swagger, clique em **Authorize** e entre com o e-mail no campo `username`.
 
@@ -180,6 +195,7 @@ null_limite/
 │   ├── ingest/structure.py  # texto -> JSON via LLM (Groq)
 │   └── seed.py              # JSON -> banco de demo
 ├── data/profiles/           # 100 perfis anonimizados (versionado)
+├── static/                  # interface web (index.html, app.js, app.css)
 ├── data/bids/               # editais de exemplo carregados pelo seed
 ├── tests/                   # pytest (matching e equipe recomendada)
 ├── requirements.txt
