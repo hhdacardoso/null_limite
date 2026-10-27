@@ -30,29 +30,42 @@ uvicorn main:app --reload --port 8000
 # - Health: http://localhost:8000/health
 ```
 
-## Endpoints (S1)
+## Endpoints
 
 ### Auth
-- `POST /auth/register` - Cadastra candidato (email, nome, senha)
+- `POST /auth/register` - Cadastra profissional (email, nome, cargo opcional, senha)
 - `POST /auth/login` - Login (form OAuth2, retorna JWT)
 - `GET /auth/me` - Perfil do usuário logado (Bearer token)
 
-### Currículos (Resumes)
-- `POST /candidates/me/resumes` - Upload PDF (multipart/form-data, retorna 202)
-- `GET /candidates/me/resumes` - Lista currículos do usuário
+### Perfil do profissional (`/professionals/me`)
+- `PATCH /professionals/me` - Atualiza nome/cargo
+- `POST|GET /professionals/me/resumes` - Upload (PDF, retorna 202) / lista currículos
+- `POST|GET /professionals/me/certificates` - Certificações (PMP, ITIL...)
+- `POST|GET /professionals/me/projects` - Experiência em projetos (cliente, setor, papel, período)
+- `POST|GET /professionals/me/education` - Formação (`technical`, `bachelor`, `specialization`, `mba`, `master`, `doctorate`)
+- `POST|GET /professionals/me/evidences` - Comprovantes (PDF/PNG/JPG). Upload multipart com `target_type` (`certificate`|`project`|`education`), `target_id` e `file`
 
-### Certificados
-- `POST /candidates/me/certificates` - Adiciona certificado
-- `GET /candidates/me/certificates` - Lista certificados
+### Validação de comprovantes (gestor)
+- `GET /evidences?status=pending` - Fila de comprovantes para revisar
+- `POST /evidences/{id}/review` - Aprova ou rejeita (`{"status": "approved"|"rejected", "note": "..."}`). Gestor não revisa o próprio comprovante
+- `GET /evidences/{id}/file` - Baixa o arquivo (só o dono ou gestor)
+
+Gestores são os emails listados em `MANAGER_EMAILS` no momento do cadastro.
 
 ### Health
 - `GET /health` - Status do serviço
 
 ## Banco de dados
 SQLite local (`null_limite.db`) criado automaticamente na primeira execução. Tabelas:
-- `candidates` - usuários
+- `professionals` - usuários (papel `professional` ou `manager`)
 - `resumes` - PDFs uploadados
-- `certificates` - certificados do candidato
+- `certificates`, `projects`, `education` - itens do perfil que pontuam em editais
+- `evidences` - comprovante de um item do perfil, com status `pending`/`approved`/`rejected`
+
+Não há migrations: ao mudar o modelo, apague `null_limite.db` para recriar.
+
+## Privacidade (LGPD)
+Uploads não são servidos publicamente. Comprovantes só são baixados pelo dono ou por gestores via endpoint autenticado.
 
 ## Estrutura
 ```
@@ -75,6 +88,7 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=10080
 UPLOAD_DIR=./uploads
 MAX_FILE_SIZE=10485760
+MANAGER_EMAILS=gestor@ex.com,outro@ex.com
 ```
 
 ## Testando rápido (curl)
@@ -83,7 +97,7 @@ MAX_FILE_SIZE=10485760
 # Registra
 curl -X POST http://localhost:8000/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"email":"test@ex.com","full_name":"Teste","password":"123456"}'
+  -d '{"email":"test@ex.com","full_name":"Teste","job_title":"Gerente de Projetos","password":"123456"}'
 
 # Login (pega token)
 curl -X POST http://localhost:8000/auth/login \
@@ -91,13 +105,13 @@ curl -X POST http://localhost:8000/auth/login \
   -d "username=test@ex.com&password=123456"
 
 # Upload PDF (use token do login)
-curl -X POST http://localhost:8000/candidates/me/resumes \
+curl -X POST http://localhost:8000/professionals/me/resumes \
   -H "Authorization: Bearer SEU_TOKEN" \
   -F "file=@curriculo.pdf"
 
 # Lista
 curl -H "Authorization: Bearer SEU_TOKEN" \
-  http://localhost:8000/candidates/me/resumes
+  http://localhost:8000/professionals/me/resumes
 ```
 
 ## Próximas sprints (não implementadas)
