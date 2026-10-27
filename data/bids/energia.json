@@ -1,0 +1,42 @@
+{
+  "title": "Modernização do sistema comercial – Distribuidora de Energia (fictícia)",
+  "client": "Distribuidora de Energia (fictícia)",
+  "description": "Edital de exemplo para a demo. Os critérios do Gerente de Projeto reproduzem o exemplo do case.",
+  "roles": [
+    {
+      "name": "Gerente de Projeto",
+      "quantity": 1,
+      "criteria": [
+        {"description": "Gerente de projeto com certificação PMP", "type": "certification", "max_points": 10,
+         "keywords": ["pmp", "project management professional"]},
+        {"description": "Experiência comprovada em projetos do setor de energia (2 pts por projeto)", "type": "sector_projects",
+         "points_per_item": 2, "max_points": 8, "sectors": ["energia"]},
+        {"description": "Pós-graduação", "type": "education", "max_points": 5, "min_level": "specialization"},
+        {"description": "Pelo menos 10 anos de experiência profissional", "type": "years_experience", "max_points": 5, "min_years": 10}
+      ]
+    },
+    {
+      "name": "Analista de Negócios",
+      "quantity": 1,
+      "criteria": [
+        {"description": "Certificação em Scrum (CSM, PSM ou equivalente)", "type": "certification", "max_points": 5,
+         "keywords": ["scrum master", "csm", "psm", "certified scrum"]},
+        {"description": "Projetos no setor de energia (2 pts por projeto)", "type": "sector_projects",
+         "points_per_item": 2, "max_points": 6, "sectors": ["energia"]},
+        {"description": "Pós-graduação", "type": "education", "max_points": 3, "min_level": "specialization"},
+        {"description": "Pelo menos 5 anos de experiência profissional", "type": "years_experience", "max_points": 3, "min_years": 5}
+      ]
+    },
+    {
+      "name": "Desenvolvedor Java",
+      "quantity": 1,
+      "criteria": [
+        {"description": "Certificação Java (OCP, SCJP ou equivalente)", "type": "certification", "max_points": 5,
+         "keywords": ["java", "ocp", "ocjp", "scjp", "oracle certified"]},
+        {"description": "Projetos nos setores de tecnologia ou energia (2 pts por projeto)", "type": "sector_projects",
+         "points_per_item": 2, "max_points": 6, "sectors": ["tecnologia", "energia"]},
+        {"description": "Pelo menos 5 anos de experiência profissional", "type": "years_experience", "max_points": 3, "min_years": 5}
+      ]
+    }
+  ]
+}

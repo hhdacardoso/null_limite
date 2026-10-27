@@ -15,11 +15,14 @@ python scripts/seed.py                 # recria o banco com dados de demo (apaga
 uvicorn main:app --reload --port 8000  # Swagger em /docs
 ```
 
-Não há suíte de testes ainda. Para validar uma mudança, use `fastapi.testclient.TestClient` (precisa de `pip install httpx2`) com um banco temporário:
+Testes com pytest (usam banco e uploads temporários, nunca o `null_limite.db`):
 
 ```bash
-DATABASE_URL=sqlite:////tmp/test.db UPLOAD_DIR=/tmp/test_uploads python -c "from fastapi.testclient import TestClient; import main; ..."
+pip install -r requirements-dev.txt
+python -m pytest -q tests
 ```
+
+Para validar algo fora dos testes, use `fastapi.testclient.TestClient` com `DATABASE_URL` e `UPLOAD_DIR` apontando para um diretório temporário.
 
 ## Arquitetura
 
@@ -28,6 +31,7 @@ DATABASE_URL=sqlite:////tmp/test.db UPLOAD_DIR=/tmp/test_uploads python -c "from
 - Auth: JWT com `sub` = e-mail. `get_current_user` para qualquer usuário logado, `require_manager` para rotas de gestor.
 - Itens do perfil (`Certificate`, `Project`, `Education`) pertencem a um `Professional`. `Evidence` aponta para exatamente um deles (FK `certificate_id`, `project_id` ou `education_id`) e tem status `pending`/`approved`/`rejected`.
 - No matching, **só item com comprovante aprovado pontua**; item pendente pode aparecer como pontuação potencial.
+- Matching (`/bids`): edital tem vagas (`BidRole`) e cada vaga tem critérios (`BidCriterion`, tipos `certification`, `sector_projects`, `education`, `years_experience`). Anos de experiência comprovados vêm dos projetos aprovados; o `years_experience` declarado só conta como potencial. A equipe é escolhida por busca exata sem repetir pessoa (`best_team`), limitada a `MAX_TEAM_SLOTS` vagas.
 - Setores de projeto são normalizados: `energia`, `financeiro`, `seguros`, `saude`, `governo`, `varejo`, `telecom`, `tecnologia`, `industria`, `logistica`, `educacao`, `outros`.
 - Datas são UTC naive (`utcnow()` em `main.py`); não use `datetime.utcnow()`.
 

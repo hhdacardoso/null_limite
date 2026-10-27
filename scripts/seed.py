@@ -6,8 +6,9 @@
   moved to look recently updated and ~30% to look 2-4 years stale (fictitious data,
   this only makes the freshness/gamification demo realistic)
 - Fictitious evidence PDFs with a mix of approved / pending / missing
+- Example bids from data/bids/*.json
 
-Usage: python scripts/seed.py [--profiles data/profiles]
+Usage: python scripts/seed.py [--profiles data/profiles] [--bids data/bids]
 WARNING: deletes every row in the configured database.
 """
 import argparse
@@ -115,6 +116,7 @@ def add_evidence(db, rng, upload_dir: Path, owner, reviewer, label: str, approve
 def main_seed():
     parser = argparse.ArgumentParser()
     parser.add_argument("--profiles", type=Path, default=Path("data/profiles"))
+    parser.add_argument("--bids", type=Path, default=Path("data/bids"))
     args = parser.parse_args()
 
     profiles = [json.loads(p.read_text(encoding="utf8")) for p in sorted(args.profiles.glob("p*.json"))]
@@ -200,10 +202,13 @@ def main_seed():
             db.add(item)
             db.flush()
             add_evidence(db, rng, upload_dir, professional, reviewer, proj["name"], 0.3, 0.15, project_id=item.id)
+
+    for path in sorted(args.bids.glob("*.json")):
+        db.add(main.build_bid(main.BidCreate.model_validate_json(path.read_text(encoding="utf8")), managers[0].id))
     db.commit()
 
     counts = {model.__tablename__: db.query(model).count()
-              for model in (main.Professional, main.Certificate, main.Education, main.Project, main.Evidence)}
+              for model in (main.Professional, main.Certificate, main.Education, main.Project, main.Evidence, main.Bid)}
     print(f"Seeded {len(profiles)} profiles ({fresh} recently updated, {len(profiles) - fresh} stale): {counts}")
     print(f"Logins: <nome.sobrenome>@nexora.demo, gestor1@nexora.demo, gestor2@nexora.demo / password {PASSWORD}")
     db.close()
