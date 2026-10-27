@@ -1,9 +1,10 @@
 #!/bin/bash
-# Null Limite - S1 Fundação - Script de inicialização
+# Null Limite - script de inicialização: cria a .venv, instala dependências e sobe o servidor
 
 set -e
+cd "$(dirname "$0")"
 
-echo "=== Null Limite S1 - Fundação ==="
+echo "=== Null Limite ==="
 echo ""
 
 # Verifica Python
@@ -15,15 +16,24 @@ fi
 PYTHON_VERSION=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
 echo "✅ Python $PYTHON_VERSION encontrado"
 
+# Cria a venv do projeto (não instala nada no Python do sistema)
+if [ ! -d .venv ]; then
+    echo "📦 Criando .venv..."
+    python3 -m venv .venv
+fi
+
 # Verifica dependências
 echo "📦 Verificando dependências..."
-python3 -c "import fastapi, uvicorn, sqlalchemy, pydantic, jose, passlib, aiofiles" 2>/dev/null || {
+.venv/bin/python -c "import fastapi, uvicorn, sqlalchemy, pydantic, jose, bcrypt, aiofiles, dotenv" 2>/dev/null || {
     echo "⚠️  Dependências faltando. Instalando..."
-    pip3 install --break-system-packages -r requirements.txt -q
+    .venv/bin/pip install -q -r requirements.txt
 }
 
-# Cria diretório de uploads
-mkdir -p uploads
+# Popula o banco com os dados de demo na primeira execução
+if [ ! -f null_limite.db ]; then
+    echo "🌱 Banco não encontrado, rodando seed de demo..."
+    .venv/bin/python scripts/seed.py
+fi
 
 # Inicia servidor
 echo "🚀 Iniciando servidor em http://localhost:8000"
@@ -33,4 +43,4 @@ echo ""
 echo "Pressione Ctrl+C para parar"
 echo ""
 
-uvicorn main:app --reload --port 8000 --host 0.0.0.0
+.venv/bin/uvicorn main:app --reload --port 8000 --host 0.0.0.0
