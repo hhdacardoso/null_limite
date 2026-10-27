@@ -3,7 +3,7 @@ import random
 from datetime import datetime
 
 import main
-from conftest import auth, make_user
+from conftest import add_item, auth, make_user
 
 PM_BID = {
     "title": "Edital de teste",
@@ -17,19 +17,6 @@ PM_BID = {
         ],
     }],
 }
-
-
-def add_item(db, owner, item, status=None):
-    """Add a profile item and, unless status is None, one evidence with that status."""
-    item.professional_id = owner.id
-    db.add(item)
-    db.flush()
-    if status:
-        target = {main.Certificate: "certificate_id", main.Project: "project_id", main.Education: "education_id"}[type(item)]
-        db.add(main.Evidence(professional_id=owner.id, filename="x.pdf", file_path="/nonexistent", file_size=1,
-                             status=main.EvidenceStatus(status), **{target: item.id}))
-    db.commit()
-    return item
 
 
 def energy_project(year):

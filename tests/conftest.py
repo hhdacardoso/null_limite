@@ -37,6 +37,19 @@ def make_user(db, email, role=main.UserRole.PROFESSIONAL, **fields):
     return user
 
 
+def add_item(db, owner, item, status=None, with_file=True):
+    """Add a profile item and, unless status is None, one evidence with that status."""
+    item.professional_id = owner.id
+    db.add(item)
+    db.flush()
+    if status:
+        target = {main.Certificate: "certificate_id", main.Project: "project_id", main.Education: "education_id"}[type(item)]
+        file_fields = {"filename": "x.pdf", "file_path": "/nonexistent", "file_size": 1} if with_file else {}
+        db.add(main.Evidence(professional_id=owner.id, status=main.EvidenceStatus(status), **file_fields, **{target: item.id}))
+    db.commit()
+    return item
+
+
 def auth(client, email):
     token = client.post("/auth/login", data={"username": email, "password": "demo123"}).json()["access_token"]
     return {"Authorization": f"Bearer {token}"}

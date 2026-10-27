@@ -59,6 +59,11 @@ class UserRole(str, enum.Enum):
     PROFESSIONAL = "professional"
     MANAGER = "manager"
 
+class Team(str, enum.Enum):
+    PROJECT_MANAGEMENT = "gestao_projetos"
+    BUSINESS_ANALYSIS = "analise_negocios"
+    ENGINEERING = "engenharia"
+
 class Professional(Base):
     __tablename__ = "professionals"
     id = Column(Integer, primary_key=True, index=True)
@@ -68,6 +73,7 @@ class Professional(Base):
     job_title = Column(String(255), nullable=True)
     years_experience = Column(Integer, nullable=True)
     role = Column(Enum(UserRole), default=UserRole.PROFESSIONAL, nullable=False)
+    team = Column(Enum(Team), nullable=True)
     created_at = Column(DateTime, default=utcnow)
 
 class ResumeStatus(str, enum.Enum):
@@ -148,9 +154,10 @@ class Evidence(Base):
     certificate_id = Column(Integer, ForeignKey("certificates.id", ondelete="CASCADE"), nullable=True, index=True)
     project_id = Column(Integer, ForeignKey("projects.id", ondelete="CASCADE"), nullable=True, index=True)
     education_id = Column(Integer, ForeignKey("education.id", ondelete="CASCADE"), nullable=True, index=True)
-    filename = Column(String(255), nullable=False)
-    file_path = Column(String(500), nullable=False)
-    file_size = Column(Integer, nullable=False)
+    # No file = education the professional asked a manager to validate without a document
+    filename = Column(String(255), nullable=True)
+    file_path = Column(String(500), nullable=True)
+    file_size = Column(Integer, nullable=True)
     status = Column(Enum(EvidenceStatus), default=EvidenceStatus.PENDING, nullable=False)
     review_note = Column(Text, nullable=True)
     reviewed_by = Column(Integer, ForeignKey("professionals.id", ondelete="SET NULL"), nullable=True)
@@ -218,12 +225,14 @@ class ProfessionalCreate(BaseModel):
     full_name: str
     job_title: Optional[str] = None
     years_experience: Optional[int] = Field(default=None, ge=0)
+    team: Optional[Team] = None
     password: str = Field(min_length=6, max_length=72)  # bcrypt limit
 
 class ProfessionalUpdate(BaseModel):
     full_name: Optional[str] = None
     job_title: Optional[str] = None
     years_experience: Optional[int] = Field(default=None, ge=0)
+    team: Optional[Team] = None
 
 class ProfessionalOut(BaseModel):
     id: int
@@ -232,6 +241,7 @@ class ProfessionalOut(BaseModel):
     job_title: Optional[str] = None
     years_experience: Optional[int] = None
     role: UserRole
+    team: Optional[Team] = None
     created_at: datetime
     model_config = ConfigDict(from_attributes=True)
 
@@ -295,8 +305,8 @@ class EvidenceOut(BaseModel):
     certificate_id: Optional[int] = None
     project_id: Optional[int] = None
     education_id: Optional[int] = None
-    filename: str
-    file_size: int
+    filename: Optional[str] = None
+    file_size: Optional[int] = None
     status: EvidenceStatus
     review_note: Optional[str] = None
     reviewed_by: Optional[int] = None
@@ -436,6 +446,91 @@ class TeamOut(BaseModel):
     slots: List[TeamSlot]
     pending_gains: List[PendingGain]  # approving these evidences raises the team score the most
 
+class ItemProgress(BaseModel):
+    type: EvidenceTarget
+    id: int
+    label: str
+    status: str  # approved, pending, pending_no_file, rejected, missing or expired
+    points: int
+
+class Badge(BaseModel):
+    code: str
+    name: str
+    description: str
+
+class BidImpact(BaseModel):
+    bid_id: int
+    bid_title: str
+    role_name: str
+    gain: int  # technical score gained in this role if the item gets approved
+
+class Mission(BaseModel):
+    action: str  # upload_evidence, attach_file, resend_evidence, renew_certificate, update_profile
+    title: str
+    item_type: Optional[EvidenceTarget] = None
+    item_id: Optional[int] = None
+    profile_points: int
+    bid_impact: List[BidImpact]
+
+class GamificationOut(BaseModel):
+    professional_id: int
+    full_name: str
+    team: Optional[Team] = None
+    points: int
+    items_points: int
+    freshness_bonus: int
+    level: str
+    next_level: Optional[str] = None
+    points_to_next_level: Optional[int] = None
+    freshness: str  # atualizado, atencao, desatualizado
+    days_since_update: int
+    position: int
+    total_professionals: int
+    top_percent: int
+    team_position: Optional[int] = None
+    team_size: Optional[int] = None
+    badges: List[Badge]
+    missions: List[Mission]
+    items: List[ItemProgress]
+
+class TeamBoardEntry(BaseModel):
+    team: Optional[Team] = None
+    members: int
+    avg_points: float
+    updated_pct: float
+    proven_items_pct: float
+
+class ProfessionalBoardEntry(BaseModel):
+    position: int
+    professional_id: int
+    full_name: str
+    team: Optional[Team] = None
+    points: int
+    level: str
+    freshness: str
+    days_since_update: int
+
+class StaleProfile(BaseModel):
+    professional_id: int
+    full_name: str
+    team: Optional[Team] = None
+    freshness: str
+    days_since_update: int
+    bid_potential_points: int  # best potential score across open bids: who matters most to chase
+
+class OverviewOut(BaseModel):
+    professionals: int
+    updated: int
+    attention: int
+    stale: int
+    updated_pct: float
+    items: int
+    approved_items: int
+    proven_items_pct: float
+    pending_evidences: int
+    pending_without_file: int
+    stale_profiles: List[StaleProfile]
+
 # Security functions
 def verify_password(plain: str, hashed: str) -> bool:
     return bcrypt.checkpw(plain.encode(), hashed.encode())
@@ -542,7 +637,12 @@ def load_profiles(db: Session) -> dict[int, ProfileSnapshot]:
 
 def item_status(profile: ProfileSnapshot, target: EvidenceTarget, item_id: int,
                 assume_approved: frozenset = frozenset()) -> tuple[str, Optional[int]]:
-    """Best status among the item's evidences; `assume_approved` simulates approving pending ones."""
+    """Best status among the item's evidences.
+
+    `assume_approved` simulates approvals: it holds evidence ids and/or (target, item id) keys.
+    """
+    if (target, item_id) in assume_approved:
+        return ("approved", None)
     best = ("missing", None)
     for evidence in profile.evidences.get((target, item_id), []):
         status = "approved" if evidence.id in assume_approved else evidence.status.value
@@ -678,6 +778,127 @@ def best_team(slots: list[list[CandidateScore]]) -> list[Optional[CandidateScore
     search(0, set(), [], 0, 0)
     return best["team"]
 
+def recommend_team(bid: Bid, profiles: dict[int, ProfileSnapshot], now: datetime) -> tuple[list[BidRole], list[Optional[CandidateScore]]]:
+    slot_roles = [role for role in bid.roles for _ in range(role.quantity)]
+    rankings = {role.id: rank_role(role, profiles, now)[:len(slot_roles)] for role in bid.roles}
+    return slot_roles, best_team([rankings[role.id] for role in slot_roles])
+
+# Gamification: points come from the current profile state (nothing to farm), mostly from approved evidence
+ITEM_POINTS = {"approved": 12, "pending": 5, "pending_no_file": 2, "rejected": 0, "missing": 0, "expired": 0}
+FRESHNESS_TIERS = [(365, "atualizado", 20), (730, "atencao", 10)]  # (max days since update, status, bonus)
+# (min points, name); calibrated on the demo base to roughly 40% / 30% / 20% / 10%
+LEVELS = [(0, "Bronze"), (40, "Prata"), (60, "Ouro"), (90, "Diamante")]
+
+@dataclass
+class ProfileProgress:
+    profile: ProfileSnapshot
+    items: list  # [(target, item, ItemProgress)]
+    items_points: int
+    freshness: str
+    freshness_bonus: int
+    days_since_update: int
+
+    @property
+    def points(self) -> int:
+        return self.items_points + self.freshness_bonus
+
+def profile_items(profile: ProfileSnapshot) -> list[tuple[EvidenceTarget, object, str]]:
+    return ([(EvidenceTarget.CERTIFICATE, c, c.name) for c in profile.certificates]
+            + [(EvidenceTarget.PROJECT, p, p.name) for p in profile.projects]
+            + [(EvidenceTarget.EDUCATION, e, f"{e.course} ({e.level.value})") for e in profile.education])
+
+def profile_progress(profile: ProfileSnapshot, now: datetime) -> ProfileProgress:
+    items = []
+    for target, item, label in profile_items(profile):
+        status, evidence_id = item_status(profile, target, item.id)
+        if target == EvidenceTarget.CERTIFICATE and item.expiry_date and item.expiry_date < now:
+            status = "expired"
+        elif status == "pending" and not next(e for e in profile.evidences[(target, item.id)] if e.id == evidence_id).file_path:
+            status = "pending_no_file"
+        items.append((target, item, ItemProgress(type=target, id=item.id, label=label, status=status,
+                                                 points=ITEM_POINTS[status])))
+    # Last time the professional touched the profile; manager reviews don't count
+    dates = [item.created_at for _, item, _ in items] + [e.created_at for es in profile.evidences.values() for e in es]
+    last_update = max((d for d in dates if d), default=profile.professional.created_at or now)
+    days = max((now - last_update).days, 0)
+    freshness, bonus = next(((status, bonus) for limit, status, bonus in FRESHNESS_TIERS if days <= limit), ("desatualizado", 0))
+    return ProfileProgress(profile=profile, items=items, items_points=sum(p.points for _, _, p in items),
+                           freshness=freshness, freshness_bonus=bonus, days_since_update=days)
+
+def level_for(points: int) -> tuple[str, Optional[str], Optional[int]]:
+    """Current level, next level and points missing to reach it."""
+    current = [name for minimum, name in LEVELS if points >= minimum][-1]
+    upcoming = next(((name, minimum - points) for minimum, name in LEVELS if minimum > points), (None, None))
+    return current, *upcoming
+
+def professional_progress(profiles: dict[int, ProfileSnapshot], now: datetime) -> list[ProfileProgress]:
+    """Progress of everyone but managers, best first."""
+    progress = [profile_progress(p, now) for p in profiles.values() if p.professional.role == UserRole.PROFESSIONAL]
+    progress.sort(key=lambda p: p.points, reverse=True)
+    return progress
+
+def badges_for(progress: ProfileProgress, recommended: bool) -> list[Badge]:
+    statuses = [(target, item, p.status) for target, item, p in progress.items]
+    badges = []
+    if len(statuses) >= 3 and all(status == "approved" for _, _, status in statuses):
+        badges.append(Badge(code="perfil_comprovado", name="Perfil comprovado", description="Todos os itens do perfil têm comprovante aprovado"))
+    if progress.freshness == "atualizado":
+        badges.append(Badge(code="em_dia", name="Em dia", description="Perfil atualizado nos últimos 12 meses"))
+    if any(target == EvidenceTarget.CERTIFICATE and status == "approved" for target, _, status in statuses):
+        badges.append(Badge(code="certificado", name="Certificado", description="Certificação válida e comprovada"))
+    sectors = Counter(item.sector for target, item, status in statuses
+                      if target == EvidenceTarget.PROJECT and status == "approved" and item.sector and item.sector != "outros")
+    for sector, count in sorted(sectors.items()):
+        if count >= 3:
+            badges.append(Badge(code=f"especialista_{sector}", name=f"Especialista em {sector}",
+                                description=f"{count} projetos comprovados no setor {sector}"))
+    if recommended:
+        badges.append(Badge(code="escalado", name="Escalado", description="Está na equipe recomendada de um edital"))
+    return badges
+
+def bid_impact(profile: ProfileSnapshot, target: EvidenceTarget, item_id: int, bids: list[Bid], now: datetime,
+               base_scores: dict[int, CandidateScore]) -> list[BidImpact]:
+    impact = []
+    for bid in bids:
+        for role in bid.roles:
+            gain = score_candidate(role, profile, now, frozenset({(target, item_id)})).points - base_scores[role.id].points
+            if gain > 0:
+                impact.append(BidImpact(bid_id=bid.id, bid_title=bid.title, role_name=role.name, gain=gain))
+    return sorted(impact, key=lambda i: i.gain, reverse=True)
+
+def missions_for(progress: ProfileProgress, bids: list[Bid], now: datetime) -> list[Mission]:
+    profile = progress.profile
+    base_scores = {role.id: score_candidate(role, profile, now) for bid in bids for role in bid.roles}
+    missions = []
+    for target, item, item_progress in progress.items:
+        label, status = item_progress.label, item_progress.status
+        if status == "missing":
+            action, title = "upload_evidence", f"Envie o comprovante de {label}"
+            if target == EvidenceTarget.EDUCATION:
+                title += " (sem o documento, peça a validação ao gestor)"
+        elif status == "pending_no_file":
+            action, title = "attach_file", f"Anexe o comprovante de {label} para facilitar a validação"
+        elif status == "rejected":
+            action, title = "resend_evidence", f"Reenvie o comprovante de {label}"
+        elif status == "expired":
+            action, title = "renew_certificate", f"Renove a certificação {label}"
+        else:
+            continue  # approved, or waiting for the manager
+        impact = [] if status == "expired" else bid_impact(profile, target, item.id, bids, now, base_scores)
+        missions.append(Mission(action=action, title=title, item_type=target, item_id=item.id,
+                                profile_points=ITEM_POINTS["approved"] - item_progress.points, bid_impact=impact))
+    if progress.freshness != "atualizado":
+        missions.append(Mission(action="update_profile", title="Atualize seu perfil com projetos e certificações recentes",
+                                profile_points=FRESHNESS_TIERS[0][2] - progress.freshness_bonus, bid_impact=[]))
+    missions.sort(key=lambda m: (max((i.gain for i in m.bid_impact), default=0), m.profile_points), reverse=True)
+    return missions
+
+def position_of(progress: ProfileProgress, ranked: list[ProfileProgress]) -> int:
+    return 1 + sum(1 for p in ranked if p.points > progress.points)
+
+def pct(part: int, total: int) -> float:
+    return round(100 * part / total, 1) if total else 0.0
+
 # App
 app = FastAPI(title="Null Limite")
 
@@ -699,6 +920,7 @@ def register(data: ProfessionalCreate, db: Session = Depends(get_db)):
         full_name=data.full_name,
         job_title=data.job_title,
         years_experience=data.years_experience,
+        team=data.team,
         hashed_password=get_password_hash(data.password),
         role=UserRole.MANAGER if data.email.lower() in MANAGER_EMAILS else UserRole.PROFESSIONAL,
     )
@@ -773,18 +995,22 @@ def list_education(user: Professional = Depends(get_current_user), db: Session =
 async def upload_evidence(
     target_type: EvidenceTarget = Form(...),
     target_id: int = Form(...),
-    file: UploadFile = File(...),
+    file: Optional[UploadFile] = File(None),
     user: Professional = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
+    """Without a file, only education can be sent: a manager validates it by other means."""
     model, fk_column = EVIDENCE_TARGETS[target_type]
     target = db.query(model).filter(model.id == target_id, model.professional_id == user.id).first()
     if not target:
         raise HTTPException(404, f"{target_type.value} not found")
-    file_path, file_size = await save_upload(file, EVIDENCE_EXTENSIONS)
+    has_file = file is not None and bool(file.filename)
+    if not has_file and target_type != EvidenceTarget.EDUCATION:
+        raise HTTPException(400, "A file is required for certificates and projects")
+    file_path, file_size = await save_upload(file, EVIDENCE_EXTENSIONS) if has_file else (None, None)
     evidence = Evidence(
         professional_id=user.id,
-        filename=file.filename,
+        filename=file.filename if has_file else None,
         file_path=file_path,
         file_size=file_size,
         **{fk_column: target.id},
@@ -835,6 +1061,8 @@ def download_evidence(evidence_id: int, user: Professional = Depends(get_current
     evidence = db.get(Evidence, evidence_id)
     if not evidence or (evidence.professional_id != user.id and user.role != UserRole.MANAGER):
         raise HTTPException(404, "Evidence not found")
+    if not evidence.file_path:
+        raise HTTPException(404, "Evidence has no file")
     return FileResponse(evidence.file_path, filename=evidence.filename)
 
 # Routes: bids and matching (managers; responses expose other professionals' profiles)
@@ -884,9 +1112,7 @@ def bid_ranking(
 def bid_team(bid_id: int, _: Professional = Depends(require_manager), db: Session = Depends(get_db)):
     bid = get_bid_or_404(db, bid_id)
     profiles, now = load_profiles(db), utcnow()
-    slot_roles = [role for role in bid.roles for _ in range(role.quantity)]
-    rankings = {role.id: rank_role(role, profiles, now)[:len(slot_roles)] for role in bid.roles}
-    team = best_team([rankings[role.id] for role in slot_roles])
+    slot_roles, team = recommend_team(bid, profiles, now)
 
     gains = []
     for role, member in zip(slot_roles, team):
@@ -906,6 +1132,91 @@ def bid_team(bid_id: int, _: Professional = Depends(require_manager), db: Sessio
         points=sum(m.points for m in team if m), potential_points=sum(m.potential_points for m in team if m),
         slots=[TeamSlot(role_id=role.id, role_name=role.name, member=member) for role, member in zip(slot_roles, team)],
         pending_gains=gains,
+    )
+
+# Routes: gamification
+@app.get("/professionals/me/gamification", response_model=GamificationOut)
+def my_gamification(user: Professional = Depends(get_current_user), db: Session = Depends(get_db)):
+    profiles, now, bids = load_profiles(db), utcnow(), db.query(Bid).all()
+    me = profile_progress(profiles[user.id], now)
+    ranked = professional_progress(profiles, now)
+    team_ranked = [p for p in ranked if user.team and p.profile.professional.team == user.team]
+    recommended = any(member and member.professional_id == user.id
+                      for bid in bids for member in recommend_team(bid, profiles, now)[1])
+    level, next_level, missing = level_for(me.points)
+    position = position_of(me, ranked)
+    return GamificationOut(
+        professional_id=user.id, full_name=user.full_name, team=user.team, points=me.points,
+        items_points=me.items_points, freshness_bonus=me.freshness_bonus, level=level, next_level=next_level,
+        points_to_next_level=missing, freshness=me.freshness, days_since_update=me.days_since_update,
+        position=position, total_professionals=len(ranked), top_percent=-(-100 * position // max(len(ranked), 1)),
+        team_position=position_of(me, team_ranked) if team_ranked else None,
+        team_size=len(team_ranked) if team_ranked else None,
+        badges=badges_for(me, recommended), missions=missions_for(me, bids, now),
+        items=[p for _, _, p in me.items],
+    )
+
+@app.get("/leaderboard/teams", response_model=List[TeamBoardEntry])
+def team_leaderboard(_: Professional = Depends(get_current_user), db: Session = Depends(get_db)):
+    # Aggregates only: individual scores are visible to managers alone (LGPD)
+    by_team = {}
+    for progress in professional_progress(load_profiles(db), utcnow()):
+        by_team.setdefault(progress.profile.professional.team, []).append(progress)
+    board = []
+    for team, members in by_team.items():
+        statuses = [p.status for m in members for _, _, p in m.items]
+        board.append(TeamBoardEntry(
+            team=team, members=len(members), avg_points=round(sum(m.points for m in members) / len(members), 1),
+            updated_pct=pct(sum(m.freshness == "atualizado" for m in members), len(members)),
+            proven_items_pct=pct(statuses.count("approved"), len(statuses)),
+        ))
+    return sorted(board, key=lambda t: t.avg_points, reverse=True)
+
+@app.get("/leaderboard/professionals", response_model=List[ProfessionalBoardEntry])
+def professional_leaderboard(
+    team: Optional[Team] = None,
+    limit: int = Query(default=20, ge=1, le=200),
+    _: Professional = Depends(require_manager),
+    db: Session = Depends(get_db)
+):
+    ranked = [p for p in professional_progress(load_profiles(db), utcnow())
+              if team is None or p.profile.professional.team == team]
+    return [
+        ProfessionalBoardEntry(
+            position=position_of(p, ranked), professional_id=p.profile.professional.id,
+            full_name=p.profile.professional.full_name, team=p.profile.professional.team, points=p.points,
+            level=level_for(p.points)[0], freshness=p.freshness, days_since_update=p.days_since_update,
+        )
+        for p in ranked[:limit]
+    ]
+
+@app.get("/gamification/overview", response_model=OverviewOut)
+def gamification_overview(_: Professional = Depends(require_manager), db: Session = Depends(get_db)):
+    profiles, now, bids = load_profiles(db), utcnow(), db.query(Bid).all()
+    ranked = professional_progress(profiles, now)
+    statuses = [p.status for progress in ranked for _, _, p in progress.items]
+    freshness = Counter(p.freshness for p in ranked)
+    pending = db.query(Evidence).filter(Evidence.status == EvidenceStatus.PENDING)
+
+    stale = []
+    for progress in ranked:
+        if progress.freshness == "atualizado":
+            continue
+        potential = sum(max((score_candidate(role, progress.profile, now).potential_points for role in bid.roles), default=0)
+                        for bid in bids)
+        professional = progress.profile.professional
+        stale.append(StaleProfile(professional_id=professional.id, full_name=professional.full_name,
+                                  team=professional.team, freshness=progress.freshness,
+                                  days_since_update=progress.days_since_update, bid_potential_points=potential))
+    stale.sort(key=lambda s: (s.bid_potential_points, s.days_since_update), reverse=True)
+
+    return OverviewOut(
+        professionals=len(ranked), updated=freshness["atualizado"], attention=freshness["atencao"],
+        stale=freshness["desatualizado"], updated_pct=pct(freshness["atualizado"], len(ranked)),
+        items=len(statuses), approved_items=statuses.count("approved"),
+        proven_items_pct=pct(statuses.count("approved"), len(statuses)),
+        pending_evidences=pending.count(), pending_without_file=pending.filter(Evidence.file_path.is_(None)).count(),
+        stale_profiles=stale,
     )
 
 @app.get("/health")
