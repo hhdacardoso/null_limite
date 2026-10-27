@@ -3,11 +3,12 @@
 Backend mínimo para o HackatOhm CEFET-MG. Sprint 1: Auth, cadastro candidato, upload PDF, storage, modelo DB.
 
 ## Stack
-- **FastAPI** 0.109 (Python 3.10+)
-- **SQLAlchemy** 1.4 (sync, SQLite)
-- **Pydantic** 1.10
-- **python-jose** + **passlib** (JWT + bcrypt)
+- **FastAPI** 0.162 (Python 3.10+, testado em 3.14)
+- **SQLAlchemy** 2.1 (sync, SQLite)
+- **Pydantic** 2.14
+- **python-jose** + **bcrypt** (JWT + hash de senha)
 - **aiofiles** (async file upload)
+- **python-dotenv** (lê `.env`)
 
 ## Como rodar
 
@@ -59,6 +60,7 @@ null_limite/
 ├── main.py              # App completo (single-file)
 ├── requirements.txt     # Dependências
 ├── run.sh               # Script de inicialização
+├── .gitignore
 ├── null_limite.db       # SQLite (criado em runtime)
 ├── uploads/             # PDFs salvos (criado em runtime)
 └── README.md
