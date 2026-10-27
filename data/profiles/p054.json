@@ -1,0 +1,56 @@
+{
+  "id": "p054",
+  "full_name": "Diego Oliveira",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Java Full Stack Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Projeto Hanger Inc.",
+      "client": "Hanger Inc.",
+      "sector": "outros",
+      "role": "Desenvolvedor Java Full Stack Sênior",
+      "description": "Desenvolvimento de microserviços com Spring Boot, Angular e implantação em AWS/PCF.",
+      "start": "2016-01",
+      "end": null
+    },
+    {
+      "name": "Projeto Exelon Corp.",
+      "client": "Exelon Corp",
+      "sector": "energia",
+      "role": "Desenvolvedor Java Full Stack",
+      "description": "Desenvolvimento full‑stack Java, integração de serviços e suporte AWS.",
+      "start": "2014-06",
+      "end": "2015-12"
+    },
+    {
+      "name": "Projeto Gap Inc.",
+      "client": "Gap Inc.",
+      "sector": "varejo",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Implementação de backend com Hibernate e Spring, criação de APIs RESTful.",
+      "start": "2012-09",
+      "end": "2014-05"
+    },
+    {
+      "name": "Projeto Marsh & McLennan",
+      "client": "Marsh & McLennan Company",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento de aplicações J2EE, serviços SOAP e integração com JMS.",
+      "start": "2010-10",
+      "end": "2012-08"
+    },
+    {
+      "name": "Projeto HDFC",
+      "client": "HDFC",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de interfaces web com Struts, JSP e Hibernate.",
+      "start": "2009-11",
+      "end": "2010-09"
+    }
+  ]
+}

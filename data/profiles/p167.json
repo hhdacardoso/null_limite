@@ -1,0 +1,45 @@
+{
+  "id": "p167",
+  "full_name": "Samuel Freitas",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelors in Computers",
+      "institution": null,
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "Thermo Fisher",
+      "description": "Desenvolvimento de portal comercial e microserviços para gestão de produtos e pedidos.",
+      "end": null,
+      "name": "Portal Comercial Thermo Fisher",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "industria",
+      "start": "2017-01"
+    },
+    {
+      "client": "Vanguard",
+      "description": "Desenvolvimento de aplicação web para gestão de investimentos e serviços ao cliente.",
+      "end": "2016-12",
+      "name": "Sistema de Gestão de Investimentos",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "financeiro",
+      "start": "2015-07"
+    },
+    {
+      "client": "Bank of America",
+      "description": "Desenvolvimento e manutenção de plataforma de vendas e serviços bancários.",
+      "end": "2015-06",
+      "name": "Aplicação de Centro Bancário",
+      "role": "Desenvolvedor Java/J2EE",
+      "sector": "financeiro",
+      "start": "2014-01"
+    }
+  ],
+  "years_experience": 8
+}

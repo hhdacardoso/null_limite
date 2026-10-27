@@ -1,0 +1,99 @@
+{
+  "id": "p155",
+  "full_name": "Fernanda Araújo",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 10,
+  "certifications": [
+    {
+      "name": "Black Belt Six Sigma",
+      "issuer": "American Six Sigma Institute",
+      "issue_year": null
+    },
+    {
+      "name": "Green Belt Six Sigma",
+      "issuer": "American Six Sigma Institute",
+      "issue_year": null
+    },
+    {
+      "name": "International Scrum Master",
+      "issuer": "Scrum Alliance",
+      "issue_year": null
+    },
+    {
+      "name": "Project Management",
+      "issuer": "American Project Management (APM)",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "doctorate",
+      "course": "Ph.D. in Environmental & Resource Engineering",
+      "institution": "SUNY ESF College",
+      "completion_year": 2013
+    },
+    {
+      "level": "master",
+      "course": "Master’s Degree in Computer Science",
+      "institution": "IFESCU",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cygnet Info-Tech",
+      "client": "Cygnet Info-Tech",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios Sênior / Product Owner",
+      "description": "Gerenciou o backlog de produto, definiu roadmap e coordenou entregas em equipe SCRUM",
+      "start": "2017-07",
+      "end": null
+    },
+    {
+      "name": "RSNY (Healthcare Facility)",
+      "client": "RSNY",
+      "sector": "saude",
+      "role": "Analista de Negócios Six Sigma",
+      "description": "Liderou projetos de melhoria de processos e qualidade em ambiente hospitalar",
+      "start": "2017-01",
+      "end": "2017-06"
+    },
+    {
+      "name": "Northwestern Mutual Life Insurance and Financial Services",
+      "client": "Northwestern Mutual",
+      "sector": "financeiro",
+      "role": "Consultor de Negócios / Product Owner",
+      "description": "Gerenciou requisitos de segurança de TI e liderou iniciativas de melhoria de processos",
+      "start": "2014-09",
+      "end": "2016-03"
+    },
+    {
+      "name": "Barclays Bank",
+      "client": "Barclays",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Six Sigma",
+      "description": "Desenvolveu modelos de processos, análises de risco e planos de melhoria Lean Six Sigma",
+      "start": "2012-07",
+      "end": "2014-03"
+    },
+    {
+      "name": "Eaton Corporation",
+      "client": "Eaton",
+      "sector": "industria",
+      "role": "Analista de Negócios Six Sigma",
+      "description": "Apoio ao Product Manager na melhoria contínua de data centers e desenvolvimento de planos de teste",
+      "start": "2011-03",
+      "end": "2012-06"
+    },
+    {
+      "name": "Newpage Paper Corporation",
+      "client": "Newpage Paper Corporation",
+      "sector": "industria",
+      "role": "Gerente de Excelência Operacional Lean Six Sigma",
+      "description": "Implementou projetos de melhoria de qualidade e processos de produção de papel",
+      "start": "2008-02",
+      "end": "2011-01"
+    }
+  ]
+}

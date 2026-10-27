@@ -1,0 +1,47 @@
+{
+  "id": "p184",
+  "full_name": "Lucas Santos",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Analista de Negócios",
+  "projects": [
+    {
+      "client": "Southwest Airlines",
+      "description": "Melhoria do site e sistema de organização de detalhes de viagem para clientes registrados.",
+      "end": null,
+      "name": "Enhancement of Southwest Airlines Website",
+      "role": "Analista de Negócios",
+      "sector": "outros",
+      "start": "2016-10"
+    },
+    {
+      "client": "Health Edge",
+      "description": "Design de um sistema de processamento de reclamações eletrônicas (ECP) e integração de provedores de saúde.",
+      "end": "2016-10",
+      "name": "Electronic Claims Processing System",
+      "role": "Analista de Negócios",
+      "sector": "saude",
+      "start": "2015-07"
+    },
+    {
+      "client": "Chase",
+      "description": "Projeto focado em transparência de transações de cartão de crédito e melhoria da interface web para clientes.",
+      "end": "2015-07",
+      "name": "Credit Card Transaction Transparency",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2013-12"
+    },
+    {
+      "client": "Cigniti Technologies",
+      "description": "Criação de cenários de teste e casos de teste para aplicações end-to-end e testes manuais em dispositivos móveis.",
+      "end": "2013-11",
+      "name": "Quality Assurance and Testing",
+      "role": "Analista de Qualidade",
+      "sector": "tecnologia",
+      "start": "2010-08"
+    }
+  ],
+  "years_experience": 7
+}

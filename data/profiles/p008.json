@@ -1,0 +1,47 @@
+{
+  "id": "p008",
+  "full_name": "Helena Costa",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Desenvolvedor Java/J2EE Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "TCF Bank",
+      "client": "TCF Bank",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "description": "Desenvolvimento de aplicação de processamento de empréstimos pessoais em ambiente AWS",
+      "start": "2017-05",
+      "end": null
+    },
+    {
+      "name": "T-Mobile",
+      "client": "T-Mobile",
+      "sector": "telecom",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "description": "Desenvolvimento de microserviços e APIs REST para serviços de telecomunicações",
+      "start": "2016-08",
+      "end": "2017-05"
+    },
+    {
+      "name": "Aetna",
+      "client": "Aetna",
+      "sector": "saude",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "description": "Implementação de serviços web e integração de dados de saúde em plataforma Java",
+      "start": "2014-07",
+      "end": "2016-06"
+    },
+    {
+      "name": "BCBS",
+      "client": "BCBS",
+      "sector": "saude",
+      "role": "Desenvolvedor Java/J2EE Sênior",
+      "description": "Desenvolvimento de aplicação web para busca e compra de planos de saúde",
+      "start": "2012-06",
+      "end": "2013-12"
+    }
+  ]
+}

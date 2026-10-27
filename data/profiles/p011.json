@@ -1,0 +1,63 @@
+{
+  "id": "p011",
+  "full_name": "Paulo Rocha",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 10,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Applied Sciences and Engineering",
+      "institution": "Michigan State University",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "IDS Rapport Solution Implementation",
+      "client": "Fifth Third Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Sênior",
+      "description": "Implementou solução de workflow front‑end para processos de contrato e integração com iLien, aumentando a eficiência de submittals e documentação.",
+      "start": "2015-03",
+      "end": null
+    },
+    {
+      "name": "GAP Analysis HIPAA 4010/5010",
+      "client": "Mississippi State Division of Medicaid",
+      "sector": "governo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Analisou e documentou lacunas entre HIPAA 4010 e 5010, conduzindo sessões JAD e testes de aceitação do usuário.",
+      "start": "2013-05",
+      "end": "2015-02"
+    },
+    {
+      "name": "HIPAA 5010 Compliance Project",
+      "client": "Dept of Health, Austin TX",
+      "sector": "governo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Gerenciou requisitos e testes de migração de transações EDI para conformidade HIPAA 5010.",
+      "start": "2012-05",
+      "end": "2013-04"
+    },
+    {
+      "name": "Prime Mail & Guided Health Enhancements",
+      "client": "Prime Therapeutics",
+      "sector": "outros",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Desenvolveu e documentou melhorias de interface e fluxos de trabalho para a plataforma de benefícios farmacêuticos.",
+      "start": "2011-01",
+      "end": "2012-04"
+    },
+    {
+      "name": "Integrated Customer View System",
+      "client": "PNC Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Realizou análise de lacunas e definiu requisitos para um sistema web de visão única do cliente.",
+      "start": "2008-10",
+      "end": "2010-12"
+    }
+  ]
+}

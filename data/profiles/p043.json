@@ -1,0 +1,69 @@
+{
+  "id": "p043",
+  "full_name": "Rodrigo Carvalho",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Engenheiro de QA",
+  "years_experience": 4,
+  "certifications": [
+    {
+      "name": "ISTQB Certified Tester-Foundation Level",
+      "issuer": "ASTQB board certification",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Technology, Electronics and communication engineering",
+      "institution": "Bandari Srinivas Institute of technology, JNT University, Hyderabad",
+      "completion_year": 2013
+    }
+  ],
+  "projects": [
+    {
+      "name": "eGrove Systems – eCommerce & Admin Interface",
+      "client": "eGrove Systems",
+      "sector": "tecnologia",
+      "role": "Engenheiro de QA",
+      "description": "Desenvolvimento de planos e casos de teste para automação mobile e API.",
+      "start": "2018-01",
+      "end": null
+    },
+    {
+      "name": "YiiPack – Plataforma de envio de pacotes",
+      "client": "YiiPack",
+      "sector": "varejo",
+      "role": "Engenheiro de QA",
+      "description": "Criação de scripts Selenium para testes funcionais e regressão.",
+      "start": "2018-01",
+      "end": "2018-12"
+    },
+    {
+      "name": "Genpact – Aplicativo Mobile de Seguro",
+      "client": "Nationwide Insurance",
+      "sector": "seguros",
+      "role": "Engenheiro de QA",
+      "description": "Automação mobile com Appium e testes de API SOAP.",
+      "start": "2016-07",
+      "end": "2017-12"
+    },
+    {
+      "name": "Genpact – Sistema de Logística IT",
+      "client": "Penske",
+      "sector": "logistica",
+      "role": "Engenheiro de QA",
+      "description": "Automação Selenium com TestNG e Maven para testes de regressão.",
+      "start": "2015-04",
+      "end": "2016-06"
+    },
+    {
+      "name": "Genpact – Sistema de Tickets IT",
+      "client": "GE GRC",
+      "sector": "tecnologia",
+      "role": "Engenheiro de QA",
+      "description": "Testes manuais e automação de aplicações web em J2EE.",
+      "start": "2013-07",
+      "end": "2015-03"
+    }
+  ]
+}

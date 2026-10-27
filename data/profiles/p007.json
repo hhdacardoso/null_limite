@@ -1,0 +1,79 @@
+{
+  "id": "p007",
+  "full_name": "Mariana Moreira",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista Sênior de Sistemas de Negócios",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "Professional Scrum Master (PSM)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Scrum Master Accredited Certification (SMAC)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Six Sigma Green Belt",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Technology",
+      "institution": "JNTU, Hyderabad",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Loan Origination System (LOS)",
+      "client": "JPMorgan Chase",
+      "sector": "financeiro",
+      "role": "Analista Sênior de Sistemas de Negócios / Scrum Master",
+      "description": "Implementação de sistema de originação de crédito flexível e integrado.",
+      "start": "2016-03",
+      "end": null
+    },
+    {
+      "name": "Business Glossary Migration",
+      "client": "Global Payments",
+      "sector": "financeiro",
+      "role": "Analista Sênior de Negócios / Scrum Master",
+      "description": "Migração da capacidade de glossário empresarial para plataforma Hadoop.",
+      "start": "2015-04",
+      "end": "2016-02"
+    },
+    {
+      "name": "GFT Integration for Asset Management Platform",
+      "client": "MFS Investment Management",
+      "sector": "financeiro",
+      "role": "Analista Sênior de Sistemas de Negócios",
+      "description": "Adição de funcionalidades GFT ao sistema de gestão de ativos.",
+      "start": "2013-01",
+      "end": "2015-03"
+    },
+    {
+      "name": "Electronic Medical Record System",
+      "client": "HDFC Life",
+      "sector": "seguros",
+      "role": "Analista de Negócios / Analista de Risco",
+      "description": "Desenvolvimento de prontuário eletrônico para melhorar o fluxo de informações clínicas.",
+      "start": "2011-10",
+      "end": "2012-12"
+    },
+    {
+      "name": "Seller Central Development",
+      "client": "Amazon",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios Júnior",
+      "description": "Criação de plataforma de gerenciamento de inventário e envios para vendedores.",
+      "start": "2009-08",
+      "end": "2011-09"
+    }
+  ]
+}

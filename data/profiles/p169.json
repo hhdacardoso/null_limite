@@ -1,0 +1,95 @@
+{
+  "id": "p169",
+  "full_name": "Felipe Rocha",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Gerente de Programas Técnicos",
+  "years_experience": 16,
+  "certifications": [
+    {
+      "name": "Project Management Professional (PMP)",
+      "issuer": "PMI",
+      "issue_year": null
+    },
+    {
+      "name": "Certified Scrum Master (CSM)",
+      "issuer": "Scrum Alliance",
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Arts in Economics",
+      "institution": "Lucknow University, India",
+      "completion_year": 1998
+    },
+    {
+      "level": "technical",
+      "course": "Diploma in Advanced Computing",
+      "institution": "Pune University, India",
+      "completion_year": 2001
+    },
+    {
+      "level": "master",
+      "course": "Masters in Computer Application",
+      "institution": "IASE Deemed Rajasthan University, India",
+      "completion_year": 2007
+    }
+  ],
+  "projects": [
+    {
+      "name": "Migration of Integration Service to Talend",
+      "client": "Walgreens",
+      "sector": "varejo",
+      "role": "Gerente de Programas Técnicos/Produto",
+      "description": "Conversão de 22.000 gráficos de integração para Talend, consolidando serviços em um único ambiente",
+      "start": "2017-09",
+      "end": null
+    },
+    {
+      "name": "Global Information Data Platform product",
+      "client": "GE Capital",
+      "sector": "financeiro",
+      "role": "Arquiteto de Soluções/Produto",
+      "description": "Desenvolvimento de plataforma de dados em nuvem híbrida com Hadoop e Talend",
+      "start": "2015-06",
+      "end": "2017-08"
+    },
+    {
+      "name": "Migration and Simplification of PMO",
+      "client": "GE Capital",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos/Produto",
+      "description": "Simplificação de processos PMO e implementação de avaliação de risco de projetos",
+      "start": "2014-04",
+      "end": "2015-06"
+    },
+    {
+      "name": "GE Capital – Know Your Customer",
+      "client": "GE Capital",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos/Scrum Master",
+      "description": "Desenvolvimento de ferramenta BRMS para verificação de risco de clientes",
+      "start": "2013-02",
+      "end": "2014-04"
+    },
+    {
+      "name": "GE Capital – Customer Master",
+      "client": "GE Capital",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos/Scrum Master",
+      "description": "Gestão de dados mestres de clientes em Oracle para integração de sistemas",
+      "start": "2011-10",
+      "end": "2013-01"
+    },
+    {
+      "name": "Harleysville GBP-Support",
+      "client": "Harleysville Insurance",
+      "sector": "seguros",
+      "role": "Gerente de Projetos/Lead Técnico",
+      "description": "Desenvolvimento de portal GBP para gestão de negócios de grupo de vida",
+      "start": "2009-07",
+      "end": "2011-09"
+    }
+  ]
+}

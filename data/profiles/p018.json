@@ -1,0 +1,78 @@
+{
+  "id": "p018",
+  "full_name": "Beatriz Pereira",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2009,
+      "course": "Masters of Business Administration (M.B.A.)",
+      "institution": "NMIMS University, Mumbai, India",
+      "level": "mba"
+    },
+    {
+      "completion_year": 2004,
+      "course": "Bachelor of Engineering (B.E.) (Computer Engineering)",
+      "institution": "University of Rajasthan, India",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Gerente de Programas Sênior",
+  "projects": [
+    {
+      "client": "DXC Technology",
+      "description": "Gestão de programas e projetos para a conta Metlife, atuando como ponto focal para escalonamentos e novas oportunidades.",
+      "end": "2018-01",
+      "name": "Metlife",
+      "role": "Gerente de Programas",
+      "sector": "seguros",
+      "start": "2017-04"
+    },
+    {
+      "client": "USAA",
+      "description": "Liderança de equipe de pesquisa estratégica e inovação para o grupo de arquitetura do CTO, focando em soluções de negócios e validação de produtos.",
+      "end": "2017-04",
+      "name": "USAA",
+      "role": "Gerente de Programas / Analista de Pesquisa Principal",
+      "sector": "financeiro",
+      "start": "2015-04"
+    },
+    {
+      "client": "Genworth",
+      "description": "Gestão ágil e análise de requisitos para manutenção e aprimoramento do sistema de administração de sinistros de hipoteca (Guidewire ClaimCenter).",
+      "end": "2015-04",
+      "name": "Genworth",
+      "role": "Scrum Master / Analista de Negócios",
+      "sector": "seguros",
+      "start": "2014-03"
+    },
+    {
+      "client": "HCL Technologies",
+      "description": "Gestão de ciclo de vida de oportunidades, propostas, RFPs e estratégias de vendas para o grupo de soluções de negócios.",
+      "end": "2014-03",
+      "name": "HCL Technologies",
+      "role": "Gerente Adjunto",
+      "sector": "tecnologia",
+      "start": "2010-02"
+    },
+    {
+      "client": "Office Depot Reliance",
+      "description": "Treinamento gerencial focado em melhoria de processos de cadeia de suprimentos, merchandising e análise de dados para campanhas de marketing.",
+      "end": "2010-02",
+      "name": "Office Depot Reliance",
+      "role": "Estagiária de Gestão",
+      "sector": "varejo",
+      "start": "2009-07"
+    },
+    {
+      "client": "Schneider Electric",
+      "description": "Liderança de equipe em projeto de verificação de firmware, coordenando recursos e riscos entre quatro países.",
+      "end": "2007-05",
+      "name": "Schneider Electric",
+      "role": "Engenheira de Software",
+      "sector": "industria",
+      "start": "2004-08"
+    }
+  ],
+  "years_experience": 11
+}

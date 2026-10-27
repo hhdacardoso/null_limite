@@ -1,0 +1,72 @@
+{
+  "id": "p090",
+  "full_name": "Isabela Teixeira",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelors of Technology",
+      "institution": "IIT Delhi",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Gerente de Projetos",
+  "projects": [
+    {
+      "client": "GE Health Care",
+      "description": "Gestão do projeto de desenvolvimento da solução de gestão de operações hospitalares 'Wall of Analytics'.",
+      "end": null,
+      "name": "Wall of Analytics (WOA)",
+      "role": "Gerente de Projetos",
+      "sector": "saude",
+      "start": "2015-10"
+    },
+    {
+      "client": "Rockwell Automation",
+      "description": "Implementação de um Ambiente de Desenvolvimento Seguro (SDE) para proteção de propriedade intelectual em centros globais.",
+      "end": "2015-10",
+      "name": "Secure Development Environment (SDE)",
+      "role": "Gerente de Projetos",
+      "sector": "industria",
+      "start": "2015-04"
+    },
+    {
+      "client": "GEICO Inc.",
+      "description": "Gestão do programa de migração de infraestrutura de e-mail do Exchange 2010 para o Office 365.",
+      "end": "2015-04",
+      "name": "Migração Office 365",
+      "role": "Gerente de Programa",
+      "sector": "seguros",
+      "start": "2014-11"
+    },
+    {
+      "client": "Hewlett Packard",
+      "description": "Gestão técnica de programas para produtos de Gestão de Informação (Supervisor, AIO e Instance Generator).",
+      "end": "2014-11",
+      "name": "Information Management Portfolio",
+      "role": "Gerente de Programa Técnico",
+      "sector": "tecnologia",
+      "start": "2007-10"
+    },
+    {
+      "client": "Autodesk Inc.",
+      "description": "Execução de projeto de migração de data center e recuperação de desastres envolvendo mais de 250 servidores.",
+      "end": "2007-10",
+      "name": "Disaster Recovery/Data Centre Migration",
+      "role": "Gerente de Projetos de TI",
+      "sector": "tecnologia",
+      "start": "2006-06"
+    },
+    {
+      "client": "Renesas Technology America, Armstrong Inc., Deutsche Bank, Mindspeed Inc.",
+      "description": "Consultoria sênior e administração de banco de dados para clientes de manufatura e serviços financeiros.",
+      "end": "2006-06",
+      "name": "Consultoria em Banco de Dados",
+      "role": "Consultor Sênior / DBA",
+      "sector": "outros",
+      "start": "2004-06"
+    }
+  ],
+  "years_experience": 17
+}

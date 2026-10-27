@@ -1,0 +1,45 @@
+{
+  "id": "p036",
+  "full_name": "Vinícius Araújo",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Masters in Computer Application",
+      "institution": null,
+      "level": "master"
+    }
+  ],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "eBay",
+      "description": "Desenvolvimento de funcionalidades para a plataforma de bilheteria StubHub.com.",
+      "end": null,
+      "name": "StubHub.com",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "tecnologia",
+      "start": "2014-08"
+    },
+    {
+      "client": "Citicorp",
+      "description": "Desenvolvimento da aplicação CitiTrade para soluções de negociação online.",
+      "end": "2014-07",
+      "name": "CitiTrade",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "financeiro",
+      "start": "2012-02"
+    },
+    {
+      "client": "Anthem",
+      "description": "Atualização de mensagens e conformidade HIPAA no portal de provedores.",
+      "end": "2012-06",
+      "name": "Providers Portal",
+      "role": "Desenvolvedor Java J2EE",
+      "sector": "saude",
+      "start": "2011-02"
+    }
+  ],
+  "years_experience": 9
+}

@@ -1,0 +1,56 @@
+{
+  "id": "p025",
+  "full_name": "Igor Souza",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Risk Margin Calculation Application",
+      "client": "Citi Group",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Sênior",
+      "description": "Desenvolvimento de aplicação para cálculo de margens de risco de portfólio.",
+      "start": "2016-09",
+      "end": null
+    },
+    {
+      "name": "Equity Management System (EMS)",
+      "client": "Merrill Lynch",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Análise e melhoria de sistema de gestão de ordens e negociação de ações.",
+      "start": "2015-03",
+      "end": "2016-09"
+    },
+    {
+      "name": "Credit Appraisal and Loan Origination Enhancement",
+      "client": "Key Bank",
+      "sector": "financeiro",
+      "role": "Scrum Master/Analista de Negócios",
+      "description": "Implementação de arquitetura orientada a serviços e condução de Scrum em projeto de crédito.",
+      "start": "2012-09",
+      "end": "2015-03"
+    },
+    {
+      "name": "Fixed Income Operations Tool (FIO)",
+      "client": "Aditya Birla Finance",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de ferramenta para melhorar eficiência de operações de renda fixa.",
+      "start": "2010-05",
+      "end": "2012-08"
+    },
+    {
+      "name": "Document Handling Automation for New Account Opening",
+      "client": "HDFC Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Automatização do ciclo de vida de documentos para abertura de contas.",
+      "start": "2008-09",
+      "end": "2010-05"
+    }
+  ]
+}

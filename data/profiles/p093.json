@@ -1,0 +1,54 @@
+{
+  "id": "p093",
+  "full_name": "Isabela Martins",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Sr. Java/J2EE",
+  "years_experience": 9,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Computer Science",
+      "institution": "JNTUH",
+      "completion_year": 2008
+    }
+  ],
+  "projects": [
+    {
+      "name": "GE Transportation",
+      "client": "GE Transportation",
+      "sector": "energia",
+      "role": "Desenvolvedor Sr. Java/J2EE",
+      "description": "Desenvolvimento full‑stack de aplicações J2EE com Spring, micro‑serviços e integração cloud.",
+      "start": "2015-09",
+      "end": null
+    },
+    {
+      "name": "Charter Communications",
+      "client": "Charter Communications",
+      "sector": "telecom",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Implementação de soluções Java full‑stack, APIs REST e migração de aplicações Swing para web.",
+      "start": "2014-04",
+      "end": "2015-08"
+    },
+    {
+      "name": "Nationwide Insurance",
+      "client": "Nationwide Insurance",
+      "sector": "seguros",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Criação de aplicação web de cotação de seguros com arquitetura SOA e micro‑serviços.",
+      "start": "2013-08",
+      "end": "2014-03"
+    },
+    {
+      "name": "Agfa Healthcare",
+      "client": "Agfa Healthcare",
+      "sector": "saude",
+      "role": "Desenvolvedor Java/J2EE",
+      "description": "Desenvolvimento de sistemas de imagem e informação para hospitais usando J2EE.",
+      "start": "2012-11",
+      "end": "2013-07"
+    }
+  ]
+}

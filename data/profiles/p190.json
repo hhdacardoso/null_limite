@@ -1,0 +1,81 @@
+{
+  "id": "p190",
+  "full_name": "Sofia Souza",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Sistemas de Negócios",
+  "years_experience": 9,
+  "certifications": [
+    {
+      "name": "PSM1",
+      "issuer": "Professional Scrum Master",
+      "issue_year": null
+    },
+    {
+      "name": "CSM",
+      "issuer": "Sofia Scrum Master",
+      "issue_year": null
+    },
+    {
+      "name": "CSPO",
+      "issuer": "Sofia Scrum Product Owner",
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Barclay’s – Business Systems Analyst",
+      "client": "Barclay’s",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Análise de requisitos, documentação BRD/FRD, testes e suporte a aplicações financeiras",
+      "start": "2017-01",
+      "end": null
+    },
+    {
+      "name": "SEI – Business Analyst",
+      "client": "SEI",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de soluções de risco de ativos e suporte a testes e métricas de desempenho",
+      "start": "2015-06",
+      "end": "2016-12"
+    },
+    {
+      "name": "Chartered Communications – Business Analyst",
+      "client": "Chartered Communications",
+      "sector": "telecom",
+      "role": "Analista de Negócios",
+      "description": "Integração de dados para data warehouse e criação de relatórios de BI",
+      "start": "2014-08",
+      "end": "2015-05"
+    },
+    {
+      "name": "T-Mobile – Business Analyst",
+      "client": "T-Mobile",
+      "sector": "telecom",
+      "role": "Analista de Negócios",
+      "description": "Gestão de requisitos e testes para projeto de entrega de operações",
+      "start": "2013-01",
+      "end": "2014-07"
+    },
+    {
+      "name": "ZenTech Technologies – Business Analyst",
+      "client": "ZenTech Technologies",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de intranet HR e testes de integração",
+      "start": "2010-07",
+      "end": "2012-12"
+    },
+    {
+      "name": "HDFC Bank – Business/Quality Analyst",
+      "client": "HDFC Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios/Qualidade",
+      "description": "Reestruturação de LOS e suporte a sistemas bancários corporativos",
+      "start": "2009-07",
+      "end": "2010-06"
+    }
+  ]
+}

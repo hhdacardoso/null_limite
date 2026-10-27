@@ -1,0 +1,98 @@
+{
+  "id": "p061",
+  "full_name": "Nicolas Duarte",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Java Sênior / Arquiteto",
+  "years_experience": 10,
+  "certifications": [
+    {
+      "name": "Sun Certified Java Programmer",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "IBM Certified Database Associate -- DB2 Universal Database V8.1 Family",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Java EE 6 Web Services Developer Certified Expert",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Six Sigma Green Belt Certification",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "NSE's Certification in Financial Markets (NCFM)",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Computer Sciences",
+      "institution": null,
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Inter Company Payment Process",
+      "client": "Anixter",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java Sênior / Arquiteto",
+      "description": "Desenvolvimento de aplicação web para processo de pagamento interempresas.",
+      "start": "2016-07",
+      "end": null
+    },
+    {
+      "name": "DC2 Phase 0 ICP – Life Quote",
+      "client": "State Farm Insurance",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java Sênior / Arquiteto / Analista de Segurança",
+      "description": "Desenvolvimento de plataforma integrada de cotações de seguros com segurança.",
+      "start": "2012-05",
+      "end": "2016-06"
+    },
+    {
+      "name": "Cost Basis Day3",
+      "client": "United Services Automobile Association (USAA)",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java Sênior",
+      "description": "Implementação de serviços REST para transferência eletrônica de fundos.",
+      "start": "2011-12",
+      "end": "2012-05"
+    },
+    {
+      "name": "Enterprise Wires Services",
+      "client": "United Services Automobile Association (USAA)",
+      "sector": "financeiro",
+      "role": "Líder Técnico",
+      "description": "Arquitetura e desenvolvimento de serviços de transferência bancária.",
+      "start": "2010-06",
+      "end": "2011-11"
+    },
+    {
+      "name": "Real-Time IDV OFAC",
+      "client": "United Services Automobile Association (USAA)",
+      "sector": "financeiro",
+      "role": "Líder de Módulo",
+      "description": "Desenvolvimento de serviço de verificação de listas de sanções em tempo real.",
+      "start": "2009-09",
+      "end": "2010-05"
+    },
+    {
+      "name": "GIM2 Report Changes",
+      "client": "United Services Automobile Association (USAA)",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java",
+      "description": "Modificação de relatórios de fundos do mercado monetário.",
+      "start": "2009-02",
+      "end": "2009-08"
+    }
+  ]
+}

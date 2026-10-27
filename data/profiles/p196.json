@@ -1,0 +1,72 @@
+{
+  "id": "p196",
+  "full_name": "Eduardo Batista",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Sistemas",
+  "years_experience": 12,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Engineering",
+      "institution": null,
+      "completion_year": 2005
+    }
+  ],
+  "projects": [
+    {
+      "name": "T-Mobile for Business Marketplace",
+      "client": "T-Mobile",
+      "sector": "telecom",
+      "role": "Analista de Sistemas",
+      "description": "Desenvolve e documenta requisitos, cria histórias de usuário e valida APIs para o marketplace de comunicação da T-Mobile.",
+      "start": "2017-09",
+      "end": null
+    },
+    {
+      "name": "AT&T Collaborate",
+      "client": "AT&T",
+      "sector": "telecom",
+      "role": "Engenheiro de Sistema",
+      "description": "Responsável por escrever histórias de usuário e apoiar testes e implantação de soluções de voz hospedada.",
+      "start": "2015-05",
+      "end": "2017-09"
+    },
+    {
+      "name": "AT&T GCP DPPCO",
+      "client": "AT&T",
+      "sector": "telecom",
+      "role": "Engenheiro de Sistema",
+      "description": "Gerenciou API de inventário e documentação de interface.",
+      "start": "2014-02",
+      "end": "2015-04"
+    },
+    {
+      "name": "AT&T Business Manager",
+      "client": "AT&T",
+      "sector": "telecom",
+      "role": "Engenheiro de Front‑End",
+      "description": "Criou documentos de alto nível e coordenou requisitos de interface.",
+      "start": "2012-12",
+      "end": "2014-02"
+    },
+    {
+      "name": "Projeto de TI na Netwing Technologies",
+      "client": "Netwing Technologies",
+      "sector": "tecnologia",
+      "role": "Gerente de Projeto",
+      "description": "Gerenciou projetos de TI, entregou requisitos e relatórios.",
+      "start": "2009-05",
+      "end": "2010-12"
+    },
+    {
+      "name": "Planejamento de Torres Móveis na IMIL",
+      "client": "Independent Mobile Infrastructure Ltd",
+      "sector": "telecom",
+      "role": "Engenheiro Sênior",
+      "description": "Planejou e analisou dados técnicos para implantação de torres móveis.",
+      "start": "2007-12",
+      "end": "2009-02"
+    }
+  ]
+}

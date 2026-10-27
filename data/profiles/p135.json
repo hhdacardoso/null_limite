@@ -1,0 +1,69 @@
+{
+  "id": "p135",
+  "full_name": "Felipe Gomes",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Gerente de Projetos",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "Six Sigma Green Belt",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Engenharia de Produção",
+      "institution": "University of Mumbai",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Visa Inc. Project Management",
+      "client": "Visa Inc.",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Gerenciamento de projetos de pagamentos eletrônicos, incluindo controle de orçamento e integração de sistemas.",
+      "start": null,
+      "end": null
+    },
+    {
+      "name": "American Express Credit Card Platform",
+      "client": "American Express",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Coordenação de sprints e backlog para plataforma de serviços de cartão de crédito.",
+      "start": "2015-07",
+      "end": "2016-09"
+    },
+    {
+      "name": "Morgan Stanley Wealth Operations",
+      "client": "Morgan Stanley",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Análise de processos e integração de plataforma de monitoramento de portfólio.",
+      "start": "2014-08",
+      "end": "2015-05"
+    },
+    {
+      "name": "Industrial Engineering Corporation Manufacturing",
+      "client": "Industrial Engineering Corporation",
+      "sector": "energia",
+      "role": "Gerente de Projetos Junior",
+      "description": "Implementação de sistemas de rastreabilidade e melhoria de processos de fabricação.",
+      "start": "2011-11",
+      "end": "2013-07"
+    },
+    {
+      "name": "Refair Industries Product Development",
+      "client": "Refair Industries",
+      "sector": "outros",
+      "role": "Analista de Qualidade / Analista de Negócios Junior",
+      "description": "Desenvolvimento de estimativas de custo e melhoria de qualidade de componentes mecânicos.",
+      "start": "2009-05",
+      "end": "2012-08"
+    }
+  ]
+}

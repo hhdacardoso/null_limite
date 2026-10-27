@@ -1,0 +1,78 @@
+{
+  "id": "p103",
+  "full_name": "Rodrigo Machado",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Lead Java J2EE Developer",
+  "years_experience": 10,
+  "certifications": [
+    {
+      "name": "Sun Certified Java Programmer",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "master",
+      "course": "Master of Science",
+      "institution": "New York University",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "E-commerce & Internal Websites",
+      "client": "Walgreens",
+      "sector": "varejo",
+      "role": "Desenvolvedor Líder",
+      "description": "Desenvolvimento de aplicações RIA em J2EE com Spring, Struts e Hibernate, integrando serviços REST/ SOAP e dashboards em Splunk.",
+      "start": "2015-06",
+      "end": null
+    },
+    {
+      "name": "Concierge Customer Platform",
+      "client": "Citigroup Inc",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Sênior",
+      "description": "Projeto de abertura de contas e suporte de vendas, utilizando Spring, Hibernate, Web Services e integração com Oracle.",
+      "start": "2013-04",
+      "end": "2015-05"
+    },
+    {
+      "name": "Web Services Architecture",
+      "client": "Walgreens",
+      "sector": "varejo",
+      "role": "Desenvolvedor J2EE",
+      "description": "Implementação de serviços SOAP/REST com Apache CXF e integração com WebLogic.",
+      "start": "2015-06",
+      "end": null
+    },
+    {
+      "name": "Big Data Analytics Platform",
+      "client": "Citigroup Inc",
+      "sector": "financeiro",
+      "role": "Desenvolvedor J2EE",
+      "description": "Arquitetura de Big Data com Hadoop, Spark e MongoDB para análise de dados financeiros.",
+      "start": "2014-01",
+      "end": "2015-05"
+    },
+    {
+      "name": "Automated Testing Framework",
+      "client": "Walgreens",
+      "sector": "varejo",
+      "role": "Desenvolvedor J2EE",
+      "description": "Desenvolvimento de testes unitários e de integração com JUnit, Mockito e Jenkins.",
+      "start": "2015-06",
+      "end": null
+    },
+    {
+      "name": "Cloud Deployment Automation",
+      "client": "Citigroup Inc",
+      "sector": "financeiro",
+      "role": "Desenvolvedor J2EE",
+      "description": "Automação de deploy em AWS EC2 e configuração de clusters Hadoop via Puppet.",
+      "start": "2014-06",
+      "end": "2015-05"
+    }
+  ]
+}

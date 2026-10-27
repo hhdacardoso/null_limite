@@ -1,0 +1,83 @@
+{
+  "id": "p119",
+  "full_name": "Nicolas Correia",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [
+    {
+      "issue_year": null,
+      "issuer": "Project Management Institute",
+      "name": "PMP"
+    },
+    {
+      "issue_year": null,
+      "issuer": "Scrum Alliance",
+      "name": "CSM"
+    }
+  ],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Electronics & Communication",
+      "institution": "MIT Manipal",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Gerente de Projetos / Scrum Master",
+  "projects": [
+    {
+      "client": "Chevron Corporation",
+      "description": "Gestão de projetos de software e recursos para a área de Project Resource Company (PRC).",
+      "end": null,
+      "name": "Gestão de Projetos PRC",
+      "role": "Gerente de Projetos / Analista de Negócios",
+      "sector": "energia",
+      "start": "2012-03"
+    },
+    {
+      "client": "Fitch Ratings",
+      "description": "Facilitação de sprints e gestão de releases de software utilizando metodologia Ágil.",
+      "end": "2012-02",
+      "name": "Gestão Ágil de Software",
+      "role": "Scrum Master / Gerente de Projetos",
+      "sector": "financeiro",
+      "start": "2011-07"
+    },
+    {
+      "client": "Larsen & Toubro Infotech Ltd",
+      "description": "Liderança de equipe no desenvolvimento de aplicações IT e suporte pós-produção.",
+      "end": "2011-06",
+      "name": "Desenvolvimento de Aplicações IT",
+      "role": "Líder de Projetos / Engenheiro de Software Sênior",
+      "sector": "tecnologia",
+      "start": "2007-09"
+    },
+    {
+      "client": "Atos Origin",
+      "description": "Levantamento de requisitos e desenvolvimento de aplicações customizadas seguindo o SDLC.",
+      "end": "2007-09",
+      "name": "Análise de Sistemas",
+      "role": "Analista de Sistemas",
+      "sector": "tecnologia",
+      "start": "2007-02"
+    },
+    {
+      "client": "Covansys India Pvt. Ltd",
+      "description": "Desenvolvimento de aplicações e colaboração com a equipe de QA para testes de aceitação.",
+      "end": "2006-04",
+      "name": "Desenvolvimento de Software",
+      "role": "Engenheiro de Software Sênior",
+      "sector": "tecnologia",
+      "start": "2005-06"
+    },
+    {
+      "client": "CrimsonLogic India Pvt. Ltd",
+      "description": "Desenvolvimento de ferramenta de reutilização de IED para unidades de negócios em Panamá e Austrália.",
+      "end": "2005-06",
+      "name": "Desenvolvimento de Ferramenta IED",
+      "role": "Analista de Sistemas",
+      "sector": "tecnologia",
+      "start": "2004-05"
+    }
+  ],
+  "years_experience": 14
+}

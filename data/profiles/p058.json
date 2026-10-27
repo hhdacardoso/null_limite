@@ -1,0 +1,54 @@
+{
+  "id": "p058",
+  "full_name": "Eduarda Barbosa",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Master of Science in Computer Science",
+      "institution": "Colorado Technical University",
+      "level": "master"
+    }
+  ],
+  "job_title": "Analista de Negócios Sênior",
+  "projects": [
+    {
+      "client": "Merchant e-solutions",
+      "description": "Gestão de requisitos e implementação de soluções de processamento de cartões de crédito.",
+      "end": null,
+      "name": "Merchant e-solutions",
+      "role": "Analista de Negócios Sênior / Gerente de Projetos",
+      "sector": "financeiro",
+      "start": "2017-03"
+    },
+    {
+      "client": "Lille Systems",
+      "description": "Análise de requisitos para plataformas de computação em neblina (Fog Computing) e conectividade IoT.",
+      "end": "2017-02",
+      "name": "Lille Systems",
+      "role": "Analista de Negócios / Gerente de Projetos",
+      "sector": "tecnologia",
+      "start": "2016-09"
+    },
+    {
+      "client": "United HealthCare",
+      "description": "Análise de requisitos para o módulo de processamento de sinistros de saúde (Claims Processing).",
+      "end": "2016-08",
+      "name": "United HealthCare",
+      "role": "Analista de Negócios de Saúde",
+      "sector": "saude",
+      "start": "2015-08"
+    },
+    {
+      "client": "Cipla Global Limited",
+      "description": "Gestão de projeto e análise de requisitos para desenvolvimento de um banco de dados centralizado (EDR).",
+      "end": "2015-07",
+      "name": "Cipla Global Limited",
+      "role": "Gerente de Projetos / Analista de Negócios",
+      "sector": "saude",
+      "start": "2013-06"
+    }
+  ],
+  "years_experience": 5
+}

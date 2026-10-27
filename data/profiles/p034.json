@@ -1,0 +1,84 @@
+{
+  "id": "p034",
+  "full_name": "Renata Ferreira",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Negócios",
+  "years_experience": 12,
+  "certifications": [],
+  "education": [
+    {
+      "level": "mba",
+      "course": "Master of Business Administration",
+      "institution": "Madurai Kamaraj University",
+      "completion_year": 2013
+    },
+    {
+      "level": "bachelor",
+      "course": "BSc in Specialized Physics",
+      "institution": "The American College",
+      "completion_year": 2003
+    },
+    {
+      "level": "technical",
+      "course": "DNIIT program",
+      "institution": "NIIT",
+      "completion_year": 2003
+    }
+  ],
+  "projects": [
+    {
+      "name": "ROC Application Automation",
+      "client": "Malvern Institute (Rehabilitation Hospital)",
+      "sector": "saude",
+      "role": "Analista de Negócios",
+      "description": "Automatização de fluxos de trabalho e integração de faturamento médico.",
+      "start": "2016-06",
+      "end": null
+    },
+    {
+      "name": "Peertasker Application",
+      "client": "Peertasker",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Coordenação de requisitos e sprints para plataforma de colaboração.",
+      "start": "2015-08",
+      "end": "2016-06"
+    },
+    {
+      "name": "Expert Appointment Application",
+      "client": "Expert Appointment",
+      "sector": "saude",
+      "role": "Analista de Negócios e Gerente de Projetos",
+      "description": "Implementação de comunicação de vídeo em tempo real e integração de pagamentos médicos.",
+      "start": "2012-02",
+      "end": "2014-08"
+    },
+    {
+      "name": "Recovery Maps",
+      "client": "Recovery Maps Inc.",
+      "sector": "saude",
+      "role": "Analista de Negócios",
+      "description": "Elicitação de requisitos e suporte à implantação em hospitais.",
+      "start": "2010-12",
+      "end": "2013-03"
+    },
+    {
+      "name": "Marvel Interiors Inventory Application",
+      "client": "Marvel Interiors",
+      "sector": "industria",
+      "role": "Gerente de Projetos",
+      "description": "Planejamento e controle de projeto de sistema de inventário.",
+      "start": "2010-01",
+      "end": "2010-12"
+    },
+    {
+      "name": "Projetos diversos (Android, iOS, E‑commerce)",
+      "client": "Vários clientes",
+      "sector": "outros",
+      "role": "Analista de Negócios / Gerente de Projetos",
+      "description": "Desenvolvimento de aplicativos móveis e soluções de comércio eletrônico.",
+      "start": "2005-10",
+      "end": "2009-12"
+    }
+  ]
+}

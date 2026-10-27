@@ -1,0 +1,72 @@
+{
+  "id": "p160",
+  "full_name": "Nicolas Monteiro",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Engineering",
+      "institution": "Jawaharlal Nehru Technological University (JNTU), India",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Raymond James CRM Migration",
+      "client": "Raymond James",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Migração do CRM legado para Salesforce CRM, integrando fontes de dados e automatizando abertura de contas.",
+      "start": "2016-07",
+      "end": null
+    },
+    {
+      "name": "Northern Trust Portfolio Dashboard",
+      "client": "Northern Trust",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Desenvolvimento de dashboard de portfólio para análise de performance e drill‑down de ativos.",
+      "start": "2015-03",
+      "end": "2016-07"
+    },
+    {
+      "name": "UCLA State Data Center DW",
+      "client": "University of California (UCLA)",
+      "sector": "governo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Criação de Data Warehouse para alocação de orçamento, monitoramento de despesas e relatórios financeiros.",
+      "start": "2013-11",
+      "end": "2015-02"
+    },
+    {
+      "name": "Deutsche Bank CCAR Compliance",
+      "client": "Deutsche Bank",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Implementação de requisitos CCAR e Dodd‑Frank para relatórios regulatórios de stress testing.",
+      "start": "2012-10",
+      "end": "2013-09"
+    },
+    {
+      "name": "ICICI Bank Credit Card Application",
+      "client": "ICICI Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de sistema de aplicação de cartão de crédito com funcionalidades de auto‑serviço.",
+      "start": "2011-08",
+      "end": "2012-09"
+    },
+    {
+      "name": "Strategic Head – Zonal Credit",
+      "client": "Empresa não especificada (Zonal Credit)",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Automação de scorecard de crédito empresarial e plataforma de stress testing de VaR.",
+      "start": "2010-06",
+      "end": "2011-08"
+    }
+  ]
+}

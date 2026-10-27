@@ -1,0 +1,72 @@
+{
+  "id": "p194",
+  "full_name": "Eduarda Melo",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Desenvolvedor Java Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Engineering",
+      "institution": "JNTUK University",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Gutenberg",
+      "client": "Equifax",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Java Sênior",
+      "description": "Modernização de dados para simplificar o carregamento de arquivos de empregadores.",
+      "start": "2016-04",
+      "end": null
+    },
+    {
+      "name": "E-HRO",
+      "client": "Horizon (Cardinal Health)",
+      "sector": "saude",
+      "role": "Desenvolvedor J2EE/Vitria",
+      "description": "Sistema de recursos humanos que recebe dados do PeopleSoft e gera arquivos para fornecedores.",
+      "start": "2015-02",
+      "end": "2016-04"
+    },
+    {
+      "name": "Product Control Management Repository (PCMR)",
+      "client": "Social Interest Solutions",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor J2EE Sênior",
+      "description": "Serviço de lookup e atualização de metadados de produtos para o sistema EDAM.",
+      "start": "2013-12",
+      "end": "2015-02"
+    },
+    {
+      "name": "RightFax",
+      "client": "General Electric",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java Sênior",
+      "description": "Plataforma de envio e recebimento de faxes digitais integrada ao servidor RightFax.",
+      "start": "2011-11",
+      "end": "2013-12"
+    },
+    {
+      "name": "Money Send",
+      "client": "Triveni IT",
+      "sector": "financeiro",
+      "role": "Programador Java",
+      "description": "Aplicação de transferência de fundos entre consumidores, empresas e governos.",
+      "start": "2010-10",
+      "end": "2011-11"
+    },
+    {
+      "name": "eHRMS",
+      "client": "Value Labs",
+      "sector": "outros",
+      "role": "Programador Java",
+      "description": "Sistema de gestão de recursos humanos para automação de processos de RH.",
+      "start": "2009-06",
+      "end": "2010-09"
+    }
+  ]
+}

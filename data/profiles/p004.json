@@ -1,0 +1,78 @@
+{
+  "id": "p004",
+  "full_name": "Thiago Campos",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Scrum Master",
+  "years_experience": 12,
+  "certifications": [
+    {
+      "name": "Certified Scrum Master",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "mba",
+      "course": "MBA",
+      "institution": "Vinayaka Mission, Salem, Tamilnadu, India",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "BEST (SAP and ServiceNow Integration)",
+      "client": "Black box Network",
+      "sector": "tecnologia",
+      "role": "Scrum Master",
+      "description": "Migração de projetos de Waterfall para Agile-Scrum e facilitação de cerimônias SAFe",
+      "start": "2017-07",
+      "end": null
+    },
+    {
+      "name": "TeamSite (CMS) e Salesforce (OneEMS)",
+      "client": "Philips Healthcare",
+      "sector": "saude",
+      "role": "Scrum Master",
+      "description": "Coaching de equipes distribuídas e lançamento de programa de dispositivos móveis H2H",
+      "start": "2008-05",
+      "end": "2017-06"
+    },
+    {
+      "name": "Demand Driven (D2 Supply Chain)",
+      "client": "Bose Corporation",
+      "sector": "outros",
+      "role": "Scrum Master",
+      "description": "Gestão de squads Scrum e automação de métricas ágeis",
+      "start": "2007-11",
+      "end": "2008-04"
+    },
+    {
+      "name": "Oracle Database Migration",
+      "client": "Health Net Systems",
+      "sector": "saude",
+      "role": "Business Analyst",
+      "description": "Planejamento e execução de testes end-to-end e migração de 9i para 10g",
+      "start": "2006-11",
+      "end": "2007-10"
+    },
+    {
+      "name": "Business Analyst",
+      "client": "Federal Reserve Bank of Richmond",
+      "sector": "governo",
+      "role": "Business Analyst",
+      "description": "Análise de requisitos e suporte a projetos de TI",
+      "start": "2005-07",
+      "end": "2006-10"
+    },
+    {
+      "name": "QA Analyst",
+      "client": "Calamos Investments",
+      "sector": "financeiro",
+      "role": "QA Analyst",
+      "description": "Análise de requisitos e testes de software",
+      "start": "2004-12",
+      "end": "2005-06"
+    }
+  ]
+}

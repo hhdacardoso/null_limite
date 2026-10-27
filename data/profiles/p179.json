@@ -1,0 +1,62 @@
+{
+  "id": "p179",
+  "full_name": "Isabela Gomes",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Scrum Master / Analista de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "Certified Agile Scrum Master",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Blackhawk Network Holdings",
+      "client": "Blackhawk Network Holdings",
+      "sector": "financeiro",
+      "role": "Scrum Master / Analista de Negócios Sênior",
+      "description": "Atuação como Scrum Master e Analista de Negócios, conduzindo cerimônias ágeis e entregas de soluções de pagamento.",
+      "start": "2017-01",
+      "end": null
+    },
+    {
+      "name": "CVS Health",
+      "client": "CVS Health",
+      "sector": "saude",
+      "role": "Scrum Master / Analista de Negócios Sênior",
+      "description": "Coordenação de sprints e análise de processos para melhorar a eficiência do portal de recursos para expatriados.",
+      "start": "2015-11",
+      "end": "2016-12"
+    },
+    {
+      "name": "Kaiser Permanente",
+      "client": "Kaiser Permanente",
+      "sector": "saude",
+      "role": "Analista de Negócios",
+      "description": "Levantamento de requisitos e modelagem de processos para solução de terapias domiciliares de diálise.",
+      "start": "2015-02",
+      "end": "2015-11"
+    },
+    {
+      "name": "Charter Communications",
+      "client": "Charter Communications",
+      "sector": "telecom",
+      "role": "Analista de Negócios",
+      "description": "Gestão de iniciativas estratégicas de marketing e infraestrutura de TI, atuando como ponte entre usuários e desenvolvimento.",
+      "start": "2013-11",
+      "end": "2015-02"
+    },
+    {
+      "name": "ACC Limited",
+      "client": "ACC Limited",
+      "sector": "industria",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento e suporte de aplicações web para funcionários, fornecedores e clientes da Goodman Manufacturing.",
+      "start": "2009-08",
+      "end": "2013-09"
+    }
+  ]
+}

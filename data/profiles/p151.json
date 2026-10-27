@@ -1,0 +1,80 @@
+{
+  "id": "p151",
+  "full_name": "Natália Araújo",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Business Systems Analyst/Scrum Master",
+  "years_experience": 9,
+  "certifications": [
+    {
+      "name": "Scrum Master Certification",
+      "issuer": "International Scrum Institute",
+      "issue_year": null
+    },
+    {
+      "name": "Professional Scrum Master I (PSM I) Certification",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelors in Mathematics",
+      "institution": "Osmania University",
+      "completion_year": null
+    },
+    {
+      "level": "master",
+      "course": "Masters in Computers Information Systems",
+      "institution": "California University of Management and Sciences",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mortgage Loan Origination System",
+      "client": "Farm Credit Bank of Texas",
+      "sector": "financeiro",
+      "role": "Business Systems Analyst/Scrum Master",
+      "description": "Unified web‑based application for mortgage loan origination and processing",
+      "start": "2016-09",
+      "end": null
+    },
+    {
+      "name": "Data Warehouse – Nonperforming Assets",
+      "client": "JPMC",
+      "sector": "financeiro",
+      "role": "Business Data Analyst/Scrum Master",
+      "description": "Developed a data warehouse for nonperforming assets with Cognos BI dashboards",
+      "start": "2015-02",
+      "end": "2016-08"
+    },
+    {
+      "name": "Wealth Management System",
+      "client": "Fiserv",
+      "sector": "financeiro",
+      "role": "Scrum Master",
+      "description": "Built a comprehensive wealth management application replacing spreadsheets and CRM",
+      "start": "2013-05",
+      "end": "2015-01"
+    },
+    {
+      "name": "Intranet Ticket Management",
+      "client": "Factset Research Systems",
+      "sector": "tecnologia",
+      "role": "Business Analyst",
+      "description": "Created intranet application to track tickets raised by Factset Economics",
+      "start": "2010-02",
+      "end": "2012-11"
+    },
+    {
+      "name": "Sales Compensation System",
+      "client": "ICICI Lombard",
+      "sector": "seguros",
+      "role": "Business Analyst",
+      "description": "Integrated system for calculating sales compensation for external producers",
+      "start": "2008-06",
+      "end": "2010-01"
+    }
+  ]
+}

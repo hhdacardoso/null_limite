@@ -1,0 +1,72 @@
+{
+  "id": "p193",
+  "full_name": "Natália Machado",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelor of Technology",
+      "institution": "National Institute of Technology, Tiruchirapalli",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios Sênior",
+  "projects": [
+    {
+      "client": "Huntington Bank",
+      "description": "Conversão de dados do Warren Bank para o Huntington Bank utilizando aplicação CIS e banco de dados DB2.",
+      "end": null,
+      "name": "Conversão de Dados Bancários",
+      "role": "Analista de Negócios Sênior",
+      "sector": "financeiro",
+      "start": "2015-09"
+    },
+    {
+      "client": "American International Group",
+      "description": "Consultoria para o módulo SAP Reinsurance Management (FS-RI, FS-CD, FI-GL) e gestão de melhorias de desempenho.",
+      "end": "2017-02",
+      "name": "SAP Reinsurance Management",
+      "role": "Analista de Sistemas SAP",
+      "sector": "seguros",
+      "start": "2013-05"
+    },
+    {
+      "client": "Federal Reserve Bank",
+      "description": "Substituição do sistema operacional de caixa padrão (SCA) por uma nova solução tecnológica.",
+      "end": "2015-08",
+      "name": "Substituição do Sistema de Caixa (SCA)",
+      "role": "Analista de Negócios Sênior",
+      "sector": "governo",
+      "start": "2013-12"
+    },
+    {
+      "client": "Key Bank",
+      "description": "Reengenharia do sistema de cartões de crédito para melhorar usabilidade, escalabilidade e portabilidade.",
+      "end": "2012-01",
+      "name": "Reengenharia do Sistema de Cartões de Crédito",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2010-10"
+    },
+    {
+      "client": "Prime Healthcare Services",
+      "description": "Desenvolvimento de uma aplicação central para armazenamento de relatórios de diferentes departamentos hospitalares.",
+      "end": "2010-09",
+      "name": "Repositório Central de Relatórios Hospitalares",
+      "role": "Analista de Negócios",
+      "sector": "saude",
+      "start": "2009-11"
+    },
+    {
+      "client": "Reliance Petroleum",
+      "description": "Tradução de objetivos de negócio em requisitos de produto e criação de dashboards interativos no Tableau.",
+      "end": "2009-10",
+      "name": "Requisitos de Produto e Dashboards",
+      "role": "Analista de Negócios Júnior",
+      "sector": "energia",
+      "start": "2007-07"
+    }
+  ],
+  "years_experience": 10
+}

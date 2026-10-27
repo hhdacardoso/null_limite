@@ -1,0 +1,60 @@
+{
+  "id": "p075",
+  "full_name": "Diego Fernandes",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Masters in Science",
+      "institution": "Sandiego State, CA",
+      "level": "master"
+    },
+    {
+      "completion_year": null,
+      "course": "Bachelors in Science",
+      "institution": "JNTU University Hyderabad, India",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Negócios / Scrum Master",
+  "projects": [
+    {
+      "client": "PayPal",
+      "description": "Análise de requisitos e gestão ágil para portais de banco online e alertas móveis.",
+      "end": null,
+      "name": "Online Banking Portal",
+      "role": "Analista de Negócios / Scrum Master",
+      "sector": "financeiro",
+      "start": "2014-05"
+    },
+    {
+      "client": "Liberty Mutual",
+      "description": "Análise de qualidade e requisitos para sistemas de liquidação de sinistros e gestão de prestadores.",
+      "end": "2014-04",
+      "name": "Claim Adjudication & Provider Management",
+      "role": "Analista de Qualidade e Negócios",
+      "sector": "seguros",
+      "start": "2012-03"
+    },
+    {
+      "client": "Capital One",
+      "description": "Análise de requisitos para programa de benefícios de viagem e liquidação financeira.",
+      "end": "2011-03",
+      "name": "Travel Benefit Program",
+      "role": "Analista de Qualidade e Negócios",
+      "sector": "financeiro",
+      "start": "2010-02"
+    },
+    {
+      "client": "HealthNow",
+      "description": "Testes de migração EDI e análise de requisitos para processamento de sinistros e seguros.",
+      "end": "2010-01",
+      "name": "Claim Processing & EDI Migration",
+      "role": "Analista de Qualidade e Negócios",
+      "sector": "saude",
+      "start": "2009-02"
+    }
+  ],
+  "years_experience": 8
+}

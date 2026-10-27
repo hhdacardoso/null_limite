@@ -1,0 +1,109 @@
+{
+  "id": "p192",
+  "full_name": "Camila Campos",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Gerente de Projetos de TI",
+  "years_experience": 14,
+  "certifications": [
+    {
+      "name": "Microsoft Certified Professional (Windows Server 2003)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Microsoft Certified Systems Administrator (Messaging on Windows Server 2003)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "VMware Certified Associate 5 - Data Center Virtualization (VCA-DCV)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "EMC Information Storage Associate (EMCISA)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "ITIL V3 Foundation Certified (ITIL)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "PMP Certification (PMI ID: 5278358) – Completed PMP training-Pursuing certification",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "mba",
+      "course": "Masters of Business Administration (MBA)",
+      "institution": "Madurai Kamraj University, Lusby MD",
+      "completion_year": 2013
+    },
+    {
+      "level": "bachelor",
+      "course": "Bachelors of Engineering – Computer Science (B.E.)",
+      "institution": "Pune University, Pune India",
+      "completion_year": 2004
+    }
+  ],
+  "projects": [
+    {
+      "name": "Internal Cloud Threat and Vulnerability Management",
+      "client": "S&P Global",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos Sênior",
+      "description": "Gerenciou projetos de segurança em nuvem e migração de usuários para o Box",
+      "start": "2017-05",
+      "end": null
+    },
+    {
+      "name": "Data Center Migration and Consolidation",
+      "client": "Metropolitan Transportation Authority (MTA)",
+      "sector": "governo",
+      "role": "Gerente de Projetos de TI",
+      "description": "Planejou e executou migração de data center e consolidação de servidores",
+      "start": "2016-12",
+      "end": "2017-05"
+    },
+    {
+      "name": "Data Center Migration and Virtualization",
+      "client": "Thomson Reuters",
+      "sector": "financeiro",
+      "role": "Engenheiro de Soluções de Sistema / Gerente de TI",
+      "description": "Migrou data center e virtualizou aplicações COTS em NY, NJ e TX",
+      "start": "2014-09",
+      "end": "2016-11"
+    },
+    {
+      "name": "Data Center Migration and Virtualization",
+      "client": "Thomson Reuters",
+      "sector": "financeiro",
+      "role": "Gerente de Serviços de TI",
+      "description": "Gerenciou migração de data center e atualização de hardware em NY, NJ e MO",
+      "start": "2008-02",
+      "end": "2014-09"
+    },
+    {
+      "name": "Technical Support Engineer",
+      "client": "Capsilon Technologies",
+      "sector": "tecnologia",
+      "role": "Engenheiro de Suporte Técnico",
+      "description": "Administração de servidores e redes em Pune",
+      "start": "2006-05",
+      "end": "2007-11"
+    },
+    {
+      "name": "Technical Support Engineer",
+      "client": "vCustomer Services Pvt. Ltd.",
+      "sector": "tecnologia",
+      "role": "Engenheiro de Suporte Técnico",
+      "description": "Suporte técnico a servidores, workstations e Active Directory em Pune",
+      "start": "2004-08",
+      "end": "2006-05"
+    }
+  ]
+}

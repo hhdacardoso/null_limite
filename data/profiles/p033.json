@@ -1,0 +1,56 @@
+{
+  "id": "p033",
+  "full_name": "Lucas Dias",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "AmerisourceBergen",
+      "description": "Desenvolvimento de aplicações web e microserviços utilizando Spring Boot, AngularJS e JMS.",
+      "end": null,
+      "name": "Desenvolvimento de Aplicações Web e Microserviços",
+      "role": "Desenvolvedor Java/UI Sênior",
+      "sector": "saude",
+      "start": "2017-03"
+    },
+    {
+      "client": "Carefusion",
+      "description": "Implementação de módulos de aplicação usando Spring, Hibernate e Web Services SOAP.",
+      "end": "2017-02",
+      "name": "Desenvolvimento de Módulos de Aplicação",
+      "role": "Desenvolvedor Java",
+      "sector": "saude",
+      "start": "2016-01"
+    },
+    {
+      "client": "Holmes Murphy",
+      "description": "Desenvolvimento e integração de aplicação com lógica de negócio e conectividade de banco de dados.",
+      "end": "2015-11",
+      "name": "Desenvolvimento e Integração de Aplicação",
+      "role": "Desenvolvedor Java",
+      "sector": "outros",
+      "start": "2014-02"
+    },
+    {
+      "client": "Green Co Technologies",
+      "description": "Desenvolvimento de interfaces de usuário e componentes de servidor em Java.",
+      "end": "2014-01",
+      "name": "Desenvolvimento de Interfaces e Servidores",
+      "role": "Desenvolvedor Java",
+      "sector": "tecnologia",
+      "start": "2012-08"
+    },
+    {
+      "client": "SB Technologies",
+      "description": "Desenvolvimento de componentes de visualização e procedimentos armazenados em Oracle.",
+      "end": "2012-07",
+      "name": "Desenvolvimento de Componentes e Banco de Dados",
+      "role": "Desenvolvedor Java",
+      "sector": "outros",
+      "start": "2010-10"
+    }
+  ],
+  "years_experience": 8
+}

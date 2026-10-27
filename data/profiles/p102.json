@@ -1,0 +1,62 @@
+{
+  "id": "p102",
+  "full_name": "Tatiane Ribeiro",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "Certified Scrum Master",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Data Conversion Project",
+      "client": "Capital One",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Sênior",
+      "description": "Análise e migração de dados legados para ODS, garantindo consistência e suporte aos usuários downstream.",
+      "start": "2015-10",
+      "end": null
+    },
+    {
+      "name": "Claims System Enhancements",
+      "client": "United Health Group",
+      "sector": "saude",
+      "role": "Analista de Negócios Sênior",
+      "description": "Melhorias no sistema de sinistros, assegurando conformidade com HIPAA, SOX e regulamentos CMS.",
+      "start": "2014-07",
+      "end": "2015-10"
+    },
+    {
+      "name": "Online Account Management Project",
+      "client": "Schools First FCU",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Implementação de funcionalidades de gestão de contas online, alertas e visão de portfólio para cooperativa de crédito.",
+      "start": "2012-03",
+      "end": "2014-05"
+    },
+    {
+      "name": "Medicaid Eligibility System",
+      "client": "NYC Department of Health",
+      "sector": "governo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Desenvolvimento de solução para validação de elegibilidade Medicaid e prevenção de uso indevido.",
+      "start": "2011-04",
+      "end": "2012-02"
+    },
+    {
+      "name": "Vendor Management System Enhancement",
+      "client": "Procure staff Technologies",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios",
+      "description": "Aprimoramento de sistema de gerenciamento de fornecedores com módulos de BI e dashboards.",
+      "start": "2009-01",
+      "end": "2011-02"
+    }
+  ]
+}

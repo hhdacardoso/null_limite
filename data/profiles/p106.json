@@ -1,0 +1,65 @@
+{
+  "id": "p106",
+  "full_name": "Mariana Souza",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [],
+  "job_title": "Gerente de Projetos de Infraestrutura de TI Sênior",
+  "projects": [
+    {
+      "client": "Royal Bank of Scotland",
+      "description": "Gerenciamento da migração e fechamento de datacenter para o centro regional no Reino Unido.",
+      "end": "2018-02",
+      "name": "Migração e Fechamento de Datacenter",
+      "role": "Gerente de Projetos",
+      "sector": "financeiro",
+      "start": "2016-06"
+    },
+    {
+      "client": "Royal Bank of Scotland",
+      "description": "Migração de aplicação empresarial de 3 camadas de plataforma Windows para Linux.",
+      "end": "2018-02",
+      "name": "Migração e Implementação de Aplicação Empresarial",
+      "role": "Gerente de Projetos",
+      "sector": "financeiro",
+      "start": "2016-06"
+    },
+    {
+      "client": "Royal Bank of Scotland",
+      "description": "Migração de três aplicações empresariais para a nuvem AWS, incluindo lift-and-shift e replatforming.",
+      "end": "2018-02",
+      "name": "Migração de Aplicações para AWS Cloud",
+      "role": "Gerente de Projetos",
+      "sector": "financeiro",
+      "start": "2016-06"
+    },
+    {
+      "client": "General Electric",
+      "description": "Implementação de infraestrutura VDI para mais de 1000 usuários de engenharia.",
+      "end": "2016-06",
+      "name": "Configuração de Infraestrutura VDI",
+      "role": "Gerente de Projetos",
+      "sector": "industria",
+      "start": "2011-10"
+    },
+    {
+      "client": "General Electric",
+      "description": "Implementação de design de rede de arquitetura segura (SAND) para 15k usuários na região Ásia-Pacífico.",
+      "end": "2016-06",
+      "name": "Implementação de Design de Rede de Arquitetura Segura (SAND)",
+      "role": "Gerente de Projetos",
+      "sector": "industria",
+      "start": "2011-10"
+    },
+    {
+      "client": "General Electric",
+      "description": "Migração de mais de 450 fornecedores para rede de terceiros segura e e-mail seguro via TLS.",
+      "end": "2016-06",
+      "name": "Migração de Fornecedores para Rede Segura",
+      "role": "Gerente de Projetos",
+      "sector": "industria",
+      "start": "2011-10"
+    }
+  ],
+  "years_experience": 12
+}

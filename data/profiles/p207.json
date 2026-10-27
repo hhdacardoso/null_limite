@@ -1,0 +1,54 @@
+{
+  "id": "p207",
+  "full_name": "Henrique Almeida",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Desenvolvedor Full Stack Java Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Technology in Information Technology",
+      "institution": "Jawaharlal Nehru Technological University, JNTU, Hyderabad",
+      "completion_year": 2009
+    }
+  ],
+  "projects": [
+    {
+      "name": "Citizens Energy Group",
+      "client": "Citizens Energy Group",
+      "sector": "energia",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Desenvolvimento de microserviços em Spring Boot e Angular, integração com Predix e AWS",
+      "start": "2017-01",
+      "end": null
+    },
+    {
+      "name": "Freeman Health System",
+      "client": "Freeman Health System",
+      "sector": "saude",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Criação de aplicações web com Spring MVC, ReactJS e Spark para análise de dados em tempo real",
+      "start": "2015-09",
+      "end": "2016-12"
+    },
+    {
+      "name": "FNB Corporation",
+      "client": "FNB Corporation",
+      "sector": "financeiro",
+      "role": "Desenvolvedor Full Stack Java",
+      "description": "Desenvolvimento de serviços REST, integração com Kafka e AWS Beanstalk",
+      "start": "2014-07",
+      "end": "2015-08"
+    },
+    {
+      "name": "Kansas City Life Insurance Company",
+      "client": "Kansas City Life Insurance Company",
+      "sector": "seguros",
+      "role": "Programador Java/J2EE",
+      "description": "Desenvolvimento de aplicações corporativas com Java EE, WebSphere e integração de serviços",
+      "start": "2013-11",
+      "end": "2014-06"
+    }
+  ]
+}

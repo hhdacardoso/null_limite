@@ -1,0 +1,63 @@
+{
+  "id": "p071",
+  "full_name": "Rodrigo Ramos",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Desenvolvedor Sr. Rodrigo",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Technology in Computer Science",
+      "institution": "National Institute of Technology, Rourkela",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "TMNAS",
+      "client": "TMNAS",
+      "sector": "seguros",
+      "role": "Desenvolvedor Sr. Rodrigo",
+      "description": "Análise de clickstream para otimizar campanhas de marketing",
+      "start": "2016-09",
+      "end": null
+    },
+    {
+      "name": "Davita Inc",
+      "client": "Davita Inc",
+      "sector": "saude",
+      "role": "Desenvolvedor Sr. Rodrigo",
+      "description": "Construção de pipelines de dados para plataforma BI de saúde",
+      "start": "2015-01",
+      "end": "2016-09"
+    },
+    {
+      "name": "NASBA",
+      "client": "NASBA",
+      "sector": "governo",
+      "role": "Desenvolvedor Rodrigo",
+      "description": "Migração e transformação de dados para Data Lake governamental",
+      "start": "2012-08",
+      "end": "2014-12"
+    },
+    {
+      "name": "Copart Inc",
+      "client": "Copart Inc",
+      "sector": "outros",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de aplicações J2EE para gerenciamento de conteúdo",
+      "start": "2010-10",
+      "end": "2012-08"
+    },
+    {
+      "name": "Aricent",
+      "client": "Aricent",
+      "sector": "tecnologia",
+      "role": "Desenvolvedor Java",
+      "description": "Automação de processos internos e desenvolvimento de aplicações web",
+      "start": "2008-11",
+      "end": "2010-09"
+    }
+  ]
+}

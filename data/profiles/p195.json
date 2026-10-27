@@ -1,0 +1,72 @@
+{
+  "id": "p195",
+  "full_name": "Thiago Nascimento",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelor’s in Engineering",
+      "institution": "JNTUK University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Desenvolvedor Java Sênior",
+  "projects": [
+    {
+      "client": "Equifax",
+      "description": "Modernização de dados para simplificar o carregamento de arquivos de empregadores para um repositório comum.",
+      "end": null,
+      "name": "Gutenberg",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "financeiro",
+      "start": "2016-04"
+    },
+    {
+      "client": "Horizon",
+      "description": "Desenvolvimento de sistema de RH (E-HRO) para transformação de dados do PeopleSoft e geração de arquivos para fornecedores.",
+      "end": "2016-04",
+      "name": "E-HRO",
+      "role": "Desenvolvedor J2EE/Vitria",
+      "sector": "saude",
+      "start": "2015-02"
+    },
+    {
+      "client": "Social Interest Solutions",
+      "description": "Desenvolvimento de repositório de controle de produtos (PCMR) para recuperação de metadados e atualização de ativos.",
+      "end": "2015-02",
+      "name": "PCMR",
+      "role": "Desenvolvedor J2EE Sênior",
+      "sector": "outros",
+      "start": "2013-12"
+    },
+    {
+      "client": "General Electric",
+      "description": "Desenvolvimento de mecanismo para envio, recebimento e manipulação de faxes digitais no desktop.",
+      "end": "2013-12",
+      "name": "RightFax",
+      "role": "Desenvolvedor Java Sênior",
+      "sector": "industria",
+      "start": "2011-11"
+    },
+    {
+      "client": "Triveni IT",
+      "description": "Desenvolvimento de plataforma para transferência rápida e segura de fundos entre consumidores e instituições.",
+      "end": "2011-11",
+      "name": "Money Send",
+      "role": "Programador Java",
+      "sector": "financeiro",
+      "start": "2010-10"
+    },
+    {
+      "client": "Value Labs",
+      "description": "Desenvolvimento de solução corporativa de gestão de recursos humanos (HRMS).",
+      "end": "2010-09",
+      "name": "eHRMS",
+      "role": "Programador Java",
+      "sector": "outros",
+      "start": "2009-06"
+    }
+  ],
+  "years_experience": 8
+}

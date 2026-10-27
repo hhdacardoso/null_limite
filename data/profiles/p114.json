@@ -1,0 +1,45 @@
+{
+  "id": "p114",
+  "full_name": "Tatiane Castro",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": 2005,
+      "course": "Bachelor's Degree in Electronics and communications in engineering",
+      "institution": "JNTU",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Desenvolvedor PHP",
+  "projects": [
+    {
+      "client": "Cloud4c Services Pvt Ltd",
+      "description": "Desenvolvimento de plataforma de computação em nuvem sob demanda e portais internos de gestão de ativos e segurança.",
+      "end": "2017-07",
+      "name": "Plataforma de Nuvem e Portais Internos",
+      "role": "Engenheiro de Software Sênior",
+      "sector": "tecnologia",
+      "start": "2014-08"
+    },
+    {
+      "client": "Expos2 Inc",
+      "description": "Desenvolvimento e migração de plataforma de gestão de exposições virtuais e suporte a eventos ao vivo.",
+      "end": "2014-08",
+      "name": "Plataforma de Exposições Virtuais",
+      "role": "Engenheiro de Software Sênior",
+      "sector": "tecnologia",
+      "start": "2011-04"
+    },
+    {
+      "client": "Open Origin IT Solutions Pvt Ltd",
+      "description": "Desenvolvimento de plataforma de marketing de petróleo e aplicação de compras online.",
+      "end": "2011-03",
+      "name": "Plataforma de Marketing de Petróleo",
+      "role": "Engenheiro de Software",
+      "sector": "energia",
+      "start": "2006-11"
+    }
+  ],
+  "years_experience": null
+}

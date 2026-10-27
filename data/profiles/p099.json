@@ -1,0 +1,72 @@
+{
+  "id": "p099",
+  "full_name": "Igor Oliveira",
+  "source_model": "qwen/qwen3.8-27b",
+  "certifications": [],
+  "education": [
+    {
+      "completion_year": null,
+      "course": "Bachelors in Electrical Engineering",
+      "institution": "Pune University",
+      "level": "bachelor"
+    }
+  ],
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "projects": [
+    {
+      "client": "Fiserv",
+      "description": "Desenvolvimento de funcionalidades para o sistema BillMatrix Next, focado em pagamentos digitais e carteiras virtuais.",
+      "end": null,
+      "name": "Bill Matrix Next (BMX)",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "financeiro",
+      "start": "2017-05"
+    },
+    {
+      "client": "Hyundai Auto Ever America (Kia Motors)",
+      "description": "Gestão de requisitos e testes para o sistema PWA, utilizado por concessionárias para submissão de solicitações de reparo.",
+      "end": "2017-02",
+      "name": "PWA System",
+      "role": "Analista de Sistemas de Negócios / Scrum Master",
+      "sector": "industria",
+      "start": "2016-10"
+    },
+    {
+      "client": "Capital Group",
+      "description": "Migração de dados de títulos de renda fixa do sistema Raptor para o Aladdin, incluindo mapeamento e normalização de dados.",
+      "end": "2016-09",
+      "name": "Reference Data Management (RDM)",
+      "role": "Analista de Sistemas de Negócios",
+      "sector": "financeiro",
+      "start": "2016-05"
+    },
+    {
+      "client": "SEI Wealth Management",
+      "description": "Desenvolvimento de um banco de dados integrado para gestão de riscos e P&L de ações e derivativos listados e OTC.",
+      "end": "2016-03",
+      "name": "Integrated Database System",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2015-08"
+    },
+    {
+      "client": "Raymond James Financial Inc",
+      "description": "Implementação do software EquiTrak para administração de fundos de hedge e private equity.",
+      "end": "2015-06",
+      "name": "EquiTrak Hedge Fund Application",
+      "role": "Analista de Negócios",
+      "sector": "financeiro",
+      "start": "2014-01"
+    },
+    {
+      "client": "Presidio Information Risk Management",
+      "description": "Desenvolvimento de uma ferramenta de comunicação interna e colaboração corporativa baseada em SharePoint.",
+      "end": "2013-12",
+      "name": "MYPOD",
+      "role": "Analista de Negócios / Scrum Master",
+      "sector": "tecnologia",
+      "start": "2012-06"
+    }
+  ],
+  "years_experience": 8
+}

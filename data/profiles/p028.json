@@ -1,0 +1,72 @@
+{
+  "id": "p028",
+  "full_name": "Otávio Gomes",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Desenvolvedor Spark",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Bachelor of Technology in Computer Science Engineering",
+      "institution": "JNTU, Kakinada, Andhra Pradesh, India",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Projeto de Análise de Dados em Saúde",
+      "client": "Cigna",
+      "sector": "seguros",
+      "role": "Desenvolvedor Spark",
+      "description": "Desenvolvimento de pipelines Spark para processamento de dados de saúde em tempo real",
+      "start": "2017-07",
+      "end": null
+    },
+    {
+      "name": "Plataforma de Analytics para Qualcomm",
+      "client": "Qualcomm",
+      "sector": "telecom",
+      "role": "Desenvolvedor Spark",
+      "description": "Construção de pipelines Spark para análise de comportamento de usuários",
+      "start": "2016-12",
+      "end": "2017-06"
+    },
+    {
+      "name": "Pipeline de Dados de Clickstream para McKesson",
+      "client": "McKesson",
+      "sector": "industria",
+      "role": "Desenvolvedor Spark",
+      "description": "Processamento de dados de clickstream e enriquecimento com dados corporativos",
+      "start": "2015-12",
+      "end": "2016-11"
+    },
+    {
+      "name": "Migração de Dados para HDFS em American Home Shield",
+      "client": "American Home Shield",
+      "sector": "seguros",
+      "role": "Desenvolvedor Gomes",
+      "description": "Migração e transformação de dados de sinistros para Hive",
+      "start": "2014-12",
+      "end": "2015-11"
+    },
+    {
+      "name": "Aplicação Web para Protective Life",
+      "client": "Protective Life",
+      "sector": "seguros",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de aplicação web baseada em Spring MVC",
+      "start": "2013-10",
+      "end": "2014-11"
+    },
+    {
+      "name": "Projeto de Desenvolvimento Java em Accenture",
+      "client": "Accenture",
+      "sector": "outros",
+      "role": "Desenvolvedor Java",
+      "description": "Desenvolvimento de aplicações multi-tier em Java",
+      "start": "2011-10",
+      "end": "2013-09"
+    }
+  ]
+}

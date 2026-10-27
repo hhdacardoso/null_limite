@@ -1,0 +1,91 @@
+{
+  "id": "p003",
+  "full_name": "Beatriz Lima",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Gerente de Projetos",
+  "years_experience": 10,
+  "certifications": [
+    {
+      "name": "Project Management Professional (PMP)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Six Sigma Green Belt",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Scrum Master",
+      "issuer": null,
+      "issue_year": null
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "Business and Management",
+      "institution": "Universitatea de Vest",
+      "completion_year": null
+    },
+    {
+      "level": "specialization",
+      "course": "Project Management",
+      "institution": "The George Washington University School of Business",
+      "completion_year": null
+    },
+    {
+      "level": "technical",
+      "course": "Mechanics",
+      "institution": "Liceul Industrial",
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "PMI Savannah Chapter Board",
+      "client": "Project Management Institute (PMI) Savannah Chapter",
+      "sector": "outros",
+      "role": "Gerente de Projetos / Vice‑Presidente de Voluntários",
+      "description": "Coordenação da conferência anual e definição de metas, orçamento e comunicação com patrocinadores.",
+      "start": "2016-12",
+      "end": null
+    },
+    {
+      "name": "Billing System Implementation",
+      "client": "ATN International",
+      "sector": "telecom",
+      "role": "Gerente de Projetos de TI / Gerente de Suporte de Faturamento",
+      "description": "Liderou a implementação do sistema de faturamento para a One Communications, incluindo treinamento e melhoria de processos.",
+      "start": "2016-04",
+      "end": "2016-11"
+    },
+    {
+      "name": "Infrastructure and Technology Projects",
+      "client": "Gulfstream Aerospace (HCL America)",
+      "sector": "industria",
+      "role": "Gerente de Projetos de TI",
+      "description": "Planejou e executou projetos de infraestrutura, incluindo implantação de SCADA, fibra óptica e substituição de hardware.",
+      "start": "2012-08",
+      "end": "2015-12"
+    },
+    {
+      "name": "Construction and Renovation Projects",
+      "client": "Craiovan Consulting SRL",
+      "sector": "outros",
+      "role": "Consultor de Gerenciamento de Projetos",
+      "description": "Gerenciou projetos de construção, interação com agências governamentais e controle de orçamento e cronograma.",
+      "start": "2009-06",
+      "end": "2011-05"
+    },
+    {
+      "name": "IT Coding Department Projects",
+      "client": "UnitedHealth Group",
+      "sector": "saude",
+      "role": "Coordenador de Projetos",
+      "description": "Coordenou projetos de TI e iniciativas Six Sigma, gerando economia de mais de US$ 800 mil.",
+      "start": "2002-08",
+      "end": "2008-05"
+    }
+  ]
+}

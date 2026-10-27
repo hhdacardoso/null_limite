@@ -1,0 +1,60 @@
+{
+  "id": "p198",
+  "full_name": "Vinícius Moura",
+  "source_model": "openai/gpt-oss-20b",
+  "job_title": "Analista de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [],
+  "education": [
+    {
+      "level": "specialization",
+      "course": "Business Analytics & Economics",
+      "institution": "Harvard Business School",
+      "completion_year": null
+    },
+    {
+      "level": "bachelor",
+      "course": "Mechanical Engineering",
+      "institution": null,
+      "completion_year": null
+    }
+  ],
+  "projects": [
+    {
+      "name": "Projeto de Migração de Armazenamento Distribuído para Plataforma em Nuvem",
+      "client": "NXP Semiconductors",
+      "sector": "tecnologia",
+      "role": "Analista de Negócios Sênior",
+      "description": "Responsável pela migração de sistemas legados para plataforma cloud, entregando inteligência operacional e compliance em tempo real.",
+      "start": "2016-12",
+      "end": null
+    },
+    {
+      "name": "Implementação de Scorecards de Fornecedores em Kohl’s",
+      "client": "Kohl’s",
+      "sector": "varejo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Desenvolvimento e administração de scorecards de fornecedores, otimizando desempenho e reduzindo custos na cadeia de suprimentos.",
+      "start": "2015-10",
+      "end": "2016-11"
+    },
+    {
+      "name": "Projeto de Melhoria de Pontes no Departamento de Transporte de Massachusetts",
+      "client": "State of Massachusetts",
+      "sector": "governo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Participação em projeto de infraestrutura pública, gerenciando requisitos e entregas em um esforço de $3 bilhões.",
+      "start": "2014-02",
+      "end": "2015-09"
+    },
+    {
+      "name": "Análise de Dados e Dashboards para VF Corporation",
+      "client": "VF Corporation",
+      "sector": "varejo",
+      "role": "Analista de Negócios Sênior",
+      "description": "Criação de dashboards e análise preditiva para otimizar planejamento estratégico e marketing em e‑commerce.",
+      "start": "2013-03",
+      "end": "2013-12"
+    }
+  ]
+}

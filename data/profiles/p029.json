@@ -1,0 +1,90 @@
+{
+  "id": "p029",
+  "full_name": "Rafael Correia",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Consultor Líder",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "PMP",
+      "issuer": "PMI",
+      "issue_year": 2017
+    },
+    {
+      "name": "IFRS",
+      "issuer": "ACCA, UK",
+      "issue_year": 2014
+    },
+    {
+      "name": "Six Sigma – Green Belt",
+      "issuer": null,
+      "issue_year": 2016
+    },
+    {
+      "name": "Lean",
+      "issuer": null,
+      "issue_year": 2014
+    }
+  ],
+  "education": [
+    {
+      "level": "bachelor",
+      "course": "CA equivalent to CPA (US)",
+      "institution": "Institute of Chartered Accountants of India",
+      "completion_year": 2011
+    },
+    {
+      "level": "bachelor",
+      "course": "B.Com (Honors)",
+      "institution": "S.G.T.B Khalsa College, University of Delhi, India",
+      "completion_year": 2010
+    }
+  ],
+  "projects": [
+    {
+      "name": "Genpact – Lead Consultant",
+      "client": "Genpact",
+      "sector": "tecnologia",
+      "role": "Consultor Líder",
+      "description": "Gerenciamento de programas e projetos Oracle, SAP e outras plataformas para clientes globais.",
+      "start": "2012-04",
+      "end": null
+    },
+    {
+      "name": "Otsuka – IT Support & Change Management",
+      "client": "Otsuka",
+      "sector": "saude",
+      "role": "Gerente de Suporte",
+      "description": "Otimização de suporte de TI, gestão de mudanças e integração de módulos financeiros Oracle.",
+      "start": "2015-11",
+      "end": null
+    },
+    {
+      "name": "Averda – Shared Service Centre Setup",
+      "client": "Averda",
+      "sector": "industria",
+      "role": "Consultor",
+      "description": "Transição, transformação e reengenharia de processos financeiros e de suporte.",
+      "start": "2014-10",
+      "end": "2015-11"
+    },
+    {
+      "name": "Humana – Process Improvement",
+      "client": "Humana",
+      "sector": "saude",
+      "role": "Consultor",
+      "description": "Documentação de processos, SOPs e suporte a módulos financeiros.",
+      "start": "2014-06",
+      "end": "2014-10"
+    },
+    {
+      "name": "McGraw‑Hill Financial – Accounts Payable Lead",
+      "client": "McGraw‑Hill Financial",
+      "sector": "financeiro",
+      "role": "Consultor",
+      "description": "Planejamento de projetos, gestão de contas a pagar e suporte a processos bancários.",
+      "start": "2013-06",
+      "end": "2014-06"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "p171",
+  "full_name": "Juliana Costa",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Analista de Sistemas de Negócios Sênior",
+  "years_experience": 8,
+  "certifications": [
+    {
+      "name": "Scrum Master Accredited Certification (SMAC)",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Google Analytics Certified Professional",
+      "issuer": null,
+      "issue_year": null
+    },
+    {
+      "name": "Certified Lean Six Sigma White Belt",
+      "issuer": "Management and Strategy Institute",
+      "issue_year": null
+    }
+  ],
+  "education": [],
+  "projects": [
+    {
+      "name": "Centralized Credit Card Disputes Management System",
+      "client": "MasterCard",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios Sênior",
+      "description": "Reengenharia do sistema de gerenciamento de disputas de cartões de crédito, incluindo integração de APIs e melhoria de relatórios.",
+      "start": "2016-07",
+      "end": "2018-01"
+    },
+    {
+      "name": "AML Case Management",
+      "client": "Bank of America",
+      "sector": "financeiro",
+      "role": "Analista de Sistemas de Negócios",
+      "description": "Aprimoramento e migração da plataforma de combate à lavagem de dinheiro, integrando módulos KYC, SAR, sanções e relatórios de transações.",
+      "start": "2015-01",
+      "end": "2016-06"
+    },
+    {
+      "name": "Enterprise Data Warehouse – State of Wisconsin",
+      "client": "State of Wisconsin",
+      "sector": "governo",
+      "role": "Analista de Negócios",
+      "description": "Desenvolvimento de um data warehouse para consolidação de dados financeiros e geração de relatórios de orçamento e despesas.",
+      "start": "2013-11",
+      "end": "2015-01"
+    },
+    {
+      "name": "BOI Secure OTP",
+      "client": "Bank of India",
+      "sector": "financeiro",
+      "role": "Analista de Negócios",
+      "description": "Implementação de autenticação por OTP para transações de cartão de crédito, incluindo análise de requisitos e modelagem de processos.",
+      "start": "2012-04",
+      "end": "2013-10"
+    },
+    {
+      "name": "PayZapp – Core Banking",
+      "client": "HDFC Bank",
+      "sector": "financeiro",
+      "role": "Analista de Negócios Júnior",
+      "description": "Levantamento de requisitos e apoio ao desenvolvimento da solução de core banking para contas, empréstimos e pagamentos.",
+      "start": "2010-12",
+      "end": "2012-03"
+    }
+  ]
+}

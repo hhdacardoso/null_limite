@@ -1,0 +1,38 @@
+{
+  "id": "p010",
+  "full_name": "Fernanda Ferreira",
+  "source_model": "openai/gpt-oss-120b",
+  "job_title": "Gerente de Projetos",
+  "years_experience": 10,
+  "certifications": [],
+  "education": [],
+  "projects": [
+    {
+      "name": "Desenvolvimento e implementação de sistemas web e mobile",
+      "client": "Bed Bath and Beyond",
+      "sector": "varejo",
+      "role": "Gerente de Projetos",
+      "description": "Liderou a entrega de aplicações web e mobile, coordenando equipes onshore e offshore.",
+      "start": "2017-02",
+      "end": null
+    },
+    {
+      "name": "Projeto de automação de mídia digital com Google AdWords",
+      "client": "Paradigm Software Technologies (Nexelus)",
+      "sector": "tecnologia",
+      "role": "Gerente de Projetos",
+      "description": "Implementou processo de inserção de orçamento em tempo real e automação de faturas para agências de mídia.",
+      "start": "2014-01",
+      "end": "2017-01"
+    },
+    {
+      "name": "Implementação de plataforma de investimentos e CRM",
+      "client": "Greencrest Capital Management LLC",
+      "sector": "financeiro",
+      "role": "Gerente de Projetos",
+      "description": "Conduziu projetos de tecnologia e captação de recursos, incluindo implantação de Salesforce.",
+      "start": "2012-07",
+      "end": "2013-12"
+    }
+  ]
+}
