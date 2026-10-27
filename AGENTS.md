@@ -34,6 +34,7 @@ Para validar algo fora dos testes, use `fastapi.testclient.TestClient` com `DATA
 - Matching (`/bids`): edital tem vagas (`BidRole`) e cada vaga tem critérios (`BidCriterion`, tipos `certification`, `sector_projects`, `education`, `years_experience`). Anos de experiência comprovados vêm dos projetos aprovados; o `years_experience` declarado só conta como potencial. A equipe é escolhida por busca exata sem repetir pessoa (`best_team`), limitada a `MAX_TEAM_SLOTS` vagas.
 - Comprovante sem arquivo (`file_path` nulo) só existe para formação: é o pedido de validação pelo gestor.
 - Gamificação: pontos são derivados do estado atual (`profile_progress` em `main.py`), sem tabela de eventos. Ranking individual só para gestor; profissional vê os próprios pontos e o agregado por equipe.
+- Interface web em `static/` (HTML/JS puros, sem build nem CDN), servida em `/`. Todo dado passa pela API autenticada; escape tudo que vem da API (`esc` em `app.js`).
 - Setores de projeto são normalizados: `energia`, `financeiro`, `seguros`, `saude`, `governo`, `varejo`, `telecom`, `tecnologia`, `industria`, `logistica`, `educacao`, `outros`.
 - Datas são UTC naive (`utcnow()` em `main.py`); não use `datetime.utcnow()`.
 

@@ -9,6 +9,8 @@
   last update; some education without a file is waiting for a manager to validate it
 - Team (practice) derived from the job title
 - Example bids from data/bids/*.json
+- Scripted demo employee funcionario@nexora.demo (password demo123): proving the missing PMP
+  and MBA puts them in the recommended team of the example bid
 
 Usage: python scripts/seed.py [--profiles data/profiles] [--bids data/bids]
 WARNING: deletes every row in the configured database.
@@ -128,6 +130,38 @@ def add_evidence(db, rng, upload_dir: Path, owner, reviewer, label: str, approve
     return True
 
 
+def add_demo_employee(db, upload_dir: Path, now: datetime, password_hash: str, reviewer):
+    """Fictitious employee for the live demo: strong in energy, but PMP and MBA have no evidence yet."""
+    last_update = add_months(now, -20)
+    employee = main.Professional(
+        email="funcionario@nexora.demo", full_name="Lucas Martins", job_title="Gerente de Projetos",
+        years_experience=12, team=main.Team.PROJECT_MANAGEMENT, hashed_password=password_hash, created_at=last_update,
+    )
+    db.add(employee)
+    db.flush()
+    items = [
+        (main.Certificate(name="PMP", issuer="PMI", issue_date=add_months(now, -12), expiry_date=add_months(now, 24)), False),
+        (main.Education(level=main.EducationLevel.MBA, course="MBA em Gestão de Projetos"), False),
+        (main.Project(name="Medição inteligente", client="Distribuidora (fictícia)", sector="energia", role="Gerente de Projetos",
+                      start_date=add_months(now, -150), end_date=add_months(now, -80)), True),
+        (main.Project(name="Novo sistema de faturamento", client="Distribuidora (fictícia)", sector="energia",
+                      role="Gerente de Projetos", start_date=add_months(now, -79), end_date=add_months(now, -24)), True),
+        (main.Project(name="Portal do cliente", client="Distribuidora (fictícia)", sector="energia", role="Gerente de Projetos",
+                      start_date=add_months(now, -23), end_date=add_months(now, -20)), False),
+    ]
+    for item, approved in items:
+        item.professional_id, item.created_at = employee.id, last_update
+        db.add(item)
+        db.flush()
+        if approved:
+            path = upload_dir / f"{uuid.uuid4()}.pdf"
+            content = fake_pdf(f"Comprovante ficticio - {item.name} - {employee.full_name}")
+            path.write_bytes(content)
+            db.add(main.Evidence(professional_id=employee.id, project_id=item.id, filename="atestado.pdf", file_path=str(path),
+                                 file_size=len(content), status=main.EvidenceStatus.APPROVED, reviewed_by=reviewer.id,
+                                 reviewed_at=main.utcnow(), created_at=last_update))
+
+
 def main_seed():
     parser = argparse.ArgumentParser()
     parser.add_argument("--profiles", type=Path, default=Path("data/profiles"))
@@ -224,6 +258,7 @@ def main_seed():
             db.flush()
             add_evidence(db, rng, upload_dir, professional, reviewer, proj["name"], 0.3, 0.15, last_update, project_id=item.id)
 
+    add_demo_employee(db, upload_dir, now, password_hash, managers[0])
     for path in sorted(args.bids.glob("*.json")):
         db.add(main.build_bid(main.BidCreate.model_validate_json(path.read_text(encoding="utf8")), managers[0].id))
     db.commit()
@@ -231,7 +266,7 @@ def main_seed():
     counts = {model.__tablename__: db.query(model).count()
               for model in (main.Professional, main.Certificate, main.Education, main.Project, main.Evidence, main.Bid)}
     print(f"Seeded {len(profiles)} profiles ({fresh} recently updated, {len(profiles) - fresh} stale): {counts}")
-    print(f"Logins: <nome.sobrenome>@nexora.demo, gestor1@nexora.demo, gestor2@nexora.demo / password {PASSWORD}")
+    print(f"Logins: funcionario@nexora.demo, gestor1@nexora.demo, gestor2@nexora.demo, <nome.sobrenome>@nexora.demo / password {PASSWORD}")
     db.close()
 
 
